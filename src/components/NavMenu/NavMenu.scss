@@ -1,0 +1,16 @@
+.nav-button {
+    color: #045540;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 21px;
+    &:hover {
+        color: #033d2e;
+        background-color: #e6ece9;
+    }
+}
+
+.menu_container {
+    display: flex;
+    justify-content: space-between;
+    width: 559px;
+}
