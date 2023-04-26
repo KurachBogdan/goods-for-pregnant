@@ -1,0 +1,91 @@
+.footer_container {
+    background-color: #faf6f1;
+    border-top: 1px solid #045540;
+    padding: 28px 0 21px 0;
+    margin-top: 28px;
+}
+
+.footer-logo_container {
+    margin-bottom: 21px;
+}
+
+.about-us_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about_us,
+.contacts {
+    width: 25vw;
+}
+
+.contacts-title {
+    margin-bottom: 11px;
+}
+
+.about_us-title,
+.contacts-title {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #74c2c2;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about_us-content {
+    text-align: center;
+}
+
+.about_us-content,
+.contacts-content {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #045540;
+}
+
+.phone_logo,
+.gmail_logo,
+.instagram_logo {
+    width: 29px;
+    height: 29px;
+}
+
+.phone_logo {
+    background: url('/assets/phone.png') center/cover no-repeat;
+}
+
+.gmail_logo {
+    background: url('/assets/gmail.png') center/cover no-repeat;
+}
+
+.instagram_logo {
+    background: url('/assets/instagram.png') center/cover no-repeat;
+}
+
+.phone_container,
+.gmail_container,
+.instagram_container {
+    display: flex;
+    align-items: center;
+}
+
+.footer_contacts {
+    margin: 7px 28px 7px 28px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rights {
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #74c2c2;
+    margin-bottom: 0;
+}

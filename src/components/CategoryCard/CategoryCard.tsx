@@ -12,7 +12,6 @@ const CategoryCard = ({ image, categoryName }: Props) => {
             <Card
                 sx={{
                     width: '250px',
-                    // boxShadow: 'none',
                     borderRadius: '14px',
                     paddingBottom: '0px',
                 }}

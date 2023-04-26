@@ -1,6 +1,6 @@
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
-import Logo from 'components/Logo/Logo'
+import AlternativeLogo from 'components/AlternativeLogo/AlternativeLogo'
 import React from 'react'
 import Container from '@mui/material/Container/Container'
 import NavMenu from 'components/NavMenu/NavMenu'
@@ -20,7 +20,7 @@ const Header = (props: Props) => {
             >
                 <Container maxWidth="xl">
                     <Toolbar>
-                        <Logo />
+                        <AlternativeLogo />
                         <NavMenu />
                     </Toolbar>
                 </Container>
