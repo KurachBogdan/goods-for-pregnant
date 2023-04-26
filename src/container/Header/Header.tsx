@@ -10,7 +10,14 @@ type Props = {}
 const Header = (props: Props) => {
     return (
         <React.Fragment>
-            <AppBar position="sticky" sx={{ backgroundColor: '#F2F2F2' }}>
+            <AppBar
+                position="sticky"
+                sx={{
+                    backgroundColor: '#faf6f1',
+                    borderTop: '1px solid #045540',
+                    borderBottom: '1px solid #045540',
+                }}
+            >
                 <Container maxWidth="xl">
                     <Toolbar>
                         <Logo />

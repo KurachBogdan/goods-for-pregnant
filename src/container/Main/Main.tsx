@@ -1,14 +1,15 @@
 import React from 'react'
 import './Main.scss'
+import FirstEffect from 'components/FirstEffect/FirstEffect'
+import Home from 'pages/Home/Home'
 
 type Props = {}
 
 const Main = (props: Props) => {
     return (
         <React.Fragment>
-            <div className="background-container">
-                <div className="logo_container"></div>
-            </div>
+            <FirstEffect />
+            <Home />
         </React.Fragment>
     )
 }

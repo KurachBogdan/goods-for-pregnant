@@ -9,12 +9,17 @@ const NavMenu = (props: Props) => {
     return (
         <div className="menu_container">
             <Button className="nav-button">Головна</Button>
+            <div className='border_between_links'></div>
             <Button className="nav-button">Сертифікати</Button>
+            <div className='border_between_links'></div>
             <Button className="nav-button">Відгуки</Button>
+            <div className='border_between_links'></div>
             <Button className="nav-button">Контакти</Button>
+            <div className='border_between_links'></div>
             <Button className="nav-button">
                 <FavoriteIcon sx={{ color: 'tomato' }} />0
             </Button>
+            <div className='border_between_links'></div>
             <Button className="nav-button">
                 <ShoppingCartIcon />0
             </Button>

@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material'
-import logo from 'assets/logo.png'
+import logo from 'assets/alternative_logo.png'
 import './Logo.scss'
 
 type Props = {}
