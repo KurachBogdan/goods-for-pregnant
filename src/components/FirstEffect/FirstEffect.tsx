@@ -4,13 +4,18 @@ import './FirstEffect.scss'
 type Props = {}
 
 const FirstEffect = (props: Props) => {
+    const handleClick = () => {
+        window.scrollTo({ top: window.innerHeight - 49, behavior: 'smooth' })
+    }
     return (
-        <div
-            aria-label="Кнопка зі стрілкою вниз"
-            className="background-container"
-        >
+        <div className="background-container">
             <div className="logo_container"></div>
-            <Button variant="text" className="btn-down-arrow">
+            <Button
+                onClick={handleClick}
+                aria-label="Кнопка зі стрілкою вниз"
+                variant="text"
+                className="btn-down-arrow"
+            >
                 <div className="arrow-down-1"></div>
                 <div className="arrow-down-2"></div>
             </Button>

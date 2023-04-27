@@ -1,14 +1,15 @@
 .background-container {
     width: calc(100vw - 17px);
-    height: calc(100vh - 64px);
-    // background: url('/assets/pregnant.jpg') center/cover no-repeat;
+    height: calc(100vh - 49px);
+    background: url('/assets/main.jpg') center/cover no-repeat;
     background-color: #e4ddd6;
 }
 
 .logo_container {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background: url('/assets/full_logo.png') center/cover no-repeat;
+    margin-left: calc(100vw - 217px);
 }
 
 .arrow-down-1,
@@ -34,13 +35,18 @@
 .btn-down-arrow {
     margin: 0 auto;
     position: relative;
+    position: absolute;
+    left: calc(50vw - 17px);
+    bottom: 14vh;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 93px;
     height: 37px;
     border-radius: 21px;
-    margin-top: 182px;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0);
+    }
 }
 
 @keyframes blink {
