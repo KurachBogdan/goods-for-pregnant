@@ -4,14 +4,14 @@
     justify-content: flex-end;
     width: calc(100vw - 17px);
     height: calc(100vh - 49px);
-    background: url('/assets/full_logo (3).png') calc(100vw - 250px) 0 no-repeat, url('/assets/main.jpg') center/cover no-repeat;
+    background: url('/assets/full_logo.png') calc(100vw - 250px) 0 no-repeat, url('/assets/main.jpg') center/cover no-repeat;
     background-color: #e4ddd6;
 }
 
 .arrow-down-1,
 .arrow-down-2 {
     width: 49px;
-    border: 3px solid #74c2c2;
+    border: 3px solid rgba(9,98,121,0.76234243697479);
     border-radius: 10px;
     animation: blink 1.4s infinite;
     box-shadow: 0px 0px 2px #99d2e0;
@@ -55,7 +55,7 @@ h1 {
     font-family: 'Exo 2', sans-serif;
     font-size: 56px;
     font-weight: 600;
-    color: #045540;
+    color: white;
     margin: 0;
     padding: 0px 0px 0px 105px;
     text-transform: uppercase;
@@ -65,7 +65,7 @@ h1 {
     font-family: 'Exo 2', sans-serif;
     font-size: 35px;
     font-weight: 600;
-    color: #045540;
+    color: white;
     width: 100%;
     margin: 0;
     padding: 14px 0px 0px 154px;

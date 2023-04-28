@@ -1,13 +1,13 @@
 import Container from '@mui/material/Container/Container'
 import MainPart from 'components/MainPart/MainPart'
 import RightSide from 'components/RightSide/RightSide'
-import React from 'react'
+import './Home.scss'
 
 type Props = {}
 
 const Home = (props: Props) => {
     return (
-        <React.Fragment>
+        <div className="home_container">
             <Container
                 maxWidth="lg"
                 sx={{
@@ -19,7 +19,7 @@ const Home = (props: Props) => {
                 <MainPart />
                 <RightSide />
             </Container>
-        </React.Fragment>
+        </div>
     )
 }
 

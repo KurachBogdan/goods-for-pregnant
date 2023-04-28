@@ -17,7 +17,7 @@ const Header = (props: Props) => {
                 display: 'flex',
                 justifyContent: 'center',
                 backgroundImage:
-                    'linear-gradient(to right, #9402D9, #638CE7, #5FFBF1)',
+                    'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,98,121,0.76234243697479) 47%, rgba(0,212,255,1) 100%)',
             }}
         >
             <Container maxWidth="xl">
