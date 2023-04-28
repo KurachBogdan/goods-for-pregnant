@@ -21,7 +21,7 @@ const NavMenu = (props: Props) => {
             </Button>
             <div className='border_between_links'></div>
             <Button className="nav-button">
-                <ShoppingCartIcon />0
+                <ShoppingCartIcon sx={{ color: '#105b63' }} />0
             </Button>
         </div>
     )

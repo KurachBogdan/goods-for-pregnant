@@ -9,7 +9,12 @@ const FirstEffect = (props: Props) => {
     }
     return (
         <div className="background-container">
-            <div className="logo_container"></div>
+            <div className="main_title-container">
+                <h1>З нами</h1>
+                <p className="main_title_text">мами відпочивають,</p>
+                <p className="main_title_text">а малюки</p>
+                <p className="main_title_text">засинають</p>
+            </div>
             <Button
                 onClick={handleClick}
                 aria-label="Кнопка зі стрілкою вниз"

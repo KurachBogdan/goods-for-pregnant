@@ -1,15 +1,11 @@
 .background-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: calc(100vw - 17px);
     height: calc(100vh - 49px);
-    background: url('/assets/main.jpg') center/cover no-repeat;
+    background: url('/assets/full_logo (3).png') calc(100vw - 250px) 0 no-repeat, url('/assets/main.jpg') center/cover no-repeat;
     background-color: #e4ddd6;
-}
-
-.logo_container {
-    width: 200px;
-    height: 200px;
-    background: url('/assets/full_logo.png') center/cover no-repeat;
-    margin-left: calc(100vw - 217px);
 }
 
 .arrow-down-1,
@@ -55,3 +51,30 @@
     }
   }
 
+h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    color: #045540;
+    margin: 0;
+    padding: 0px 0px 0px 105px;
+    text-transform: uppercase;
+}
+
+.main_title_text {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #045540;
+    width: 100%;
+    margin: 0;
+    padding: 14px 0px 0px 154px;
+}
+
+.main_title-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 77px;
+}
