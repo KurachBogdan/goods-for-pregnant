@@ -50,7 +50,6 @@ const CardItem = ({
             <CardMedia
                 sx={{ height: 340 }}
                 image={image}
-                title="green iguana"
             />
             <CardContent>
                 <div className="card_title-container">
@@ -109,7 +108,8 @@ const CardItem = ({
                         style={{ color: isLiked ? 'tomato' : 'grey' }}
                     />
                 </IconButton>
-                <Button onClick={() => addProductToCart(count, price)}
+                <Button
+                    onClick={() => addProductToCart(count, price)}
                     variant="contained"
                     className="add_to_cart_btn"
                     size="small"

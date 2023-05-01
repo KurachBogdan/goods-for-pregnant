@@ -19,11 +19,26 @@ type CartDataProps = {
     totalPrice: number
 }
 
+// type ProductsInCart = {
+//     [id: number]: number
+// }
+
 const App = (props: Props) => {
     const [cartData, setCartData] = useState<CartDataProps>({
         totalCount: 0,
         totalPrice: 0,
     })
+
+    // const [productsInCart, setProductsInCart] = useState<ProductsInCart>({
+    //     1: 5,
+    //     2: 7,
+    // })
+
+    // const addProductToCart2 = (id: number) => {
+    //     setProductsInCart(() => ({
+    //         id: 
+    //     }))
+    // }
 
     const addProductToCart = (count: number, price: number) => {
         setCartData((prevState) => ({

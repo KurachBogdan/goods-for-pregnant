@@ -1,0 +1,13 @@
+.item_in_cart-container {
+    border-radius: 14px;
+    max-width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.img_in_cart-container {
+    background: url('../../../public/images/rabbit_in_glasses.jpg') center/cover no-repeat;
+    width: 150px;
+}
