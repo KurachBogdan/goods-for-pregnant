@@ -4,9 +4,14 @@ import AlternativeLogo from 'components/AlternativeLogo/AlternativeLogo'
 import Container from '@mui/material/Container/Container'
 import NavMenu from 'components/NavMenu/NavMenu'
 
-type Props = {}
+type Props = {
+    cartData: {
+        totalCount: number
+        totalPrice: number
+    }
+}
 
-const Header = (props: Props) => {
+const Header = ({ cartData }: Props) => {
     return (
         <AppBar
             position="sticky"
@@ -23,7 +28,7 @@ const Header = (props: Props) => {
             <Container maxWidth="xl">
                 <Toolbar>
                     <AlternativeLogo />
-                    <NavMenu />
+                    <NavMenu  cartData={cartData}/>
                 </Toolbar>
             </Container>
         </AppBar>

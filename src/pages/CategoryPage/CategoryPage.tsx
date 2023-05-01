@@ -1,12 +1,14 @@
 import CardItem from 'components/CardItem/CardItem'
 import productsArray from 'utils/productsArray'
 import { Container, Grid, Typography } from '@mui/material'
+import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
 
 type Props = {}
 
 const CategoryPage = (props: Props) => {
     return (
         <Container maxWidth="lg" sx={{ padding: '28px 0px' }}>
+            <ScrollToTopOnMount />
             <Grid container spacing={4.2}>
                 {productsArray.length ? (
                     productsArray.map(

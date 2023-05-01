@@ -2,6 +2,7 @@ import { Button, Grid, Typography } from '@mui/material'
 import './MainPart.scss'
 import CategoryCard from 'components/CategoryCard/CategoryCard'
 import categoriesArray from 'utils/categoriesArray'
+import { Link } from 'react-router-dom'
 
 type Props = {}
 
@@ -13,10 +14,12 @@ const MainPart = (props: Props) => {
                     categoriesArray.map(({ image, categoryName }, index) => (
                         <Grid item xs={4} md={4} key={`category_${index}`}>
                             <Button className="category_btn">
-                                <CategoryCard
-                                    image={image}
-                                    categoryName={categoryName}
-                                />
+                                <Link className="category_btn_link" to="/categoryPage">
+                                    <CategoryCard
+                                        image={image}
+                                        categoryName={categoryName}
+                                    />
+                                </Link>{' '}
                             </Button>
                         </Grid>
                     ))

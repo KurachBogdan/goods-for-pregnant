@@ -1,8 +1,13 @@
 .nav-button {
+    border-radius: 21px;
+}
+
+.nav-button-link {
+    display: flex;
+    text-decoration: none;
     color: #105b63;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    border-radius: 21px;
     &:hover {
         color: #5271ff;
     }
