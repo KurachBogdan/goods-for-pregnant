@@ -5,9 +5,7 @@ import './Home.scss'
 import FirstEffect from 'components/FirstEffect/FirstEffect'
 import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
 
-type Props = {
-    addProductToCart: (count: number, price: number) => void
-}
+type Props = {}
 
 const Home = (props: Props) => {
     return (

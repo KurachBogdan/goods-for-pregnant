@@ -21,8 +21,8 @@ type CartDataProps = {
 
 const App = (props: Props) => {
     const [cartData, setCartData] = useState<CartDataProps>({
-        totalCount: 10,
-        totalPrice: 100,
+        totalCount: 0,
+        totalPrice: 0,
     })
 
     const addProductToCart = (count: number, price: number) => {
@@ -37,16 +37,13 @@ const App = (props: Props) => {
             <CssBaseline />
             <Header cartData={cartData} />
             <Routes>
-                <Route
-                    path="/"
-                    element={<Home addProductToCart={addProductToCart} />}
-                />
+                <Route path="/" element={<Home />} />
                 <Route path="certificate" element={<CertificatesPage />} />
                 <Route path="review" element={<ReviewsPage />} />
                 <Route path="contact" element={<ContactsPage />} />
                 <Route path="favorite" element={<FavoritesPage />} />
                 <Route path="cart" element={<CartPage />} />
-                <Route path="categoryPage" element={<CategoryPage />} />
+                <Route path="categoryPage" element={<CategoryPage  addProductToCart={addProductToCart}/>} />
             </Routes>
             <Footer />
         </StyledEngineProvider>

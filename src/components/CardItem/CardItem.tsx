@@ -14,9 +14,11 @@ type Props = {
     composition: string
     term: number
     price: number
+    addProductToCart: (count: number, price: number) => void
 }
 
 const CardItem = ({
+    addProductToCart,
     image,
     type,
     itemName,
@@ -107,7 +109,7 @@ const CardItem = ({
                         style={{ color: isLiked ? 'tomato' : 'grey' }}
                     />
                 </IconButton>
-                <Button
+                <Button onClick={() => addProductToCart(count, price)}
                     variant="contained"
                     className="add_to_cart_btn"
                     size="small"
