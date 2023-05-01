@@ -5,6 +5,7 @@
     color: #105b63;
     text-align: center;
     text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
 }
 
 .css-651hzl-MuiCardContent-root:last-child {
@@ -25,8 +26,4 @@
 
   .category_btn:hover .category {
     color: #74c2c2;
-}
-
-.category {
-    transition: all 0.3s ease-in-out;
 }

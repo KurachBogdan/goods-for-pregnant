@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material'
+import { Button, Grid, Typography } from '@mui/material'
 import './MainPart.scss'
 import CategoryCard from 'components/CategoryCard/CategoryCard'
 import categoriesArray from 'utils/categoriesArray'
@@ -12,17 +12,16 @@ const MainPart = (props: Props) => {
                 {categoriesArray.length ? (
                     categoriesArray.map(({ image, categoryName }, index) => (
                         <Grid item xs={4} md={4} key={`category_${index}`}>
-                            <CategoryCard
-                                image={image}
-                                categoryName={categoryName}
-                            />
+                            <Button className="category_btn">
+                                <CategoryCard
+                                    image={image}
+                                    categoryName={categoryName}
+                                />
+                            </Button>
                         </Grid>
                     ))
                 ) : (
-                    <Typography
-                        className="category"
-                        component="div"
-                    >
+                    <Typography className="category" component="div">
                         No any categories
                     </Typography>
                 )}

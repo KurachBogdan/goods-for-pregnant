@@ -17,11 +17,11 @@ const NavMenu = (props: Props) => {
             <Button className="nav-button">Контакти</Button>
             <div className='border_between_links'></div>
             <Button className="nav-button">
-                <FavoriteIcon sx={{ color: 'tomato' }} />0
+                <FavoriteIcon sx={{ color: 'tomato' }} /> 0
             </Button>
             <div className='border_between_links'></div>
-            <Button className="nav-button">
-                <ShoppingCartIcon sx={{ color: '#105b63' }} />0
+            <Button className="nav-button shop_cart_icon">
+                <ShoppingCartIcon className='shoppig_cart_icon' sx={{ color: 'rgba(26,92,94,1)' }} />0
             </Button>
         </div>
     )

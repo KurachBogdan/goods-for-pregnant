@@ -1,0 +1,12 @@
+.product-quantity {
+    display: flex;
+    justify-content: center;
+    input {
+        text-align: center;
+        padding: 0;
+        height: 28px;
+        cursor: context-menu;
+    }
+    margin-top: 7px;
+    height: 28px;
+}

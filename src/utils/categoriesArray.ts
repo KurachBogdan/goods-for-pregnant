@@ -1,10 +1,10 @@
-export type Article = {
+export type Category = {
     id: number
     image: string
     categoryName: string
 }
 
-const categoriesArray: Article[] = [
+const categoriesArray: Category[] = [
     {
         id: 1,
         image: '/images/new.jpg',

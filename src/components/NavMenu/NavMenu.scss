@@ -4,7 +4,7 @@
     font-weight: 600;
     border-radius: 21px;
     &:hover {
-        color: #fedd2e;
+        color: #5271ff;
     }
 }
 
@@ -18,4 +18,8 @@
     height: 35px;
     border: 1px solid;
     color: #045540;
+}
+
+.shop_cart_icon:hover .shoppig_cart_icon {
+    color: rgba(26,92,94,1);
 }
