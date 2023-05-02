@@ -1,8 +1,9 @@
-import { Container } from '@mui/material'
+import { Button, Container } from '@mui/material'
 import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
 import './CartPage.scss'
 import CartPageDescriptionPart from 'components/CartPageDescriptionPart/CartPageDescriptionPart'
-import Quantity from 'components/Quantity/Quantity'
+// import Quantity from 'components/Quantity/Quantity'
+import DeleteIcon from '@mui/icons-material/Delete'
 
 type Props = {}
 
@@ -15,15 +16,17 @@ const CartPage = (props: Props) => {
                     <div className="img_in_cart-container"></div>
                     <CartPageDescriptionPart />
                     <div className="properties-container">
-                        <p className="product_count_in_cart"></p>
-                        <p className="product_price_in_cart"></p>
+                        <p className="product_count_in_cart">Кількість: 1</p>
+                        <p className="product_price_in_cart">Ціна: 100</p>
                         {/* <Quantity
                             count={count}
                             onDecrement={onDecrement}
                             onIncrement={onIncrement}
                         /> */}
                     </div>
-                    <div className="delete_from_cart_container"></div>
+                    <Button className="delete_from_cart_container">
+                        <DeleteIcon />
+                    </Button>
                 </div>
             </Container>
         </div>
