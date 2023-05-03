@@ -16,35 +16,37 @@ type Props = {}
 
 type CartDataProps = {
     totalCount: number
-    totalPrice: number
 }
 
-// type ProductsInCart = {
-//     [id: number]: number
-// }
+type ProductsInCart = {
+    [id: number]: number
+}
 
 const App = (props: Props) => {
     const [cartData, setCartData] = useState<CartDataProps>({
         totalCount: 0,
-        totalPrice: 0,
     })
 
-    // const [productsInCart, setProductsInCart] = useState<ProductsInCart>({
-    //     1: 5,
-    //     2: 7,
-    // })
-
-    // const addProductToCart2 = (id: number) => {
-    //     setProductsInCart(() => ({
-    //         id: 
-    //     }))
-    // }
-
-    const addProductToCart = (count: number, price: number) => {
+    const addTotalCountToHeader = (count: number) => {
         setCartData((prevState) => ({
             totalCount: prevState.totalCount + count,
-            totalPrice: prevState.totalPrice + count * price,
         }))
+    }
+    
+    const [productsInCart, setProductsInCart] = useState<ProductsInCart>({})
+
+    const addProductToCart = (id: number, count: number) => {
+        setProductsInCart((prevState) => ({
+            ...prevState,
+            [id]: (prevState[id] || 0) + count,
+        }))
+    }
+
+    const handleClick = (id: number, count: number) => {
+        (() => {
+            addTotalCountToHeader(count);
+            addProductToCart(id, count);
+        })();
     }
 
     return (
@@ -57,8 +59,18 @@ const App = (props: Props) => {
                 <Route path="review" element={<ReviewsPage />} />
                 <Route path="contact" element={<ContactsPage />} />
                 <Route path="favorite" element={<FavoritesPage />} />
-                <Route path="cart" element={<CartPage />} />
-                <Route path="categoryPage" element={<CategoryPage  addProductToCart={addProductToCart}/>} />
+                <Route
+                    path="cart"
+                    element={<CartPage productsInCart={productsInCart} />}
+                />
+                <Route
+                    path="categoryPage"
+                    element={
+                        <CategoryPage
+                        handleClick={handleClick}
+                        />
+                    }
+                />
             </Routes>
             <Footer />
         </StyledEngineProvider>

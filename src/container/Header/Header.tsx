@@ -7,7 +7,6 @@ import NavMenu from 'components/NavMenu/NavMenu'
 type Props = {
     cartData: {
         totalCount: number
-        totalPrice: number
     }
 }
 
@@ -18,7 +17,7 @@ const Header = ({ cartData }: Props) => {
             sx={{
                 borderTop: '1px solid #045540',
                 borderBottom: '1px solid #045540',
-                height: '49px',
+                minHeight: '49px',
                 display: 'flex',
                 justifyContent: 'center',
                 backgroundImage:
@@ -28,7 +27,9 @@ const Header = ({ cartData }: Props) => {
             <Container maxWidth="xl">
                 <Toolbar>
                     <AlternativeLogo />
-                    <NavMenu  cartData={cartData}/>
+                    <NavMenu
+                        cartData={cartData}
+                    />
                 </Toolbar>
             </Container>
         </AppBar>

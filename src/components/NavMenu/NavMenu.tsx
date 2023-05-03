@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom'
 type Props = {
     cartData: {
         totalCount: number
-        totalPrice?: number
     }
 }
 

@@ -6,6 +6,7 @@ import { useState } from 'react'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 
 type Props = {
+    id: number
     image: string
     type: string
     itemName: string
@@ -14,11 +15,12 @@ type Props = {
     composition: string
     term: number
     price: number
-    addProductToCart: (count: number, price: number) => void
+    handleClick: (id: number, count: number) => void
 }
 
 const CardItem = ({
-    addProductToCart,
+    handleClick,
+    id,
     image,
     type,
     itemName,
@@ -47,10 +49,7 @@ const CardItem = ({
         <Card
             sx={{ maxWidth: 260, cursor: 'context-menu', borderRadius: '14px' }}
         >
-            <CardMedia
-                sx={{ height: 340 }}
-                image={image}
-            />
+            <CardMedia sx={{ height: 340 }} image={image} />
             <CardContent>
                 <div className="card_title-container">
                     <p className="type">{type}</p>
@@ -109,7 +108,7 @@ const CardItem = ({
                     />
                 </IconButton>
                 <Button
-                    onClick={() => addProductToCart(count, price)}
+                    onClick={() => handleClick(id, count)}
                     variant="contained"
                     className="add_to_cart_btn"
                     size="small"

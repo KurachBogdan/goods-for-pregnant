@@ -4,10 +4,10 @@ import { Container, Grid, Typography } from '@mui/material'
 import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
 
 type Props = {
-    addProductToCart: (count: number, price: number) => void
+    handleClick: (id: number, count: number) => void
 }
 
-const CategoryPage = ({ addProductToCart }: Props) => {
+const CategoryPage = ({ handleClick }: Props) => {
     return (
         <Container maxWidth="lg" sx={{ padding: '28px 0px' }}>
             <ScrollToTopOnMount />
@@ -27,7 +27,8 @@ const CategoryPage = ({ addProductToCart }: Props) => {
                         }) => (
                             <Grid item xs={12} sm={6} md={3} key={id}>
                                 <CardItem
-                                    addProductToCart={addProductToCart}
+                                    id={id}
+                                    handleClick={handleClick}
                                     image={image}
                                     type={type}
                                     itemName={itemName}
