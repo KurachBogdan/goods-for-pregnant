@@ -1,15 +1,15 @@
+import CertificatesPage from 'pages/CertificatesPage/CertificatesPage'
+import FavoritesPage from 'pages/FavoritesPage/FavoritesPage'
 import { StyledEngineProvider } from '@mui/material/styles'
+import ContactsPage from 'pages/ContactsPage/ContactsPage'
+import CategoryPage from 'pages/CategoryPage/CategoryPage'
+import ReviewsPage from 'pages/ReviewsPage/ReviewsPage'
 import CssBaseline from '@mui/material/CssBaseline'
+import { Route, Routes } from 'react-router-dom'
+import CartPage from 'pages/CartPage/CartPage'
 import Footer from 'container/Footer/Footer'
 import Header from 'container/Header/Header'
 import Home from 'pages/Home/Home'
-import { Route, Routes } from 'react-router-dom'
-import CartPage from 'pages/CartPage/CartPage'
-import CertificatesPage from 'pages/CertificatesPage/CertificatesPage'
-import ReviewsPage from 'pages/ReviewsPage/ReviewsPage'
-import FavoritesPage from 'pages/FavoritesPage/FavoritesPage'
-import ContactsPage from 'pages/ContactsPage/ContactsPage'
-import CategoryPage from 'pages/CategoryPage/CategoryPage'
 import { useState } from 'react'
 
 type Props = {}
@@ -32,7 +32,7 @@ const App = (props: Props) => {
             totalCount: prevState.totalCount + count,
         }))
     }
-    
+
     const [productsInCart, setProductsInCart] = useState<ProductsInCart>({})
 
     const addProductToCart = (id: number, count: number) => {
@@ -43,10 +43,10 @@ const App = (props: Props) => {
     }
 
     const handleClick = (id: number, count: number) => {
-        (() => {
-            addTotalCountToHeader(count);
-            addProductToCart(id, count);
-        })();
+        ;(() => {
+            addTotalCountToHeader(count)
+            addProductToCart(id, count)
+        })()
     }
 
     return (
@@ -65,11 +65,7 @@ const App = (props: Props) => {
                 />
                 <Route
                     path="categoryPage"
-                    element={
-                        <CategoryPage
-                        handleClick={handleClick}
-                        />
-                    }
+                    element={<CategoryPage handleClick={handleClick} />}
                 />
             </Routes>
             <Footer />

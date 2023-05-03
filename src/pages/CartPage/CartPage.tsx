@@ -1,10 +1,8 @@
-import { Button, Container } from '@mui/material'
-import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
-import './CartPage.scss'
-import CartPageDescriptionPart from 'components/CartPageDescriptionPart/CartPageDescriptionPart'
-// import Quantity from 'components/Quantity/Quantity'
-import DeleteIcon from '@mui/icons-material/Delete'
 import productsArray, { Product, getProductObject } from 'utils/productsArray'
+import CartPageItem from 'components/CartPageItem/CartPageItem'
+import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
+import { Container } from '@mui/material'
+import './CartPage.scss'
 
 type Props = {
     productsInCart: {
@@ -22,43 +20,23 @@ const CartPage = ({
     return (
         <div>
             <ScrollToTopOnMount />
-            <Container sx={{ padding: '28px 0px' }} maxWidth="lg">
-                <div className="item_in_cart-container">
-                    <div className="img_in_cart-container"></div>
-                    <CartPageDescriptionPart productsInCart={productsInCart} />
-                    <div className="properties-container">
-                            {Object.keys(productsInCart).map((productId) => (
-                                <p className="product_count_in_cart" key={productId}>
-                                    Кількість:{' '}
-                                    {productsInCart[parseInt(productId)]} шт.
-                                </p>
-                            ))}
-                            {Object.keys(productsInCart).map((productId) => (
-                                <p className="product_price_in_cart" key={productId}>
-                                Вартість:{' '}
-                                    {productsObject[parseInt(productId)].price} грн
-                                </p>
-                            ))}
-                        {/* <Quantity
-                            count={count}
-                            onDecrement={onDecrement}
-                            onIncrement={onIncrement}
-                        /> */}
-                    </div>
-                    <Button className="delete_from_cart_container">
-                        <DeleteIcon />
-                    </Button>
+            <Container maxWidth="lg" sx={{ padding: '21px 0px' }}>
+                <CartPageItem
+                    productsInCart={productsInCart}
+                    productsObject={productsObject}
+                />
+                <div className="total_price_in_cart">
+                    Загальна вартість:{' '}
+                    {Object.keys(productsInCart).reduce(
+                        (total, productId) =>
+                            total +
+                            productsObject[parseInt(productId)].price *
+                                productsInCart[parseInt(productId)],
+                        0
+                    )}{' '}
+                    грн.
                 </div>
             </Container>
-            <div>
-                {Object.keys(productsInCart).map((productId) => (
-                    <div key={productId}>
-                        {productsObject[parseInt(productId)].type}{' '}
-                        {productsObject[parseInt(productId)].itemName}:{' '}
-                        {productsInCart[parseInt(productId)]}
-                    </div>
-                ))}
-            </div>
         </div>
     )
 }

@@ -1,7 +1,7 @@
-import CardItem from 'components/CardItem/CardItem'
-import productsArray from 'utils/productsArray'
 import { Container, Grid, Typography } from '@mui/material'
 import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
+import CardItem from 'components/CardItem/CardItem'
+import productsArray from 'utils/productsArray'
 
 type Props = {
     handleClick: (id: number, count: number) => void

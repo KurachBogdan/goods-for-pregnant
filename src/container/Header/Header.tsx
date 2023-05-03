@@ -17,7 +17,7 @@ const Header = ({ cartData }: Props) => {
             sx={{
                 borderTop: '1px solid #045540',
                 borderBottom: '1px solid #045540',
-                minHeight: '49px',
+                height: '49px',
                 display: 'flex',
                 justifyContent: 'center',
                 backgroundImage:
