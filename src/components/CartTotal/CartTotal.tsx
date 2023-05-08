@@ -1,4 +1,5 @@
 import productsArray, { Product, getProductObject } from "utils/productsArray"
+import './CartTotal.scss'
 
 type Props = {
     productsInCart: {

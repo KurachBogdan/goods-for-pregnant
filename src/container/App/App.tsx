@@ -11,6 +11,7 @@ import Footer from 'container/Footer/Footer'
 import Header from 'container/Header/Header'
 import Home from 'pages/Home/Home'
 import { useState } from 'react'
+import { omit } from 'lodash'
 
 type Props = {}
 
@@ -23,17 +24,15 @@ type ProductsInCart = {
 }
 
 const App = (props: Props) => {
-    const [cartData, setCartData] = useState<CartDataProps>({
-        totalCount: 0,
-    })
+    const [cartData, setCartData] = useState<CartDataProps>({ totalCount: 0 })
+    const [productsInCart, setProductsInCart] = useState<ProductsInCart>({})
 
     const addTotalCountToHeader = (count: number) => {
         setCartData((prevState) => ({
+            ...prevState,
             totalCount: prevState.totalCount + count,
         }))
     }
-
-    const [productsInCart, setProductsInCart] = useState<ProductsInCart>({})
 
     const addProductToCart = (id: number, count: number) => {
         setProductsInCart((prevState) => ({
@@ -42,11 +41,31 @@ const App = (props: Props) => {
         }))
     }
 
+    const changeProductQuantity = (id: number, count: number) => {
+        const diffCount = count - (productsInCart[id] || 0); // знаходжу різницю між попередньою кількістю товару і новою
+        setCartData((prevState) => ({
+          ...prevState,
+          totalCount: prevState.totalCount + diffCount, // оновлюю totalCount на різницю
+        }))
+        setProductsInCart((prevState) => ({
+            ...prevState,
+            [id]: count,
+        }))
+    }
+
     const handleClick = (id: number, count: number) => {
         ;(() => {
             addTotalCountToHeader(count)
             addProductToCart(id, count)
         })()
+    }
+
+    const removeProductFromCart = (id: number) => {
+        setCartData((prevState) => ({
+            ...prevState,
+            totalCount: Math.max(0, prevState.totalCount - productsInCart[id]),
+        }))
+        setProductsInCart((prevState) => omit(prevState, [id]))
     }
 
     return (
@@ -61,10 +80,16 @@ const App = (props: Props) => {
                 <Route path="favorite" element={<FavoritesPage />} />
                 <Route
                     path="cart"
-                    element={<CartPage productsInCart={productsInCart} />}
+                    element={
+                        <CartPage
+                            removeProductFromCart={removeProductFromCart}
+                            productsInCart={productsInCart}
+                            changeProductQuantity={changeProductQuantity}
+                        />
+                    }
                 />
                 <Route
-                    path="categoryPage"
+                    path="/category/:categoryId"
                     element={<CategoryPage handleClick={handleClick} />}
                 />
             </Routes>

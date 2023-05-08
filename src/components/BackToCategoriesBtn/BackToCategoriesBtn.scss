@@ -1,25 +1,22 @@
-.cart_footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 35px;
-}
-
-.make_purchases,
-.back_to_shopping {
+.back_to_btn {
     background-color: #5271ff;
     border-radius: 14px;
+    &:hover {
+        background-color: #fedd2e;
+    }
+    &:hover .back_to_btn_link {
+        color: #5271ff;
+    }
     height: 35px;
     line-height: 35px;
     box-shadow: none;
     transition: none;
+}
+
+.back_to_btn_link {
     font-family: 'Exo 2', sans-serif;
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
     color: #fedd2e;
-    &:hover {
-        background-color: #fedd2e;
-        color: #5271ff;
-    }
 }
