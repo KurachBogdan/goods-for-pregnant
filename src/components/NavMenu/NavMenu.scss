@@ -13,6 +13,14 @@
     }
 }
 
+.menu_itemActive {
+    display: flex;
+    text-decoration: none;
+    color: #5271ff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
 .menu_container {
     display: flex;
     justify-content: space-between;
