@@ -22,7 +22,10 @@ const Home = (props: Props) => {
                     }}
                 >
                     <MainPart />
-                    <RightSide />
+                    <RightSide
+                        rightSideLogo="Somik"
+                        rightSideTitle="Наші переваги"
+                    />
                 </Container>
             </div>
         </>
