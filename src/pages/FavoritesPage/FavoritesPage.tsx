@@ -1,112 +1,91 @@
+import { Button, Grid, Typography } from '@mui/material'
+import { useAppSelector } from 'redux/hooks'
+import Container from '@mui/material/Container/Container'
+import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
+import productsArray, { Product } from 'utils/productsArray'
+import FavoriteCardItem from 'components/CardItem/FavoriteCardItem'
+import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
+
 type Props = {}
 
 const FavoritesPage = (props: Props) => {
-    return <div>FavoritesPage</div>
+    const likedArticleIds = useAppSelector((state) =>
+        Object.keys(state.productsLikeState)
+            .filter((key) => state.productsLikeState[+key])
+            .map((key) => parseInt(key))
+    )
+
+    const likedArticles: Product[] = productsArray.filter((product) =>
+        likedArticleIds.includes(product.id)
+    )
+
+    return (
+        <Container
+            sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 438px)' }}
+            maxWidth="lg"
+        >
+            <ScrollToTopOnMount />
+            <EveryPageTitle title="Подобається" />
+            <Grid container spacing={4.2}>
+                {likedArticles.length ? (
+                    likedArticles.map(
+                        ({
+                            id,
+                            image,
+                            type,
+                            itemName,
+                            color,
+                            size,
+                            composition,
+                            term,
+                            price,
+                        }) => (
+                            <Grid item xs={12} sm={6} md={3} key={id}>
+                                {' '}
+                                <FavoriteCardItem
+                                    id={id}
+                                    image={image}
+                                    type={type}
+                                    itemName={itemName}
+                                    color={color}
+                                    size={size}
+                                    composition={composition}
+                                    term={term}
+                                    price={price}
+                                />
+                            </Grid>
+                        )
+                    )
+                ) : (
+                    <div>
+                        <Typography
+                            sx={{
+                                textTransform: 'none',
+                                fontFamily: `'Exo 2', sans-serif`,
+                                fontSize: '21px',
+                                fontWeight: 600,
+                                color: '#105b63',
+                                margin: '34px 0px 21px 34px',
+                                cursor: 'context-menu',
+                            }}
+                            component="div"
+                        >
+                            Ще немає обраних товарів
+                        </Typography>
+                        <Button
+                            style={{ margin: '14px 0px 0px 34px' }}
+                            onClick={() => window.history.back()}
+                            variant="contained"
+                            className="back_to_shopping"
+                            size="small"
+                        >
+                            Продовжити покупки
+                        </Button>
+                    </div>
+                )}
+            </Grid>
+        </Container>
+    )
 }
 
 export default FavoritesPage
-// import {
-//     Button,
-//     Card,
-//     CardActions,
-//     CardContent,
-//     CardMedia,
-//     IconButton,
-//     Typography,
-// } from '@mui/material'
-// // import { useAppSelector } from 'redux/hooks'
-// import FavoriteIcon from '@mui/icons-material/Favorite'
-
-// type Props = {
-//     id: number
-//     image: string
-//     type: string
-//     itemName: string
-//     color: string
-//     size: string
-//     composition: string
-//     term: number
-//     price: number
-// }
-
-// const FavoritesPage = ({
-//     id,
-//     image,
-//     type,
-//     itemName,
-//     color,
-//     size,
-//     composition,
-//     term,
-//     price,
-// }: Props) => {
-//     return (
-//         <Card
-//             sx={{ maxWidth: 260, cursor: 'context-menu', borderRadius: '14px' }}
-//         >
-//             <CardMedia sx={{ height: 340 }} image={image} />
-//             <CardContent>
-//                 <div className="card_title-container">
-//                     <p className="type">{type}</p>
-//                     <p>{itemName}</p>
-//                 </div>
-//                 <Typography
-//                     style={{ fontFamily: `'Exo 2', sans-serif` }}
-//                     variant="body2"
-//                     color="text.secondary"
-//                 >
-//                     <span className="before_a_colon">Колір: </span>
-//                     {color}
-//                 </Typography>
-//                 <Typography
-//                     style={{ fontFamily: `'Exo 2', sans-serif` }}
-//                     variant="body2"
-//                     color="text.secondary"
-//                 >
-//                     <span className="before_a_colon">Розмір: </span>
-//                     {size} см
-//                 </Typography>
-//                 <Typography
-//                     style={{ fontFamily: `'Exo 2', sans-serif` }}
-//                     variant="body2"
-//                     color="text.secondary"
-//                 >
-//                     <span className="before_a_colon">Склад: </span>
-//                     {composition}
-//                 </Typography>
-//                 <Typography
-//                     style={{ fontFamily: `'Exo 2', sans-serif` }}
-//                     variant="body2"
-//                     color="text.secondary"
-//                 >
-//                     <span className="before_a_colon">Артикул: </span>
-//                     {term}
-//                 </Typography>
-//                 <Typography
-//                     style={{ fontFamily: `'Exo 2', sans-serif` }}
-//                     variant="body2"
-//                     color="text.secondary"
-//                 >
-//                     <span className="before_a_colon">Ціна: </span>
-//                     <span className="price">{price} грн</span>
-//                 </Typography>
-//             </CardContent>
-//             <CardActions sx={{ justifyContent: 'space-between' }}>
-//                 <IconButton onClick={toggleLike} aria-label="add to favorites">
-//                     <FavoriteIcon
-//                         style={{ color: isLiked ? 'tomato' : 'grey' }}
-//                     />
-//                 </IconButton>
-//                 <Button
-//                     variant="contained"
-//                     className="add_to_cart_btn"
-//                     size="small"
-//                 >
-//                     Додати в корзину
-//                 </Button>
-//             </CardActions>
-//         </Card>
-//     )
-// }
-
-// export default FavoritesPage

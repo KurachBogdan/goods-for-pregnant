@@ -42,10 +42,10 @@ const App = (props: Props) => {
     }
 
     const changeProductQuantity = (id: number, count: number) => {
-        const diffCount = count - (productsInCart[id] || 0); // знаходжу різницю між попередньою кількістю товару і новою
+        const diffCount = count - (productsInCart[id] || 0) // знаходжу різницю між попередньою кількістю товару і новою
         setCartData((prevState) => ({
-          ...prevState,
-          totalCount: prevState.totalCount + diffCount, // оновлюю totalCount на різницю
+            ...prevState,
+            totalCount: prevState.totalCount + diffCount, // оновлюю totalCount на різницю
         }))
         setProductsInCart((prevState) => ({
             ...prevState,

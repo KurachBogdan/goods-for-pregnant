@@ -1,8 +1,6 @@
 import { CardMedia, Typography } from '@mui/material'
 import { Button, Card, CardActions, CardContent } from '@mui/material'
 import './CardItem.scss'
-import Quantity from 'components/Quantity/Quantity'
-import { useState } from 'react'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
@@ -18,11 +16,9 @@ type Props = {
     composition: string
     term: number
     price: number
-    handleClick: (id: number, count: number) => void
 }
 
-const CardItem = ({
-    handleClick,
+const FavoriteCardItem = ({
     id,
     image,
     type,
@@ -33,16 +29,6 @@ const CardItem = ({
     term,
     price,
 }: Props) => {
-    const [count, setCount] = useState<number>(1)
-
-    const onIncrement = () => {
-        setCount((prevState) => prevState + 1)
-    }
-
-    const onDecrement = () => {
-        setCount((prevState) => prevState - 1)
-    }
-
     const isLiked = useAppSelector((state) => state.productsLikeState[id])
     const dispatch = useAppDispatch()
 
@@ -50,7 +36,7 @@ const CardItem = ({
         <Card
             sx={{ maxWidth: 260, cursor: 'context-menu', borderRadius: '14px' }}
         >
-            <CardMedia sx={{ height: 232 }} image={image} />
+            <CardMedia sx={{ height: 340 }} image={image} />
             <CardContent>
                 <div className="card_title-container">
                     <p className="type">{type}</p>
@@ -96,11 +82,6 @@ const CardItem = ({
                     <span className="before_a_colon">Ціна: </span>
                     <span className="price">{price} грн</span>
                 </Typography>
-                <Quantity
-                    count={count}
-                    onDecrement={onDecrement}
-                    onIncrement={onIncrement}
-                />
             </CardContent>
             <CardActions sx={{ justifyContent: 'space-between' }}>
                 <Button
@@ -119,7 +100,7 @@ const CardItem = ({
                     )}
                 </Button>
                 <Button
-                    onClick={() => handleClick(id, count)}
+                    // onClick={() => handleClick(id, count)}
                     variant="contained"
                     className="add_to_cart_btn"
                     size="small"
@@ -131,4 +112,4 @@ const CardItem = ({
     )
 }
 
-export default CardItem
+export default FavoriteCardItem

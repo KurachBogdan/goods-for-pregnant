@@ -34,156 +34,184 @@ const CartPageItem = ({
                 Object.keys(productsInCart).map((productId) => (
                     <Card className="item_in_cart-container">
                         <div
-                            key={productId}
-                            style={{ width: '150px' }}
-                            className="img_in_cart-container"
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'space-between',
+                            }}
                         >
                             <img
+                                style={{ height: '200px', width: '225px' }}
                                 alt="this_image"
                                 src={productsObject[parseInt(productId)].image}
                             />
+                            <CardContent className="page_item-card_content">
+                                <div className="cart_title-container">
+                                    <p className="cart_type" key={productId}>
+                                        {
+                                            productsObject[parseInt(productId)]
+                                                .type
+                                        }
+                                    </p>
+                                    <p key={productId}>
+                                        {
+                                            productsObject[parseInt(productId)]
+                                                .itemName
+                                        }
+                                    </p>
+                                </div>
+                                <Typography
+                                    style={{
+                                        fontFamily: `'Exo 2', sans-serif`,
+                                        marginBottom: '8px',
+                                    }}
+                                    variant="body2"
+                                    color="text.secondary"
+                                >
+                                    <span className="cart_before_a_colon">
+                                        Колір:{' '}
+                                    </span>
+                                    <span key={productId}>
+                                        {
+                                            productsObject[parseInt(productId)]
+                                                .color
+                                        }
+                                    </span>
+                                </Typography>
+                                <Typography
+                                    style={{
+                                        fontFamily: `'Exo 2', sans-serif`,
+                                        marginBottom: '8px',
+                                    }}
+                                    variant="body2"
+                                    color="text.secondary"
+                                >
+                                    <span className="cart_before_a_colon">
+                                        Розмір:{' '}
+                                    </span>
+                                    <span key={productId}>
+                                        {
+                                            productsObject[parseInt(productId)]
+                                                .size
+                                        }
+                                    </span>{' '}
+                                    см
+                                </Typography>
+                                <Typography
+                                    style={{
+                                        fontFamily: `'Exo 2', sans-serif`,
+                                        marginBottom: '8px',
+                                    }}
+                                    variant="body2"
+                                    color="text.secondary"
+                                >
+                                    <span className="cart_before_a_colon">
+                                        Склад:{' '}
+                                    </span>
+                                    <span key={productId}>
+                                        {
+                                            productsObject[parseInt(productId)]
+                                                .composition
+                                        }
+                                    </span>
+                                </Typography>
+                                <Typography
+                                    style={{
+                                        fontFamily: `'Exo 2', sans-serif`,
+                                    }}
+                                    variant="body2"
+                                    color="text.secondary"
+                                >
+                                    <span className="cart_before_a_colon">
+                                        Артикул:{' '}
+                                    </span>
+                                    <span key={productId}>
+                                        {
+                                            productsObject[parseInt(productId)]
+                                                .term
+                                        }
+                                    </span>
+                                </Typography>
+                            </CardContent>
                         </div>
-                        <CardContent sx={{ padding: '7px 14px 14px 7px' }}>
-                            <div className="cart_title-container">
-                                <p className="cart_type" key={productId}>
-                                    {productsObject[parseInt(productId)].type}
-                                </p>
-                                <p key={productId}>
-                                    {
-                                        productsObject[parseInt(productId)]
-                                            .itemName
-                                    }
-                                </p>
-                            </div>
-                            <Typography
-                                style={{
-                                    fontFamily: `'Exo 2', sans-serif`,
-                                }}
-                                variant="body2"
-                                color="text.secondary"
-                            >
-                                <span className="cart_before_a_colon">
-                                    Колір:{' '}
-                                </span>
-                                <span key={productId}>
-                                    {productsObject[parseInt(productId)].color}
-                                </span>
-                            </Typography>
-                            <Typography
-                                style={{
-                                    fontFamily: `'Exo 2', sans-serif`,
-                                }}
-                                variant="body2"
-                                color="text.secondary"
-                            >
-                                <span className="cart_before_a_colon">
-                                    Розмір:{' '}
-                                </span>
-                                <span key={productId}>
-                                    {productsObject[parseInt(productId)].size}
-                                </span>{' '}
-                                см
-                            </Typography>
-                            <Typography
-                                style={{
-                                    fontFamily: `'Exo 2', sans-serif`,
-                                }}
-                                variant="body2"
-                                color="text.secondary"
-                            >
-                                <span className="cart_before_a_colon">
-                                    Склад:{' '}
-                                </span>
-                                <span key={productId}>
-                                    {
-                                        productsObject[parseInt(productId)]
-                                            .composition
-                                    }
-                                </span>
-                            </Typography>
-                            <Typography
-                                style={{
-                                    fontFamily: `'Exo 2', sans-serif`,
-                                }}
-                                variant="body2"
-                                color="text.secondary"
-                            >
-                                <span className="cart_before_a_colon">
-                                    Артикул:{' '}
-                                </span>
-                                <span key={productId}>
-                                    {productsObject[parseInt(productId)].term}
-                                </span>
-                            </Typography>
-                        </CardContent>
-                        <div className="properties-container">
-                            <p
-                                className="product_count_in_cart"
-                                key={productId}
-                            >
-                                Кількість:{' '}
-                                <span>
-                                    {productsInCart[parseInt(productId)]} шт.
-                                </span>
-                            </p>
-                            <p
-                                className="product_price_in_cart"
-                                key={productId}
-                            >
-                                Сума:{' '}
-                                <span>
-                                    {`${
-                                        productsObject[parseInt(productId)]
-                                            .price *
-                                        productsInCart[parseInt(productId)]
-                                    } `}
-                                    грн.
-                                </span>
-                            </p>
-                            <Quantity
-                                count={productsInCart[parseInt(productId)]}
-                                onDecrement={() =>
-                                    productsInCart[parseInt(productId)] <= 1
-                                        ? removeProductFromCart(
-                                              parseInt(productId)
-                                          )
-                                        : changeProductQuantity(
-                                              productsObject[
-                                                  parseInt(productId)
-                                              ].id,
-                                              productsInCart[
-                                                  parseInt(productId)
-                                              ] - 1
-                                          )
-                                }
-                                onIncrement={() =>
-                                    changeProductQuantity(
-                                        productsObject[parseInt(productId)].id,
-                                        productsInCart[parseInt(productId)] + 1
-                                    )
-                                }
-                                minCount={0}
-                            />
-                        </div>
-                        <Button
-                            onClick={() =>
-                                removeProductFromCart(parseInt(productId))
-                            }
-                            sx={{
-                                width: '140px',
-                                color: '#045540',
-                                marginLeft: '49px',
+                        <div
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'space-between',
                             }}
-                            className="delete_from_cart_container"
                         >
-                            <DeleteIcon />
-                        </Button>
+                            <div className="properties-container">
+                                <p
+                                    className="product_count_in_cart"
+                                    key={productId}
+                                >
+                                    Кількість:{' '}
+                                    <span>
+                                        {productsInCart[parseInt(productId)]}{' '}
+                                        шт.
+                                    </span>
+                                </p>
+                                <p
+                                    className="product_price_in_cart"
+                                    key={productId}
+                                >
+                                    Сума:{' '}
+                                    <span>
+                                        {`${
+                                            productsObject[parseInt(productId)]
+                                                .price *
+                                            productsInCart[parseInt(productId)]
+                                        } `}
+                                        грн.
+                                    </span>
+                                </p>
+                                <Quantity
+                                    count={productsInCart[parseInt(productId)]}
+                                    onDecrement={() =>
+                                        productsInCart[parseInt(productId)] <= 1
+                                            ? removeProductFromCart(
+                                                  parseInt(productId)
+                                              )
+                                            : changeProductQuantity(
+                                                  productsObject[
+                                                      parseInt(productId)
+                                                  ].id,
+                                                  productsInCart[
+                                                      parseInt(productId)
+                                                  ] - 1
+                                              )
+                                    }
+                                    onIncrement={() =>
+                                        changeProductQuantity(
+                                            productsObject[parseInt(productId)]
+                                                .id,
+                                            productsInCart[
+                                                parseInt(productId)
+                                            ] + 1
+                                        )
+                                    }
+                                    minCount={0}
+                                />
+                            </div>
+                            <Button
+                                onClick={() =>
+                                    removeProductFromCart(parseInt(productId))
+                                }
+                                sx={{
+                                    width: '140px',
+                                    color: '#045540',
+                                    marginLeft: '14px',
+                                    borderRadius: '14px'
+                                }}
+                            >
+                                <DeleteIcon />
+                            </Button>
+                        </div>
                     </Card>
                 ))
             ) : (
                 <Typography
                     sx={{
-                        textTransform: 'uppercase',
+                        textTransform: 'none',
                         fontFamily: `'Exo 2', sans-serif`,
                         fontSize: '21px',
                         fontWeight: 600,

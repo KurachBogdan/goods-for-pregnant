@@ -4,6 +4,7 @@ import CardItem from 'components/CardItem/CardItem'
 import productsArray from 'utils/productsArray'
 import { useParams } from 'react-router-dom'
 import BackToCategoriesBtn from 'components/BackToCategoriesBtn/BackToCategoriesBtn'
+import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
 
 type Props = {
     handleClick: (id: number, count: number) => void
@@ -44,6 +45,7 @@ const CategoryPage = ({ handleClick }: Props) => {
             sx={{ padding: '28px 0px', backgroundImage: handleBackground() }}
         >
             <ScrollToTopOnMount />
+            <EveryPageTitle title='Категорія товарів'/>
             <Grid container spacing={4.2}>
                 {filteredArray.length ? (
                     filteredArray.map(

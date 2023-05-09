@@ -3,6 +3,7 @@ import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
 import { Button, Container } from '@mui/material'
 import './CartPage.scss'
 import CartTotal from 'components/CartTotal/CartTotal'
+import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
 
 type Props = {
     productsInCart: {
@@ -12,14 +13,19 @@ type Props = {
     changeProductQuantity: (id: number, count: number) => void
 }
 
-const CartPage = ({ productsInCart, removeProductFromCart, changeProductQuantity }: Props) => {
+const CartPage = ({
+    productsInCart,
+    removeProductFromCart,
+    changeProductQuantity,
+}: Props) => {
     return (
         <div>
             <ScrollToTopOnMount />
             <Container
                 maxWidth="lg"
-                sx={{ padding: '28px 24px', minHeight: 'calc(100vh - 389px)' }}
+                sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 438px)' }}
             >
+                <EveryPageTitle title= 'Кошик'/>
                 <CartPageItem
                     removeProductFromCart={removeProductFromCart}
                     productsInCart={productsInCart}

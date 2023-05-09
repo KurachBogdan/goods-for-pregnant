@@ -46,8 +46,19 @@
 }
 
 .properties-container {
-    padding: 7px 56px;
+    padding-bottom: 14px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    & p {
+        margin-left: 14px;
+    }
+}
+
+.page_item-card_content {
+    padding: 0;
+    margin: 10px 14px 10px 35px;
+    &:last-child {
+        padding-bottom: 0;
+    }
 }
