@@ -10,14 +10,14 @@ const CategoryCard = ({ image, categoryName }: Props) => {
     return (
         <Card
             sx={{
-                width: '250px',
+                width: '264px',
                 borderRadius: '14px',
                 paddingBottom: '0px',
             }}
         >
             <CardMedia
                 className="card_media"
-                sx={{ height: 280, borderRadius: '14px' }}
+                sx={{ height: 207, borderRadius: '14px' }}
                 image={image}
             />
             <CardContent

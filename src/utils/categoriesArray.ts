@@ -51,7 +51,7 @@ const categoriesArray: Category[] = [
     {
         id: 8,
         image: '/images/towels.jpg',
-        categoryName: 'Крижми, рушники',
+        categoryName: 'Крижми, рушники, пелюшки',
         link: '/towels',
     },
     {

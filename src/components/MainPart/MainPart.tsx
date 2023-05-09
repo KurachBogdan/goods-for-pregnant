@@ -14,6 +14,26 @@ const MainPart = (props: Props) => {
     }
     return (
         <div className="main_part-container">
+            <div
+                style={{
+                    fontFamily: `'Exo 2', sans-serif`,
+                    fontSize: '35px',
+                    lineHeight: '35px',
+                    fontWeight: 600,
+                    color: '#045540',
+                }}
+            >
+                Категорії товарів
+            </div>
+            <div
+                style={{
+                    width: '100%',
+                    border: '3px solid #045540',
+                    borderRadius: '3px',
+                    marginTop: '7px',
+                    marginBottom: '14px',
+                }}
+            ></div>
             <Grid container spacing={3}>
                 {categoriesArray.length ? (
                     categoriesArray.map(
