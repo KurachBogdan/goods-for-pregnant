@@ -42,7 +42,7 @@ const CategoryPage = ({ handleClick }: Props) => {
     return (
         <Container
             maxWidth="lg"
-            sx={{ padding: '28px 0px', backgroundImage: handleBackground() }}
+            sx={{ padding: '21px 24px', backgroundImage: handleBackground() }}
         >
             <ScrollToTopOnMount />
             <EveryPageTitle title='Категорія товарів'/>

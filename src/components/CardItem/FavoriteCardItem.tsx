@@ -36,7 +36,7 @@ const FavoriteCardItem = ({
         <Card
             sx={{ maxWidth: 260, cursor: 'context-menu', borderRadius: '14px' }}
         >
-            <CardMedia sx={{ height: 340 }} image={image} />
+            <CardMedia sx={{ height: 232 }} image={image} />
             <CardContent>
                 <div className="card_title-container">
                     <p className="type">{type}</p>
@@ -105,7 +105,7 @@ const FavoriteCardItem = ({
                     className="add_to_cart_btn"
                     size="small"
                 >
-                    Додати в корзину
+                    Дізнатись більше
                 </Button>
             </CardActions>
         </Card>

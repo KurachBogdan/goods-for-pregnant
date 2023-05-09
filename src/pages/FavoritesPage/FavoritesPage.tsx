@@ -65,25 +65,25 @@ const FavoritesPage = (props: Props) => {
                                 fontSize: '21px',
                                 fontWeight: 600,
                                 color: '#105b63',
-                                margin: '34px 0px 21px 34px',
+                                margin: '34px 0px 0px 34px',
                                 cursor: 'context-menu',
                             }}
                             component="div"
                         >
                             Ще немає обраних товарів
                         </Typography>
-                        <Button
-                            style={{ margin: '14px 0px 0px 34px' }}
-                            onClick={() => window.history.back()}
-                            variant="contained"
-                            className="back_to_shopping"
-                            size="small"
-                        >
-                            Продовжити покупки
-                        </Button>
                     </div>
                 )}
             </Grid>
+            <Button
+                style={{ margin: '35px 0px 0px 0px' }}
+                onClick={() => window.history.back()}
+                variant="contained"
+                className="back_to_shopping"
+                size="small"
+            >
+                Продовжити покупки
+            </Button>
         </Container>
     )
 }
