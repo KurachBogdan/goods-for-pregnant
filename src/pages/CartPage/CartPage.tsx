@@ -23,7 +23,7 @@ const CartPage = ({
             <ScrollToTopOnMount />
             <Container
                 maxWidth="lg"
-                sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 438px)' }}
+                sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 437px)' }}
             >
                 <EveryPageTitle title= 'Кошик'/>
                 <CartPageItem

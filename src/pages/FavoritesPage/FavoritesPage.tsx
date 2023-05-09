@@ -21,7 +21,7 @@ const FavoritesPage = (props: Props) => {
 
     return (
         <Container
-            sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 438px)' }}
+            sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 437px)' }}
             maxWidth="lg"
         >
             <ScrollToTopOnMount />
