@@ -17,14 +17,15 @@ const CategoryCard = ({ image, categoryName }: Props) => {
         >
             <CardMedia
                 className="card_media"
-                sx={{ height: 207, borderRadius: '14px' }}
+                sx={{ height: 207 }}
                 image={image}
             />
             <CardContent
                 sx={{
-                    paddingTop: '0px',
-                    marginTop: '7px',
-                    borderRadius: '14px',
+                    paddingTop: '7px',
+                    // marginTop: '7px',
+                    // borderRadius: '14px',
+                    backgroundColor: '#105b63',
                 }}
             >
                 <Typography className="category" component="div">

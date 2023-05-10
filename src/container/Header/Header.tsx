@@ -16,13 +16,14 @@ const Header = ({ cartData }: Props) => {
         <AppBar
             position="sticky"
             sx={{
-                borderTop: '1px solid #045540',
-                borderBottom: '1px solid #045540',
+                // borderTop: '1px solid #045540',
+                // borderBottom: '1px solid #045540',
                 height: '49px',
                 display: 'flex',
                 justifyContent: 'center',
-                backgroundImage:
-                    'linear-gradient(292deg, rgba(240,240,240,1) 9%, rgba(26,92,94,1) 82%)',
+                backgroundColor: 'white',
+                // backgroundImage:
+                //     'linear-gradient(292deg, rgba(240,240,240,1) 9%, rgba(26,92,94,1) 82%)',
             }}
         >
             <Container maxWidth="xl">

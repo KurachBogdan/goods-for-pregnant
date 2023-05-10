@@ -20,7 +20,7 @@ const MainPart = (props: Props) => {
                     fontSize: '35px',
                     lineHeight: '35px',
                     fontWeight: 600,
-                    color: '#045540',
+                    color: '#105b63',
                 }}
             >
                 Категорії товарів
@@ -28,7 +28,7 @@ const MainPart = (props: Props) => {
             <div
                 style={{
                     width: '100%',
-                    border: '3px solid #045540',
+                    border: '3px solid #105b63',
                     borderRadius: '3px',
                     marginTop: '7px',
                     marginBottom: '14px',

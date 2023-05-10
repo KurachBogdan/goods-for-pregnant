@@ -2,7 +2,7 @@
     font-family: 'Exo 2', sans-serif;
     font-size: 18px;
     font-weight: 600;
-    color: #105b63;
+    color:white;
     text-align: center;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
@@ -26,4 +26,8 @@
 
   .category_btn:hover .category {
     color: #74c2c2;
+}
+
+.css-144tyno-MuiCardContent-root:last-child {
+    padding-bottom: 14px;
 }
