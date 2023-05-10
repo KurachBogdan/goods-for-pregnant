@@ -1,4 +1,4 @@
-import { CardMedia, Typography } from '@mui/material'
+import { CardMedia, Rating, Typography } from '@mui/material'
 import { Button, Card, CardActions, CardContent } from '@mui/material'
 import './CardItem.scss'
 import Quantity from 'components/Quantity/Quantity'
@@ -89,13 +89,17 @@ const CardItem = ({
                     {term}
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Exo 2', sans-serif` }}
+                    style={{
+                        fontFamily: `'Exo 2', sans-serif`,
+                        marginBottom: '7px',
+                    }}
                     variant="body2"
                     color="text.secondary"
                 >
                     <span className="before_a_colon">Ціна: </span>
                     <span className="price">{price} грн</span>
                 </Typography>
+                <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
                 <Quantity
                     count={count}
                     onDecrement={onDecrement}
