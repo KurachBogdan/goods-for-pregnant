@@ -8,15 +8,15 @@ export type Category = {
 const categoriesArray: Category[] = [
     {
         id: 1,
-        image: '/images/new.jpg',
-        categoryName: 'Новинки',
-        link: '/hottest',
+        image: '/images/diapers.jpg',
+        categoryName: 'Пелюшки',
+        link: '/diapers',
     },
     {
         id: 2,
-        image: '/images/sale.jpg',
-        categoryName: 'Акції',
-        link: '/sales',
+        image: '/images/bibs.jpg',
+        categoryName: 'Нагрудники',
+        link: '/bibs',
     },
     {
         id: 3,
@@ -51,7 +51,7 @@ const categoriesArray: Category[] = [
     {
         id: 8,
         image: '/images/towels.jpg',
-        categoryName: 'Крижми, рушники, пелюшки',
+        categoryName: 'Крижми, рушники',
         link: '/towels',
     },
     {

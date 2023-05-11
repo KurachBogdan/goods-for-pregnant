@@ -57,7 +57,10 @@ const CardItem = ({
                     <p>{itemName}</p>
                 </div>
                 <Typography
-                    style={{ fontFamily: `'Exo 2', sans-serif` }}
+                    style={{
+                        fontFamily: `'Exo 2', sans-serif`,
+                        marginTop: '9px',
+                    }}
                     variant="body2"
                     color="text.secondary"
                 >
