@@ -32,7 +32,10 @@ const CartPageItem = ({
         <>
             {Object.keys(productsInCart).length ? (
                 Object.keys(productsInCart).map((productId) => (
-                    <Card className="item_in_cart-container">
+                    <Card
+                        className="item_in_cart-container"
+                        key={productsObject[parseInt(productId)].id}
+                    >
                         <div
                             style={{
                                 display: 'flex',
@@ -46,13 +49,13 @@ const CartPageItem = ({
                             />
                             <CardContent className="page_item-card_content">
                                 <div className="cart_title-container">
-                                    <p className="cart_type" key={productId}>
+                                    <p className="cart_type">
                                         {
                                             productsObject[parseInt(productId)]
                                                 .type
                                         }
                                     </p>
-                                    <p key={productId}>
+                                    <p>
                                         {
                                             productsObject[parseInt(productId)]
                                                 .itemName
@@ -88,7 +91,7 @@ const CartPageItem = ({
                                     <span className="cart_before_a_colon">
                                         Розмір:{' '}
                                     </span>
-                                    <span key={productId}>
+                                    <span>
                                         {
                                             productsObject[parseInt(productId)]
                                                 .size
@@ -107,7 +110,7 @@ const CartPageItem = ({
                                     <span className="cart_before_a_colon">
                                         Склад:{' '}
                                     </span>
-                                    <span key={productId}>
+                                    <span>
                                         {
                                             productsObject[parseInt(productId)]
                                                 .composition
@@ -124,7 +127,7 @@ const CartPageItem = ({
                                     <span className="cart_before_a_colon">
                                         Артикул:{' '}
                                     </span>
-                                    <span key={productId}>
+                                    <span>
                                         {
                                             productsObject[parseInt(productId)]
                                                 .term
@@ -140,20 +143,14 @@ const CartPageItem = ({
                             }}
                         >
                             <div className="properties-container">
-                                <p
-                                    className="product_count_in_cart"
-                                    key={productId}
-                                >
+                                <p className="product_count_in_cart">
                                     Кількість:{' '}
                                     <span>
                                         {productsInCart[parseInt(productId)]}{' '}
                                         шт.
                                     </span>
                                 </p>
-                                <p
-                                    className="product_price_in_cart"
-                                    key={productId}
-                                >
+                                <p className="product_price_in_cart">
                                     Сума:{' '}
                                     <span>
                                         {`${
@@ -200,7 +197,7 @@ const CartPageItem = ({
                                     width: '140px',
                                     color: '#045540',
                                     marginLeft: '14px',
-                                    borderRadius: '14px'
+                                    borderRadius: '14px',
                                 }}
                             >
                                 <DeleteIcon />

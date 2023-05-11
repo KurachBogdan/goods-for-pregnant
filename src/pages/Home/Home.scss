@@ -15,3 +15,12 @@
     opacity: 0.4;
     z-index: -1;
 }
+
+.fab {
+    background-color: #105b63;
+    color: white;
+    &:hover {
+        background-color: white;
+        color: #105b63;
+    }
+}

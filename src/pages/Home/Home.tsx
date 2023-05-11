@@ -32,6 +32,7 @@ function ScrollTop(props: Props) {
             })
         }
     }
+
     return (
         <Fade in={trigger}>
             <Box
@@ -68,7 +69,11 @@ const Home = (props: Props) => {
                 </Container>
             </div>
             <ScrollTop {...props}>
-                <Fab size="small" aria-label="scroll back to top">
+                <Fab
+                    className="fab"
+                    size="small"
+                    aria-label="scroll back to top"
+                >
                     <KeyboardArrowUpIcon />
                 </Fab>
             </ScrollTop>

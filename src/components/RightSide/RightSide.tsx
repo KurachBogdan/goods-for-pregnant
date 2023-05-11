@@ -20,7 +20,7 @@ const RightSide = ({ rightSideLogo, rightSideTitle }: Props) => {
                     informativeImage,
                     informativeArticle,
                 }) => (
-                    <div className="article_container">
+                    <div className="article_container" key={informativeArticle}>
                         <CardMedia  sx={{ width: '77px', height: '154px' }} image={informativeImage}/>
                         <div className="article_part">
                             <p className="article_title">{informativeTitle}</p>
