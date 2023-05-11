@@ -11,9 +11,8 @@ const FirstEffect = (props: Props) => {
         <div className="background-container">
             <div className="main_title-container">
                 <h1>З нами</h1>
-                <p className="main_title_text">мами відпочивають,</p>
-                <p className="main_title_text">а малюки</p>
-                <p className="main_title_text">засинають</p>
+                <p>легке материнство</p>
+                <p>щасливе дитинство</p>
             </div>
             <Button
                 onClick={handleClick}

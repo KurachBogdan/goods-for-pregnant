@@ -9,6 +9,7 @@ const EveryPageTitle = ({ title }: Props) => {
                     fontSize: '35px',
                     fontWeight: 600,
                     color: '#74c2c2',
+                    cursor: 'context-menu'
                 }}
             >
                 {title}
