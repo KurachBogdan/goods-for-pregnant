@@ -48,10 +48,19 @@ const CardItem = ({
 
     return (
         <Card
-            sx={{ maxWidth: 260, cursor: 'context-menu', borderRadius: '14px' }}
+            sx={{
+                maxWidth: 260,
+                borderRadius: '14px',
+            }}
         >
-            <CardMedia sx={{ height: 232 }} image={image} />
-            <CardContent>
+            <Button variant="text">
+                <CardMedia sx={{ height: 232, width: 260 }} image={image} />
+            </Button>
+            <CardContent
+                sx={{
+                    cursor: 'context-menu',
+                }}
+            >
                 <div className="card_title-container">
                     <p className="type">{type}</p>
                     <p>{itemName}</p>
