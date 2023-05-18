@@ -9,7 +9,6 @@ type Props = {}
 const MainPart = (props: Props) => {
     const navigate = useNavigate()
     const handleLocation = (link: string) => {
-        console.log(link)
         navigate(link)
     }
     return (

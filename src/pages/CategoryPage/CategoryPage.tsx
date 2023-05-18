@@ -19,20 +19,18 @@ const CategoryPage = ({ handleClick }: Props) => {
     const category: Category | undefined = categoriesArray.find(
         ({ link }) => link === `/${categoryId}`
     )
+    const categoryName = category ? category.categoryName : 'Категорія товарів'
 
-    const categoryName = category ? category.categoryName : 'Назва категорії'
-
-    console.log(category)
-    // const handleBackground = () => {
+    // const setBackground = () => {
     //     switch (categoryId) {
-    //         case 'hottest':
+    //         case 'diapers':
     //             return '/images/pregnant.jpg'
-    //         case 'sales':
+    //         case '/bibs':
     //             return '/images/pregnant.jpg'
     //         case 'pregnant':
     //             return '/images/pregnant.jpg'
     //         case 'toys':
-    //             return '/images/pregnant.jpg'
+    //             return '/public/images/toys_accessories.jpg'
     //         case 'presbox':
     //             return '/images/pregnant.jpg'
     //         case 'textile':
@@ -48,7 +46,10 @@ const CategoryPage = ({ handleClick }: Props) => {
     //     }
     // }
     return (
-        <Container maxWidth="lg" sx={{ padding: '21px 24px' }}>
+        <Container
+            maxWidth="lg"
+            sx={{ padding: '21px 24px' /*, backgroundImage: setBackground()*/ }}
+        >
             <ScrollToTopOnMount />
             <EveryPageTitle title={categoryName} />
             <Grid container spacing={4.2}>
