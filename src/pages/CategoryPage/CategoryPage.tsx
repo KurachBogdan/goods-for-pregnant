@@ -5,6 +5,7 @@ import productsArray from 'utils/productsArray'
 import { useParams } from 'react-router-dom'
 import BackToCategoriesBtn from 'components/BackToCategoriesBtn/BackToCategoriesBtn'
 import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
+import categoriesArray, { Category } from 'utils/categoriesArray'
 
 type Props = {
     handleClick: (id: number, count: number) => void
@@ -15,37 +16,41 @@ const CategoryPage = ({ handleClick }: Props) => {
     const filteredArray = productsArray.filter(
         ({ category }) => categoryId === category
     )
-    const handleBackground = () => {
-        switch (categoryId) {
-            case 'hottest':
-                return '/images/pregnant.jpg'
-            case 'sales':
-                return '/images/pregnant.jpg'
-            case 'pregnant':
-                return '/images/pregnant.jpg'
-            case 'toys':
-                return '/images/pregnant.jpg'
-            case 'presbox':
-                return '/images/pregnant.jpg'
-            case 'textile':
-                return '/images/pregnant.jpg'
-            case 'body':
-                return '/images/pregnant.jpg'
-            case 'towels':
-                return '/images/pregnant.jpg'
-            case 'cocoons':
-                return '/images/pregnant.jpg'
-            default:
-                break
-        }
-    }
+    const category: Category | undefined = categoriesArray.find(
+        ({ link }) => link === `/${categoryId}`
+    )
+
+    const categoryName = category ? category.categoryName : 'Назва категорії'
+
+    console.log(category)
+    // const handleBackground = () => {
+    //     switch (categoryId) {
+    //         case 'hottest':
+    //             return '/images/pregnant.jpg'
+    //         case 'sales':
+    //             return '/images/pregnant.jpg'
+    //         case 'pregnant':
+    //             return '/images/pregnant.jpg'
+    //         case 'toys':
+    //             return '/images/pregnant.jpg'
+    //         case 'presbox':
+    //             return '/images/pregnant.jpg'
+    //         case 'textile':
+    //             return '/images/pregnant.jpg'
+    //         case 'body':
+    //             return '/images/pregnant.jpg'
+    //         case 'towels':
+    //             return '/images/pregnant.jpg'
+    //         case 'cocoons':
+    //             return '/images/pregnant.jpg'
+    //         default:
+    //             break
+    //     }
+    // }
     return (
-        <Container
-            maxWidth="lg"
-            sx={{ padding: '21px 24px', backgroundImage: handleBackground() }}
-        >
+        <Container maxWidth="lg" sx={{ padding: '21px 24px' }}>
             <ScrollToTopOnMount />
-            <EveryPageTitle title='Категорія товарів'/>
+            <EveryPageTitle title={categoryName} />
             <Grid container spacing={4.2}>
                 {filteredArray.length ? (
                     filteredArray.map(
