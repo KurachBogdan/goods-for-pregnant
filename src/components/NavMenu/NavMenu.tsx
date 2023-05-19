@@ -3,6 +3,8 @@ import FavoriteIcon from '@mui/icons-material/Favorite'
 import Button from '@mui/material/Button'
 import './NavMenu.scss'
 import { NavLink } from 'react-router-dom'
+import { selectLikesCount } from 'redux/likeReducer'
+import { useAppSelector } from 'redux/hooks'
 
 type Props = {
     cartData: {
@@ -11,6 +13,8 @@ type Props = {
 }
 
 const NavMenu = ({ cartData }: Props) => {
+    const likesCount = useAppSelector(selectLikesCount)
+
     return (
         <div className="menu_container">
             <Button className="nav-button">
@@ -64,7 +68,8 @@ const NavMenu = ({ cartData }: Props) => {
                     }
                     to="/favorite"
                 >
-                    <FavoriteIcon sx={{ color: 'tomato' }} /> 0
+                    <FavoriteIcon sx={{ color: 'tomato' }} />
+                    {likesCount}
                 </NavLink>{' '}
             </Button>
             <div className="border_between_links"></div>
