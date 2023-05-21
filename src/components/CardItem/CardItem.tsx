@@ -51,6 +51,8 @@ const CardItem = ({
             sx={{
                 maxWidth: 260,
                 borderRadius: '14px',
+                border: '1px solid #105b63',
+                boxShadow: 'none',
             }}
         >
             <Button variant="text">
