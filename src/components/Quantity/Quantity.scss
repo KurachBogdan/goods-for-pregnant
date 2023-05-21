@@ -10,3 +10,23 @@
     margin-top: 7px;
     height: 28px;
 }
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+    border: 1px solid #74c2c2;
+    color: #105b63;
+    &:hover {
+        background-color: rgba(16, 91, 99, 0.04);
+    }
+}
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+    color: #105b63;
+    height: 28px;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border: 1px solid #74c2c2;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:disabled {
+        font-weight: 700;
+}

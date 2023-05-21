@@ -22,10 +22,11 @@ const Quantity = ({
                 variant="outlined"
                 onClick={() => onDecrement()}
                 disabled={count <= minCount}
+                className="quantity_border_color"
             >
                 -
             </Button>
-            <TextField sx={{ height: '28px' }} value={count} disabled />
+            <TextField value={count} disabled />
             <Button
                 variant="outlined"
                 onClick={() => onIncrement()}
