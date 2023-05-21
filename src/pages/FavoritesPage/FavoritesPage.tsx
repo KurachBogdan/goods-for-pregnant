@@ -5,6 +5,8 @@ import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
 import productsArray, { Product } from 'utils/productsArray'
 import FavoriteCardItem from 'components/CardItem/FavoriteCardItem'
 import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
+import { NavLink } from 'react-router-dom'
+import './FavoritesPage.scss'
 
 type Props = {}
 
@@ -77,12 +79,21 @@ const FavoritesPage = (props: Props) => {
             </Grid>
             <Button
                 style={{ margin: '35px 0px 0px 0px' }}
-                onClick={() => window.history.back()}
+                onMouseDown={() => {
+                    setTimeout(() => {
+                        window.scrollTo({
+                            top: window.innerHeight - 49,
+                            behavior: 'smooth',
+                        })
+                    }, 490)
+                }}
                 variant="contained"
                 className="back_to_shopping"
                 size="small"
             >
-                Продовжити покупки
+                <NavLink className="back_to_categories_btn_link" to="/">
+                    Продовжити покупки
+                </NavLink>
             </Button>
         </Container>
     )

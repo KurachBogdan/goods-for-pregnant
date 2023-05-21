@@ -4,6 +4,7 @@ import { Button, Container } from '@mui/material'
 import './CartPage.scss'
 import CartTotal from 'components/CartTotal/CartTotal'
 import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
+import { NavLink } from 'react-router-dom'
 
 type Props = {
     productsInCart: {
@@ -23,9 +24,13 @@ const CartPage = ({
             <ScrollToTopOnMount />
             <Container
                 maxWidth="lg"
-                sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 437px)', cursor: 'context-menu' }}
+                sx={{
+                    padding: '21px 24px',
+                    minHeight: 'calc(100vh - 437px)',
+                    cursor: 'context-menu',
+                }}
             >
-                <EveryPageTitle title= 'Кошик'/>
+                <EveryPageTitle title="Кошик" />
                 <CartPageItem
                     removeProductFromCart={removeProductFromCart}
                     productsInCart={productsInCart}
@@ -33,12 +38,21 @@ const CartPage = ({
                 />
                 <div className="cart_footer">
                     <Button
-                        onClick={() => window.history.back()}
+                        onMouseDown={() => {
+                            setTimeout(() => {
+                                window.scrollTo({
+                                    top: window.innerHeight - 49,
+                                    behavior: 'smooth',
+                                })
+                            }, 490)
+                        }}
                         variant="contained"
                         className="back_to_shopping"
                         size="small"
                     >
-                        Продовжити покупки
+                        <NavLink className="back_to_categories_btn_link" to="/">
+                            Продовжити покупки
+                        </NavLink>
                     </Button>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
                         <CartTotal productsInCart={productsInCart} />

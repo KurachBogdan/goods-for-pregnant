@@ -8,7 +8,7 @@ const EveryPageTitle = ({ title }: Props) => {
                     fontFamily: `'Exo 2', sans-serif`,
                     fontSize: '35px',
                     fontWeight: 600,
-                    color: '#74c2c2',
+                    color: '#105b63',
                     cursor: 'context-menu'
                 }}
             >
@@ -17,7 +17,7 @@ const EveryPageTitle = ({ title }: Props) => {
             <div
                 style={{
                     width: '100%',
-                    border: '3px solid #74c2c2',
+                    border: '3px solid #105b63',
                     borderRadius: '3px',
                     marginTop: '7px',
                     marginBottom: '14px',
