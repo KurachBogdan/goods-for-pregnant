@@ -7,6 +7,11 @@ import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { addLike, removeLike } from 'redux/likeReducer'
+import React from 'react'
+import Dialog from '@mui/material/Dialog'
+import Slide from '@mui/material/Slide'
+import { TransitionProps } from '@mui/material/transitions'
+import CardItemExtended from './CardItemExtended'
 
 type Props = {
     id: number
@@ -21,6 +26,15 @@ type Props = {
     handleClick: (id: number, count: number) => void
 }
 
+const Transition = React.forwardRef(function Transition(
+    props: TransitionProps & {
+        children: React.ReactElement<any, any>
+    },
+    ref: React.Ref<unknown>
+) {
+    return <Slide direction="up" ref={ref} {...props} />
+})
+
 const CardItem = ({
     handleClick,
     id,
@@ -34,6 +48,7 @@ const CardItem = ({
     price,
 }: Props) => {
     const [count, setCount] = useState<number>(1)
+    const [open, setOpen] = useState(false)
 
     const onIncrement = () => {
         setCount((prevState) => prevState + 1)
@@ -46,6 +61,13 @@ const CardItem = ({
     const isLiked = useAppSelector((state) => state.productsLikeState[id])
     const dispatch = useAppDispatch()
 
+    const handleClickOpen = () => {
+        setOpen(true)
+    }
+
+    const handleClose = () => {
+        setOpen(false)
+    }
     return (
         <Card
             sx={{
@@ -55,9 +77,19 @@ const CardItem = ({
                 boxShadow: 'none',
             }}
         >
-            <Button sx={{}} variant="text">
+            <Button onClick={() =>handleClickOpen()} sx={{}} variant="text">
                 <CardMedia sx={{ height: 232, width: 260 }} image={image} />
             </Button>
+            <Dialog
+                maxWidth="lg"
+                open={open}
+                TransitionComponent={Transition}
+                keepMounted
+                onClose={handleClose}
+                aria-describedby="alert-dialog-slide-description"
+            >
+                <CardItemExtended handleClose={handleClose} />
+            </Dialog>
             <CardContent
                 sx={{
                     cursor: 'context-menu',

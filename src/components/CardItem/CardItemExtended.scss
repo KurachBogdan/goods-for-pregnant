@@ -1,4 +1,35 @@
-// .xxx {
-//     width: calc(100vw - 17px);
-//     height: calc(100vh - 49px);
-// }
+.card_item_extended_title-container {
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #74c2c2;
+    & .type {
+        font-weight: 500;
+        margin: 0;
+        line-height: 18px;
+        margin-bottom: 7px;
+    }
+    & p {
+        margin: 0px;
+    }
+}
+
+.card_item_extended_before_a_colon {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: #105b63;
+}
+
+.card_item_extended_price {
+    text-decoration: underline;
+}
+
+.card_item_extended_btn {
+    background-color: #74c2c2;
+    border-radius: 10px;
+    &:hover {
+        background-color: #105b63;
+    }
+}
