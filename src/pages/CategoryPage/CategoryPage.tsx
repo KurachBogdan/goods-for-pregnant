@@ -20,7 +20,6 @@ const CategoryPage = ({ handleClick }: Props) => {
         ({ link }) => link === `/${categoryId}`
     )
     const categoryName = category ? category.categoryName : 'Категорія товарів'
-
     const setBackground = () => {
         switch (categoryId) {
             case 'diapers':

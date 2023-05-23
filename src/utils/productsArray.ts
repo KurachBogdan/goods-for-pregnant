@@ -15,7 +15,7 @@ export type Product = {
 const productsArray: Product[] = [
     {
         id: 1,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/grey_rabbit.jpg',
         category: 'toys',
         type: `Іграшка в'язана`,
@@ -28,7 +28,7 @@ const productsArray: Product[] = [
     },
     {
         id: 2,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/rabbit_in_glasses.jpg',
         category: 'toys',
         type: `Іграшка в'язана`,
@@ -41,7 +41,7 @@ const productsArray: Product[] = [
     },
     {
         id: 3,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/brown_bear.jpg',
         category: 'toys',
         type: `Іграшка в'язана`,
@@ -54,7 +54,7 @@ const productsArray: Product[] = [
     },
     {
         id: 4,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/giraffe.jpg',
         category: 'toys',
         type: `Іграшка в'язана`,
@@ -67,7 +67,7 @@ const productsArray: Product[] = [
     },
     {
         id: 5,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/white_unicorn.jpg',
         category: 'toys',
         type: `Іграшка в'язана`,
@@ -80,7 +80,7 @@ const productsArray: Product[] = [
     },
     {
         id: 6,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/knitted_blanket_kudelka.jpg',
         category: 'textile',
         type: `Плед в'язаний`,
@@ -93,7 +93,7 @@ const productsArray: Product[] = [
     },
     {
         id: 7,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/sides_on_the_cradle.jpg',
         category: 'textile',
         type: `Бортики на колиску`,
@@ -106,7 +106,7 @@ const productsArray: Product[] = [
     },
     {
         id: 8,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/bedclothes_roslinka.jpg',
         category: 'textile',
         type: `Постільна білизна`,
@@ -119,7 +119,7 @@ const productsArray: Product[] = [
     },
     {
         id: 9,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/orthopedic_pillow_roslinka.jpg',
         category: 'textile',
         type: `Подушка ортопедична`,
@@ -132,7 +132,7 @@ const productsArray: Product[] = [
     },
     {
         id: 10,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/orthopedic_pillow_hmarinka.jpg',
         category: 'textile',
         type: `Подушка ортопедична`,
@@ -145,7 +145,7 @@ const productsArray: Product[] = [
     },
     {
         id: 11,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/pillow_for_pregnant_blue.jpg',
         category: 'pregnant',
         type: `Подушка для вагітних`,
@@ -158,7 +158,7 @@ const productsArray: Product[] = [
     },
     {
         id: 12,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/pillow_for_pregnant_turquoise.jpg',
         category: 'pregnant',
         type: `Подушка для вагітних`,
@@ -171,7 +171,7 @@ const productsArray: Product[] = [
     },
     {
         id: 13,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/pillow_for_feeding_grey_print.jpg',
         category: 'pregnant',
         type: `Подушка для годування`,
@@ -184,7 +184,7 @@ const productsArray: Product[] = [
     },
     {
         id: 14,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/pillow_for_feeding_blue_print.jpg',
         category: 'pregnant',
         type: `Подушка для годування`,
@@ -197,7 +197,7 @@ const productsArray: Product[] = [
     },
     {
         id: 15,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/diaper_1.jpg',
         category: 'diapers',
         type: `Пелюшка`,
@@ -210,7 +210,7 @@ const productsArray: Product[] = [
     },
     {
         id: 16,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/diaper_2.jpg',
         category: 'diapers',
         type: `Пелюшка утеплена`,
@@ -223,7 +223,7 @@ const productsArray: Product[] = [
     },
     {
         id: 17,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/diaper_3.jpg',
         category: 'diapers',
         type: `Пелюшка`,
@@ -236,7 +236,7 @@ const productsArray: Product[] = [
     },
     {
         id: 18,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/diaper_4.jpg',
         category: 'diapers',
         type: `Пелюшка утеплена`,
@@ -249,7 +249,7 @@ const productsArray: Product[] = [
     },
     {
         id: 19,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/diaper_5.jpg',
         category: 'diapers',
         type: `Пелюшка утеплена`,
@@ -262,7 +262,7 @@ const productsArray: Product[] = [
     },
     {
         id: 20,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/bib_1.jpg',
         category: 'bibs',
         type: `Нагрудник непромокаючий`,
@@ -275,7 +275,7 @@ const productsArray: Product[] = [
     },
     {
         id: 21,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/plaid_cloud.jpg',
         category: 'textile',
         type: `Плед`,
@@ -288,7 +288,7 @@ const productsArray: Product[] = [
     },
     {
         id: 22,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/mattress_for_the_changing_table.jpg',
         category: 'textile',
         type: `Матрац для пеленального столика`,
@@ -301,7 +301,7 @@ const productsArray: Product[] = [
     },
     {
         id: 23,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/towel_bear.jpg',
         category: 'towels',
         type: `Рушник`,
@@ -314,7 +314,7 @@ const productsArray: Product[] = [
     },
     {
         id: 24,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/cocoon_1.jpg',
         category: 'cocoons',
         type: `Кокон двосторонній`,
@@ -327,7 +327,7 @@ const productsArray: Product[] = [
     },
     {
         id: 25,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/cocoon_2.jpg',
         category: 'cocoons',
         type: `Кокон двосторонній`,
@@ -340,7 +340,7 @@ const productsArray: Product[] = [
     },
     {
         id: 26,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/cocoon_3.jpg',
         category: 'cocoons',
         type: `Кокон двосторонній`,
@@ -353,7 +353,7 @@ const productsArray: Product[] = [
     },
     {
         id: 27,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/body_little_patriot.jpg',
         category: 'body',
         type: `Боді`,
@@ -366,7 +366,7 @@ const productsArray: Product[] = [
     },
     {
         id: 28,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/body_made_in_ukraine.jpg',
         category: 'body',
         type: `Боді`,
@@ -379,7 +379,7 @@ const productsArray: Product[] = [
     },
     {
         id: 29,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/body_somik.jpg',
         category: 'body',
         type: `Боді`,
@@ -392,7 +392,7 @@ const productsArray: Product[] = [
     },
     {
         id: 30,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/body_emblem.jpg',
         category: 'body',
         type: `Боді`,
@@ -405,7 +405,7 @@ const productsArray: Product[] = [
     },
     {
         id: 31,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/rattle_duckling.jpg',
         category: 'toys',
         type: `Брязкальце`,
@@ -418,7 +418,7 @@ const productsArray: Product[] = [
     },
     {
         id: 32,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/rattle_bunny_white.jpg',
         category: 'toys',
         type: `Брязкальце`,
@@ -431,7 +431,7 @@ const productsArray: Product[] = [
     },
     {
         id: 33,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/koala_rattle.jpg',
         category: 'toys',
         type: `Брязкальце`,
@@ -444,7 +444,7 @@ const productsArray: Product[] = [
     },
     {
         id: 34,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/rattle_bunny_grey.jpg',
         category: 'toys',
         type: `Брязкальце`,
@@ -457,7 +457,7 @@ const productsArray: Product[] = [
     },
     {
         id: 35,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/slingbuses_beads.jpg',
         category: 'toys',
         type: `Слінгобуси`,
@@ -470,7 +470,7 @@ const productsArray: Product[] = [
     },
     {
         id: 36,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/pajama_elephant.jpg',
         category: 'toys',
         type: `Піжамниця в'язана`,
@@ -483,7 +483,7 @@ const productsArray: Product[] = [
     },
     {
         id: 37,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/mini_toy_dreamer.jpg',
         category: 'toys',
         type: `Міні-іграшка`,
@@ -496,7 +496,7 @@ const productsArray: Product[] = [
     },
     {
         id: 38,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/toy_happy_bear.jpg',
         category: 'toys',
         type: `Іграшка в'язана`,
@@ -509,7 +509,7 @@ const productsArray: Product[] = [
     },
     {
         id: 39,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis. Quo eveniet pariatur aut nostrum hic distinctio esse architecto tempore voluptas totam. Repudiandae, optio, magni quidem temporibus vel excepturi vero obcaecati, quis corrupti at fugit dolores? Repudiandae quia a molestias dolores doloremque velit dolore ducimus, voluptatem, sunt, esse similique perferendis iste harum facilis maiores quis blanditiis? Sapiente, voluptas!',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
         image: '/images/toy_cutie.jpg',
         category: 'toys',
         type: `Іграшка в'язана`,

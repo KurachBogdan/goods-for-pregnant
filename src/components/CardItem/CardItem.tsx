@@ -77,7 +77,11 @@ const CardItem = ({
                 boxShadow: 'none',
             }}
         >
-            <Button onClick={() =>handleClickOpen()} sx={{}} variant="text">
+            <Button
+                key={`product_${id}`}
+                onClick={() => handleClickOpen()}
+                variant="text"
+            >
                 <CardMedia sx={{ height: 232, width: 260 }} image={image} />
             </Button>
             <Dialog
@@ -88,7 +92,7 @@ const CardItem = ({
                 onClose={handleClose}
                 aria-describedby="alert-dialog-slide-description"
             >
-                <CardItemExtended handleClose={handleClose} />
+                <CardItemExtended handleClose={handleClose} id={id} />
             </Dialog>
             <CardContent
                 sx={{

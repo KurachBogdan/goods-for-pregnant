@@ -7,7 +7,7 @@
     & .type {
         font-weight: 500;
         margin: 0;
-        line-height: 18px;
+        line-height: 28px;
         margin-bottom: 7px;
     }
     & p {
@@ -31,5 +31,15 @@
     border-radius: 10px;
     &:hover {
         background-color: #105b63;
+    }
+}
+
+.blink {
+    animation: blink 1.4s infinite;
+}
+
+@keyframes blink {
+    50% {
+      opacity: 0.4;
     }
 }

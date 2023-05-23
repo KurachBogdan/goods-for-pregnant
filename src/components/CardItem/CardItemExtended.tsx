@@ -1,12 +1,19 @@
 import { Button, Container, Typography } from '@mui/material'
 import './CardItemExtended.scss'
 import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
+import productsArray from 'utils/productsArray'
 
 type Props = {
+    id: number
     handleClose?: () => void
 }
 
-const CardItemExtended = ({ handleClose }: Props) => {
+const CardItemExtended = ({ handleClose, id }: Props) => {
+    const product = productsArray.find((item) => item.id === id)
+    console.log(product)
+    if (!product) {
+        return <div>Не працює</div>
+    }
     return (
         <>
             <ScrollToTopOnMount />
@@ -27,7 +34,7 @@ const CardItemExtended = ({ handleClose }: Props) => {
                 >
                     <img
                         alt="Ooops..."
-                        src="/images/cocoon_1.jpg"
+                        src={product.image}
                         style={{
                             width: '43vw',
                         }}
@@ -44,8 +51,8 @@ const CardItemExtended = ({ handleClose }: Props) => {
                     >
                         <div style={{ marginLeft: '24px' }}>
                             <div className="card_item_extended_title-container">
-                                <p className="type">Кокон двосторонній</p>
-                                <p>"ОБІЙМИ ЗВІРЯТ"</p>
+                                <p className="type">{product.type}</p>
+                                <p>{product.itemName}</p>
                             </div>
                             <Typography
                                 style={{
@@ -59,11 +66,7 @@ const CardItemExtended = ({ handleClose }: Props) => {
                                 <span className="card_item_extended_before_a_colon">
                                     Опис: <span></span>
                                 </span>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Dolorum voluptatibus similique
-                                quasi eos mollitia nihil amet qui cum neque
-                                sapiente nobis laudantium optio ipsum architecto
-                                possimus laboriosam, veniam facilis.
+                                {product.description}
                             </Typography>
                             <Typography
                                 style={{
@@ -77,7 +80,7 @@ const CardItemExtended = ({ handleClose }: Props) => {
                                 <span className="card_item_extended_before_a_colon">
                                     Колір:{' '}
                                 </span>
-                                пісок, принт
+                                {product.color}
                             </Typography>
                             <Typography
                                 style={{
@@ -90,7 +93,7 @@ const CardItemExtended = ({ handleClose }: Props) => {
                                 <span className="card_item_extended_before_a_colon">
                                     Розмір:{' '}
                                 </span>
-                                універсальний, регулюється
+                                {product.size} см
                             </Typography>
                             <Typography
                                 style={{
@@ -103,7 +106,7 @@ const CardItemExtended = ({ handleClose }: Props) => {
                                 <span className="card_item_extended_before_a_colon">
                                     Склад:{' '}
                                 </span>
-                                бавовна, холлофайбер
+                                {product.composition}
                             </Typography>
                             <Typography
                                 style={{
@@ -116,7 +119,7 @@ const CardItemExtended = ({ handleClose }: Props) => {
                                 <span className="card_item_extended_before_a_colon">
                                     Артикул:{' '}
                                 </span>
-                                660029
+                                {product.term}
                             </Typography>
                             <Typography
                                 style={{
@@ -131,7 +134,7 @@ const CardItemExtended = ({ handleClose }: Props) => {
                                     Ціна:{' '}
                                 </span>
                                 <span className="card_item_extended_price">
-                                    880 грн
+                                    {product.price} грн.
                                 </span>
                             </Typography>
                             <div
@@ -150,7 +153,7 @@ const CardItemExtended = ({ handleClose }: Props) => {
                                 </Button>
                                 <Button
                                     variant="contained"
-                                    className="card_item_extended_btn"
+                                    className="card_item_extended_btn blink"
                                     size="small"
                                 >
                                     В корзину
