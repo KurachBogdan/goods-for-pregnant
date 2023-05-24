@@ -1,11 +1,8 @@
 .back_to_btn {
-    background-color: #5271ff;
+    background-color: #74c2c2;
     border-radius: 14px;
     &:hover {
-        background-color: #fedd2e;
-    }
-    &:hover .back_to_btn_link {
-        color: #5271ff;
+        background-color: #105b63;
     }
     height: 35px;
     line-height: 35px;
@@ -18,5 +15,5 @@
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
-    color: #fedd2e;
+    color: white;
 }

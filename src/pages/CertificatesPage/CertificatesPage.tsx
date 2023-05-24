@@ -1,4 +1,5 @@
-import { Button, Container, Typography } from '@mui/material'
+import { Container, Typography } from '@mui/material'
+import BackToCategoriesBtn from 'components/BackToCategoriesBtn/BackToCategoriesBtn'
 import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
 import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
 
@@ -27,15 +28,7 @@ const CertificatesPage = (props: Props) => {
                 >
                     Ще немає сертифікатів
                 </Typography>
-                <Button
-                    style={{ margin: '14px 0px 0px 0px' }}
-                    onClick={() => window.history.back()}
-                    variant="contained"
-                    className="back_to_shopping"
-                    size="small"
-                >
-                    Продовжити покупки
-                </Button>
+                <BackToCategoriesBtn />
             </div>
         </Container>
     )

@@ -4,26 +4,33 @@
 
 .nav-button-link {
     display: flex;
+    align-items: center;
     text-decoration: none;
     color: #105b63;
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
     font-weight: 600;
     &:hover {
-        color: #5271ff;
+        color: #74c2c2;
     }
 }
 
 .menu_itemActive {
     display: flex;
+    align-items: center;
     text-decoration: none;
-    color: #5271ff;
+    color: #74c2c2;
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
     font-weight: 600;
 }
 
 .menu_container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 559px;
 }
 
@@ -34,5 +41,13 @@
 // }
 
 .shop_cart_icon:hover .shoppig_cart_icon {
-    color: #1a5e60;
+    color: rgb(26, 94, 96);
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover {
+        background: none;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root:target {
+    background: none;
 }

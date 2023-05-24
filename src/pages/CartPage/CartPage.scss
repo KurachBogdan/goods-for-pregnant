@@ -2,12 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 35px;
+    margin-top: 49px;
 }
 
-.make_purchases,
-.back_to_shopping {
-    background-color: #5271ff;
+.make_purchases {
+    background-color: #74c2c2;
     border-radius: 14px;
     height: 35px;
     line-height: 35px;
@@ -17,9 +16,8 @@
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
-    color: #fedd2e;
+    color: white;
     &:hover {
-        background-color: #fedd2e;
-        color: #5271ff;
+        background-color: #105b63;
     }
 }

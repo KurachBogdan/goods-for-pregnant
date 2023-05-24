@@ -68,7 +68,9 @@ const NavMenu = ({ cartData }: Props) => {
                     }
                     to="/favorite"
                 >
-                    <FavoriteIcon sx={{ color: 'tomato' }} />
+                    <FavoriteIcon
+                        sx={{ color: 'tomato', whiteSpace: 'inherit' }}
+                    />
                     {likesCount}
                 </NavLink>{' '}
             </Button>

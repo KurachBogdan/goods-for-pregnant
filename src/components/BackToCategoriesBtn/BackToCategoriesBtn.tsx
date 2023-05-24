@@ -15,7 +15,7 @@ const BackToCategoriesBtn: React.FC<Props> = () => {
                             top: window.innerHeight - 49,
                             behavior: 'smooth',
                         })
-                    }, 490)
+                    }, 520)
                 }}
                 variant="contained"
                 className="back_to_btn"

@@ -4,7 +4,7 @@ import { Button, Container } from '@mui/material'
 import './CartPage.scss'
 import CartTotal from 'components/CartTotal/CartTotal'
 import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
-import { NavLink } from 'react-router-dom'
+import BackToCategoriesBtn from 'components/BackToCategoriesBtn/BackToCategoriesBtn'
 
 type Props = {
     productsInCart: {
@@ -37,23 +37,7 @@ const CartPage = ({
                     changeProductQuantity={changeProductQuantity}
                 />
                 <div className="cart_footer">
-                    <Button
-                        onMouseDown={() => {
-                            setTimeout(() => {
-                                window.scrollTo({
-                                    top: window.innerHeight - 49,
-                                    behavior: 'smooth',
-                                })
-                            }, 490)
-                        }}
-                        variant="contained"
-                        className="back_to_shopping"
-                        size="small"
-                    >
-                        <NavLink className="back_to_categories_btn_link" to="/">
-                            Продовжити покупки
-                        </NavLink>
-                    </Button>
+                    <BackToCategoriesBtn />
                     <div style={{ display: 'flex', alignItems: 'center' }}>
                         <CartTotal productsInCart={productsInCart} />
                         <Button className="make_purchases" variant="contained">

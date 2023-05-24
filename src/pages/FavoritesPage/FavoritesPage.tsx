@@ -1,12 +1,11 @@
-import { Button, Grid, Typography } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 import { useAppSelector } from 'redux/hooks'
 import Container from '@mui/material/Container/Container'
 import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
 import productsArray, { Product } from 'utils/productsArray'
 import FavoriteCardItem from 'components/CardItem/FavoriteCardItem'
 import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
-import { NavLink } from 'react-router-dom'
-import './FavoritesPage.scss'
+import BackToCategoriesBtn from 'components/BackToCategoriesBtn/BackToCategoriesBtn'
 
 type Props = {}
 
@@ -67,7 +66,7 @@ const FavoritesPage = (props: Props) => {
                                 fontSize: '21px',
                                 fontWeight: 600,
                                 color: '#105b63',
-                                margin: '34px 0px 0px 34px',
+                                margin: '34px 0px 21px 34px',
                                 cursor: 'context-menu',
                             }}
                             component="div"
@@ -77,24 +76,9 @@ const FavoritesPage = (props: Props) => {
                     </div>
                 )}
             </Grid>
-            <Button
-                style={{ margin: '35px 0px 0px 0px' }}
-                onMouseDown={() => {
-                    setTimeout(() => {
-                        window.scrollTo({
-                            top: window.innerHeight - 49,
-                            behavior: 'smooth',
-                        })
-                    }, 490)
-                }}
-                variant="contained"
-                className="back_to_shopping"
-                size="small"
-            >
-                <NavLink className="back_to_categories_btn_link" to="/">
-                    Продовжити покупки
-                </NavLink>
-            </Button>
+            <div style={{ marginTop: '49px' }}>
+                <BackToCategoriesBtn />
+            </div>
         </Container>
     )
 }

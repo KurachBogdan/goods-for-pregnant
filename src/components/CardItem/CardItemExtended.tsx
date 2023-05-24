@@ -10,7 +10,6 @@ type Props = {
 
 const CardItemExtended = ({ handleClose, id }: Props) => {
     const product = productsArray.find((item) => item.id === id)
-    console.log(product)
     if (!product) {
         return <div>Не працює</div>
     }

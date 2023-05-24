@@ -78,6 +78,7 @@ const CardItem = ({
             }}
         >
             <Button
+            className='card_item_image_hover'
                 key={`product_${id}`}
                 onClick={() => handleClickOpen()}
                 variant="text"
@@ -97,6 +98,7 @@ const CardItem = ({
             <CardContent
                 sx={{
                     cursor: 'context-menu',
+                    padding: '7px 14px',
                 }}
             >
                 <div className="card_title-container">
@@ -106,7 +108,6 @@ const CardItem = ({
                 <Typography
                     style={{
                         fontFamily: `'Exo 2', sans-serif`,
-                        marginTop: '9px',
                     }}
                     variant="body2"
                     color="text.secondary"
@@ -141,7 +142,7 @@ const CardItem = ({
                 <Typography
                     style={{
                         fontFamily: `'Exo 2', sans-serif`,
-                        marginBottom: '7px',
+                        marginBottom: '4px',
                     }}
                     variant="body2"
                     color="text.secondary"
@@ -156,7 +157,9 @@ const CardItem = ({
                     onIncrement={onIncrement}
                 />
             </CardContent>
-            <CardActions sx={{ justifyContent: 'space-between' }}>
+            <CardActions
+                sx={{ justifyContent: 'space-between', padding: '7px 14px 4px 14px' }}
+            >
                 <Button
                     onClick={() =>
                         isLiked

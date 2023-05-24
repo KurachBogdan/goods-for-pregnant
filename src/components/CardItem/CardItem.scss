@@ -52,3 +52,13 @@
 .css-1fu2e3p-MuiPaper-root-MuiDialog-paper {
     margin: 0;
 }
+
+.card_item_image_hover {
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.card_item_image_hover:hover {
+    transform: scale(1.03);
+    overflow: hidden;
+}

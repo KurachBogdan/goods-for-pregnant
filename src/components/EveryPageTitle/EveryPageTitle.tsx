@@ -7,6 +7,7 @@ const EveryPageTitle = ({ title }: Props) => {
                 style={{
                     fontFamily: `'Exo 2', sans-serif`,
                     fontSize: '35px',
+                    lineHeight: '35px',
                     fontWeight: 600,
                     color: '#105b63',
                     cursor: 'context-menu'

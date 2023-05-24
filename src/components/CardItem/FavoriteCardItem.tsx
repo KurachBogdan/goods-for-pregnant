@@ -34,7 +34,7 @@ const FavoriteCardItem = ({
 
     return (
         <Card
-            sx={{ maxWidth: 260, cursor: 'context-menu', borderRadius: '14px' }}
+            sx={{ maxWidth: 260, cursor: 'context-menu', borderRadius: '14px', border: '1px solid #105b63' }}
         >
             <CardMedia sx={{ height: 232 }} image={image} />
             <CardContent>
