@@ -1,0 +1,80 @@
+.review_title {
+    font-family: 'PT Serif', serif;
+    color: black;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    cursor: context-menu;
+}
+
+.comment-card {
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #74c2c2;
+    & strong {
+        color: #105b63;
+    }
+}
+
+.css-46bh2p-MuiCardContent-root:last-child {
+    padding: 7px 14px;
+}
+
+.form_text_field {
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    border: 1px solid #74c2c2;
+    padding: 7px 0 0 7px;
+    &::placeholder {
+        font-family: 'PT Sans', sans-serif;
+        color: rgba(16, 91, 99, 0.5);
+        font-size: 16px;
+    }
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {  
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    line-height:0px;
+    overflow: visible;
+    color: rgba(16, 91, 99, 0.5);
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:ms-value {
+    padding: 0;
+    height: 100%;
+}
+
+.form_name_field {
+    width: 100%;
+}
+
+.form_btn {
+    width: 35%;
+    height: 35px;
+    border-radius: 14px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: white;
+    background-color: #105b63;
+    margin-bottom: 14px;
+    &:hover {
+        color: white;
+        background-color: #74c2c2; 
+    }
+}
+
+form h3 {
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    color: black;
+}
+
