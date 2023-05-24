@@ -1,7 +1,7 @@
 .footer_container {
     // background: linear-gradient(292deg, rgba(240,240,240,1) 9%, rgba(26,92,94,1) 82%);
-    border-top: 1px solid #045540;
-    padding: 14px 0 21px 0;
+    border-top: 1px solid #105b63;
+    padding: 28px 0 21px 0;
     margin-top: 0px;
     cursor: context-menu;
 }
@@ -17,7 +17,7 @@
 
 .about_us,
 .contacts {
-    width: 25vw;
+    width: 42vw;
 }
 
 .contacts-title {
@@ -29,7 +29,7 @@
     font-family: 'Exo 2', sans-serif;
     font-size: 18px;
     font-weight: 600;
-    color: #5271ff;
+    color: #105b63;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 18px;
@@ -44,7 +44,7 @@
     font-family: 'Exo 2', sans-serif;
     font-size: 18px;
     font-weight: 300;
-    color: #fedd2e;
+    color: #74c2c2;
 }
 
 .phone_logo,
@@ -88,8 +88,9 @@
     font-family: 'Exo 2', sans-serif;
     font-size: 18px;
     font-weight: 300;
-    color: #74c2c2;
+    color: #105b63;
     margin: 0;
+    margin-top: 35px;
 }
 
 .about_us-content {
