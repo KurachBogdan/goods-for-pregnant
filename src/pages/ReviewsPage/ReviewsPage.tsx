@@ -8,7 +8,7 @@ type Props = {}
 const ReviewsPage = (props: Props) => {
     return (
         <Container
-            sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 437px)' }}
+            sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 430px)' }}
             maxWidth="lg"
         >
             <ScrollToTopOnMount />
