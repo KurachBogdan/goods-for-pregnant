@@ -20,6 +20,7 @@ const MainPart = (props: Props) => {
                     lineHeight: '35px',
                     fontWeight: 600,
                     color: '#105b63',
+                    cursor: 'context-menu',
                 }}
             >
                 Категорії товарів

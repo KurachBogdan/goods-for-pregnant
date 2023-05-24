@@ -6,9 +6,11 @@ import productsArray from 'utils/productsArray'
 type Props = {
     id: number
     handleClose?: () => void
+    handleClick: (id: number, count: number) => void
+    count: number
 }
 
-const CardItemExtended = ({ handleClose, id }: Props) => {
+const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
     const product = productsArray.find((item) => item.id === id)
     if (!product) {
         return <div>Не працює</div>
@@ -151,6 +153,7 @@ const CardItemExtended = ({ handleClose, id }: Props) => {
                                     Назад
                                 </Button>
                                 <Button
+                                    onClick={() => handleClick(id, count)}
                                     variant="contained"
                                     className="card_item_extended_btn blink"
                                     size="small"

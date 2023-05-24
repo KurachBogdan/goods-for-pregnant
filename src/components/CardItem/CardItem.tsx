@@ -78,7 +78,7 @@ const CardItem = ({
             }}
         >
             <Button
-            className='card_item_image_hover'
+                className="card_item_image_hover"
                 key={`product_${id}`}
                 onClick={() => handleClickOpen()}
                 variant="text"
@@ -93,7 +93,12 @@ const CardItem = ({
                 onClose={handleClose}
                 aria-describedby="alert-dialog-slide-description"
             >
-                <CardItemExtended handleClose={handleClose} id={id} />
+                <CardItemExtended
+                    id={id}
+                    count={count}
+                    handleClose={handleClose}
+                    handleClick={handleClick}
+                />
             </Dialog>
             <CardContent
                 sx={{
@@ -158,7 +163,10 @@ const CardItem = ({
                 />
             </CardContent>
             <CardActions
-                sx={{ justifyContent: 'space-between', padding: '7px 14px 4px 14px' }}
+                sx={{
+                    justifyContent: 'space-between',
+                    padding: '7px 14px 4px 14px',
+                }}
             >
                 <Button
                     onClick={() =>
