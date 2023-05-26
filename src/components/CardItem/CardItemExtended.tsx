@@ -29,8 +29,8 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                     style={{
                         display: 'flex',
                         justifyContent: 'space-between',
-                        alignItems: 'center',
-                        boxSizing: 'border-box',
+                        // alignItems: 'center',
+                        // boxSizing: 'border-box',
                     }}
                 >
                     <img
@@ -58,14 +58,15 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                             <Typography
                                 style={{
                                     fontFamily: `'Exo 2', sans-serif`,
-                                    fontSize: '16px',
+                                    fontSize: '17px',
+                                    lineHeight: '19px',
                                     marginTop: '14px',
                                     maxWidth: '350px',
                                     color: '#105b63',
                                 }}
                             >
                                 <span className="card_item_extended_before_a_colon">
-                                    Опис: <span></span>
+                                    Опис: <span style={{ margin: '0' }}></span>
                                 </span>
                                 {product.description}
                             </Typography>
@@ -126,7 +127,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                                 style={{
                                     fontFamily: `'Exo 2', sans-serif`,
                                     fontSize: '16px',
-                                    marginBottom: '49px',
+                                    marginBottom: '28px',
                                     color: '#105b63',
                                 }}
                                 variant="body2"

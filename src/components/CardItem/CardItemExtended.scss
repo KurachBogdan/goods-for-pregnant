@@ -2,24 +2,27 @@
     text-align: center;
     font-family: 'Exo 2', sans-serif;
     font-size: 28px;
+    line-height: 28px;
     font-weight: 600;
     color: #74c2c2;
     & .type {
         font-weight: 500;
         margin: 0;
+        margin-bottom: 4px;
         line-height: 28px;
-        margin-bottom: 7px;
     }
     & p {
         margin: 0px;
+        line-height: 28px;
     }
 }
 
 .card_item_extended_before_a_colon {
     font-family: 'Exo 2', sans-serif;
-    font-size: 21px;
+    font-size: 19px;
     font-weight: 600;
     color: #105b63;
+    margin-right: 0px;
 }
 
 .card_item_extended_price {
