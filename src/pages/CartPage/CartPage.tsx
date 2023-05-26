@@ -26,7 +26,7 @@ const CartPage = ({
                 maxWidth="lg"
                 sx={{
                     padding: '21px 24px',
-                    minHeight: 'calc(100vh - 437px)',
+                    minHeight: 'calc(100vh - 356px)',
                     cursor: 'context-menu',
                 }}
             >

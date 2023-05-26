@@ -4,7 +4,8 @@
     justify-content: flex-end;
     width: calc(100vw - 17px);
     height: calc(100vh - 49px);
-    background: url('/assets/full_logo.png') calc(100vw - 250px) 0 no-repeat, url('/assets/main.jpg') center/cover no-repeat;
+    // background: url('/assets/full_logo.png') calc(100vw - 250px) 0 no-repeat, url('/assets/main.jpg') center/cover no-repeat;
+    background: url('/assets/test.jpg') center/cover no-repeat;
     background-color: #e4ddd6;
 }
 
@@ -32,8 +33,8 @@
     margin: 0 auto;
     position: relative;
     position: absolute;
-    left: calc(50vw - 17px);
-    bottom: 14vh;
+    left: calc(50vw - 34px);
+    bottom: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,4 +78,8 @@
     padding: 0px 0px 0px 105px;
     text-transform: uppercase;
     }
+}
+
+.css-j7pyg7-MuiPaper-root-MuiAppBar-root {
+    box-shadow: none;
 }

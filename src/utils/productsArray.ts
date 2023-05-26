@@ -197,7 +197,7 @@ const productsArray: Product[] = [
     },
     {
         id: 15,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Пелюшка- невід‘ємний елемент якісного догляду за малюком. На нашому виробництві приділяють особливу увагу тканині, з якої виробляють пелюшки, адже вона має бути довговічною, якісною та максимально комфортною у використанні. Ситець- легка за структурою тканина, яка ідеально пропускає повітря. Цей матеріал виготовляється з натуральної бавовни, тому тканина приємна до тіла, чудово вбирає вологу та не викликає подразнення шкіри.',
         image: '/images/diaper_1.jpg',
         category: 'diapers',
         type: `Пелюшка`,
@@ -210,7 +210,7 @@ const productsArray: Product[] = [
     },
     {
         id: 16,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Пелюшка- невід‘ємний елемент якісного догляду за малюком. На нашому виробництві приділяють особливу увагу тканині, з якої виробляють пелюшки, адже вона має бути довговічною, якісною та максимально комфортною у використанні. Фланель- це м’яка тепла тканина, яка знайому кожному з дитинсва. Саме фланелеві (утепленні) пелюшки підходять на холодну пору року.',
         image: '/images/diaper_2.jpg',
         category: 'diapers',
         type: `Пелюшка утеплена`,
@@ -223,7 +223,7 @@ const productsArray: Product[] = [
     },
     {
         id: 17,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Пелюшка- невід‘ємний елемент якісного догляду за малюком. На нашому виробництві приділяють особливу увагу тканині, з якої виробляють пелюшки, адже вона має бути довговічною, якісною та максимально комфортною у використанні. Ситець- легка за структурою тканина, яка ідеально пропускає повітря. Цей матеріал виготовляється з натуральної бавовни, тому тканина приємна до тіла, чудово вбирає вологу та не викликає подразнення шкіри.',
         image: '/images/diaper_3.jpg',
         category: 'diapers',
         type: `Пелюшка`,
@@ -236,7 +236,7 @@ const productsArray: Product[] = [
     },
     {
         id: 18,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Пелюшка- невід‘ємний елемент якісного догляду за малюком. На нашому виробництві приділяють особливу увагу тканині, з якої виробляють пелюшки, адже вона має бути довговічною, якісною та максимально комфортною у використанні. Фланель- це м’яка тепла тканина, яка знайому кожному з дитинсва. Саме фланелеві (утепленні) пелюшки підходять на холодну пору року.',
         image: '/images/diaper_4.jpg',
         category: 'diapers',
         type: `Пелюшка утеплена`,
@@ -249,7 +249,7 @@ const productsArray: Product[] = [
     },
     {
         id: 19,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Пелюшка- невід‘ємний елемент якісного догляду за малюком. На нашому виробництві приділяють особливу увагу тканині, з якої виробляють пелюшки, адже вона має бути довговічною, якісною та максимально комфортною у використанні. Фланель- це м’яка тепла тканина, яка знайому кожному з дитинсва. Саме фланелеві (утепленні) пелюшки підходять на холодну пору року.',
         image: '/images/diaper_5.jpg',
         category: 'diapers',
         type: `Пелюшка утеплена`,
@@ -314,7 +314,7 @@ const productsArray: Product[] = [
     },
     {
         id: 24,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: `Основне завдання кокона- це створення комфорту та відчуття безпеки в період адаптації дитини до нових умов існування. Коли ви плануєте подорожувати з малюком, або ж просто поїхати за межі дому- варто спланувати всі деталі поїздки (особливо комфорт дитини). І в цьому вам допоможе кокон від ™️SOMIK./Кокон «ОБІЙМИ ЗВІРЯТ»• компактно складається/• висота захисних бортиків 15 см/• можна брати в машину/• регулюється ширина кокона`,
         image: '/images/cocoon_1.jpg',
         category: 'cocoons',
         type: `Кокон двосторонній`,
@@ -327,7 +327,7 @@ const productsArray: Product[] = [
     },
     {
         id: 25,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Основне завдання кокона- це створення комфорту та відчуття безпеки в період адаптації дитини до нових умов існування. Коли ви плануєте подорожувати з малюком, або ж просто поїхати за межі дому- варто спланувати всі деталі поїздки (особливо комфорт дитини). І в цьому вам допоможе кокон від ™️SOMIK./Кокон «ОБІЙМИ ЗВІРЯТ»/• компактно складається/• висота захисних бортиків 15 см/• можна брати в машину/• регулюється ширина кокона/',
         image: '/images/cocoon_2.jpg',
         category: 'cocoons',
         type: `Кокон двосторонній`,
@@ -340,7 +340,7 @@ const productsArray: Product[] = [
     },
     {
         id: 26,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Основне завдання кокона- це створення комфорту та відчуття безпеки в період адаптації дитини до нових умов існування. Коли ви плануєте подорожувати з малюком, або ж просто поїхати за межі дому- варто спланувати всі деталі поїздки (особливо комфорт дитини). І в цьому вам допоможе кокон від ™️SOMIK./Кокон «ОБІЙМИ ЗВІРЯТ»/• компактно складається/• висота захисних бортиків 15 см/• можна брати в машину/• регулюється ширина кокона/',
         image: '/images/cocoon_3.jpg',
         category: 'cocoons',
         type: `Кокон двосторонній`,
@@ -353,7 +353,7 @@ const productsArray: Product[] = [
     },
     {
         id: 27,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Ми бачимо багато патріотичного одягу для дорослих, але не для дітей! Тому створили особливу колекцію для маленьких українців: /•високоякісний склад/•сертифікований товар/•вишивка лише зі 100% бавовни/Ви отримуєте, не просто якісну річ, а трендовий товар, який точно не зустрінете на прогулянці. Ексклюзивність- те, що шукає кожна мама !',
         image: '/images/body_little_patriot.jpg',
         category: 'body',
         type: `Боді`,
@@ -366,7 +366,7 @@ const productsArray: Product[] = [
     },
     {
         id: 28,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Ми бачимо багато патріотичного одягу для дорослих, але не для дітей! Тому створили особливу колекцію для маленьких українців: /•високоякісний склад/•сертифікований товар/•вишивка лише зі 100% бавовни/Ви отримуєте, не просто якісну річ, а трендовий товар, який точно не зустрінете на прогулянці. Ексклюзивність- те, що шукає кожна мама !',
         image: '/images/body_made_in_ukraine.jpg',
         category: 'body',
         type: `Боді`,
@@ -379,7 +379,7 @@ const productsArray: Product[] = [
     },
     {
         id: 29,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Ми бачимо багато патріотичного одягу для дорослих, але не для дітей! Тому створили особливу колекцію для маленьких українців: /•високоякісний склад/•сертифікований товар/•вишивка лише зі 100% бавовни/Ви отримуєте, не просто якісну річ, а трендовий товар, який точно не зустрінете на прогулянці. Ексклюзивність- те, що шукає кожна мама !',
         image: '/images/body_somik.jpg',
         category: 'body',
         type: `Боді`,
@@ -392,7 +392,7 @@ const productsArray: Product[] = [
     },
     {
         id: 30,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Ми бачимо багато патріотичного одягу для дорослих, але не для дітей! Тому створили особливу колекцію для маленьких українців: /•високоякісний склад/•сертифікований товар/•вишивка лише зі 100% бавовни/Ви отримуєте, не просто якісну річ, а трендовий товар, який точно не зустрінете на прогулянці. Ексклюзивність- те, що шукає кожна мама !',
         image: '/images/body_emblem.jpg',
         category: 'body',
         type: `Боді`,
@@ -405,11 +405,11 @@ const productsArray: Product[] = [
     },
     {
         id: 31,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Шукаєте перше, особливе брязкальце для дитини? Ми створили: красиву/з приємним звуком/натуральну іграшку/яка буде подобатись малюку. Брязкальця від SOMIK не лише відмінної якості, а й ексклюзивні -таких ви точно не знайдете на просторах інтернету. Кільця які ми використовуємо шліфуються до ідеалу, а завдяки м’якій тканині дитина може безпечно гратися із нею.',
         image: '/images/rattle_duckling.jpg',
         category: 'toys',
         type: `Брязкальце`,
-        itemName: `"СЛОНЕНЯТКО"`,
+        itemName: `"КАЧЕНЯТКО"`,
         color: `білий`,
         size: '14',
         composition: 'мікрополіестер, береза',
@@ -418,7 +418,7 @@ const productsArray: Product[] = [
     },
     {
         id: 32,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Шукаєте перше, особливе брязкальце для дитини? Ми створили: красиву/з приємним звуком/натуральну іграшку/яка буде подобатись малюку. Брязкальця від SOMIK не лише відмінної якості, а й ексклюзивні -таких ви точно не знайдете на просторах інтернету. Кільця які ми використовуємо шліфуються до ідеалу, а завдяки м’якій тканині дитина може безпечно гратися із нею.',
         image: '/images/rattle_bunny_white.jpg',
         category: 'toys',
         type: `Брязкальце`,
@@ -431,7 +431,7 @@ const productsArray: Product[] = [
     },
     {
         id: 33,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Шукаєте перше, особливе брязкальце для дитини? Ми створили: красиву/з приємним звуком/натуральну іграшку/яка буде подобатись малюку. Брязкальця від SOMIK не лише відмінної якості, а й ексклюзивні -таких ви точно не знайдете на просторах інтернету. Кільця які ми використовуємо шліфуються до ідеалу, а завдяки м’якій тканині дитина може безпечно гратися із нею.',
         image: '/images/koala_rattle.jpg',
         category: 'toys',
         type: `Брязкальце`,
@@ -444,7 +444,7 @@ const productsArray: Product[] = [
     },
     {
         id: 34,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Шукаєте перше, особливе брязкальце для дитини? Ми створили: красиву/з приємним звуком/натуральну іграшку/яка буде подобатись малюку. Брязкальця від SOMIK не лише відмінної якості, а й ексклюзивні -таких ви точно не знайдете на просторах інтернету. Кільця які ми використовуємо шліфуються до ідеалу, а завдяки м’якій тканині дитина може безпечно гратися із нею.',
         image: '/images/rattle_bunny_grey.jpg',
         category: 'toys',
         type: `Брязкальце`,
@@ -457,7 +457,7 @@ const productsArray: Product[] = [
     },
     {
         id: 35,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Слінгобуси- незамінна та корисна  іграшка для дитини. Вони стануть не лише красивим тримачем для соски, а й відмінним прорізувачем для зубів. Також доведено, що слінгобуси сприяють  розвитку дрібної моторики. Кожна намистинка відшліфована і не має запаху та смаку, а також дуже міцна. Крім того, наші слінгобуси можна з’єднати із текстилем, чи повісити на коляску. ',
         image: '/images/slingbuses_beads.jpg',
         category: 'toys',
         type: `Слінгобуси`,
@@ -470,7 +470,7 @@ const productsArray: Product[] = [
     },
     {
         id: 36,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Малюк вже підріс ? І ходить на ночівлю до бабусі або друзів ? А речі для сну досі не знайшли свого місця? Цю проблему вирішить піжамниця . Іграшка-портфель має в’язану основу в яку можна покласти всі необхідні речі для дитини. Також малюки із задоволенням лягають спати із такою милою іграшкою. У піжамниці є всі шанси стати найулюбленішою іграшкою дитини.',
         image: '/images/pajama_elephant.jpg',
         category: 'toys',
         type: `Піжамниця в'язана`,
@@ -483,7 +483,7 @@ const productsArray: Product[] = [
     },
     {
         id: 37,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Іграшка, яка закохує в себе із першого погляду. Максимально мила єдиноріжка, яка підійде кожній маленькій принцесі. Всі елементи іграшки міцно з’єднанні між собою, тому ідеально підійде для малюків, які активно пізнають світ. Доречі, іграшка підходить і новонародженим, адже за рахунок розміру, її можна прикріпити до коляски - і єдиноріжка стане гарною прикрасою для вашого візочка.',
         image: '/images/mini_toy_dreamer.jpg',
         category: 'toys',
         type: `Міні-іграшка`,
@@ -496,7 +496,7 @@ const productsArray: Product[] = [
     },
     {
         id: 38,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Бестселер нашого магазину. Ведмедик, який найчастіше дарують у пологовому  будинку. Іграшка є абсолютно безпечною для новонародженого. адже виконана із бавовни, а також немає гострих елементів. Всі елементи надійно скріплені між собою. Запевняємо, що саме ця іграшка підкреслить унікальність Вашого подарунку.',
         image: '/images/toy_happy_bear.jpg',
         category: 'toys',
         type: `Іграшка в'язана`,
@@ -509,7 +509,7 @@ const productsArray: Product[] = [
     },
     {
         id: 39,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Бестселер нашого магазину. Зайчик, який найчастіше дарують у пологовому  будинку. Іграшка є абсолютно безпечною для новонародженого. адже виконана із бавовни, а також немає гострих елементів. Всі елементи надійно скріплені між собою. Запевняємо, що саме ця іграшка підкреслить унікальність Вашого подарунку.',
         image: '/images/toy_cutie.jpg',
         category: 'toys',
         type: `Іграшка в'язана`,

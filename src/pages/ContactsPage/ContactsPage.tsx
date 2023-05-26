@@ -8,7 +8,7 @@ type Props = {}
 const ContactsPage = (props: Props) => {
     return (
         <Container
-            sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 430px)' }}
+            sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 356px)' }}
             maxWidth="lg"
         >
             <ScrollToTopOnMount />

@@ -6,25 +6,46 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #105b63;
+    color: rgba(69, 73, 77, .6);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 14px;
     font-weight: 600;
-    &:hover {
-        color: #74c2c2;
-    }
+}
+
+.nav-button-link::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    width: 0;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: #105b63;
+    transition: width ease .3s;
+}
+.nav-button-link:hover::before {
+    width: 105%;
 }
 
 .menu_itemActive {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #74c2c2;
+    color: rgba(69, 73, 77, .6);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 14px;
     font-weight: 600;
+    &::after {
+        content: '';
+        display: block;
+        width: 106%;
+        border-bottom: 2px solid #105b63;
+        position: absolute;
+        left: -3%;
+        bottom: -7px;
+    }
 }
 
 .menu_container {
@@ -34,14 +55,8 @@
     width: 559px;
 }
 
-// .border_between_links {
-//     height: 35px;
-//     border: 1px solid;
-//     color: #045540;
-// }
-
-.shop_cart_icon:hover .shoppig_cart_icon {
-    color: rgb(26, 94, 96);
+.shoppig_cart_icon_color {
+    color: rgba(69, 73, 77, .6);
 }
 
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover {

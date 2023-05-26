@@ -69,7 +69,7 @@ const NavMenu = ({ cartData }: Props) => {
                     to="/favorite"
                 >
                     <FavoriteIcon
-                        sx={{ color: 'tomato', whiteSpace: 'inherit' }}
+                        sx={{ color: 'rgba(69, 73, 77, .6)', whiteSpace: 'inherit' }}
                     />
                     {likesCount}
                 </NavLink>{' '}
@@ -82,10 +82,7 @@ const NavMenu = ({ cartData }: Props) => {
                     }
                     to="/cart"
                 >
-                    <ShoppingCartIcon
-                        className="shoppig_cart_icon"
-                        sx={{ color: 'rgba(26,92,94,1)' }}
-                    />
+                    <ShoppingCartIcon className="shoppig_cart_icon_color" />
                     {cartData.totalCount}
                 </NavLink>{' '}
             </Button>

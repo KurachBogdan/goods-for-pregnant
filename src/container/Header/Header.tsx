@@ -1,9 +1,9 @@
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
-import AlternativeLogo from 'components/AlternativeLogo/AlternativeLogo'
 import Container from '@mui/material/Container/Container'
 import NavMenu from 'components/NavMenu/NavMenu'
 import { NavLink } from 'react-router-dom'
+import Logo from 'components/Logo/Logo'
 
 type Props = {
     cartData: {
@@ -19,7 +19,8 @@ const Header = ({ cartData }: Props) => {
                 height: '49px',
                 display: 'flex',
                 justifyContent: 'center',
-                backgroundColor: 'white',
+                backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                boxShadow: 'none',
             }}
         >
             <Container maxWidth="xl">
@@ -27,7 +28,7 @@ const Header = ({ cartData }: Props) => {
                     sx={{ display: 'flex', justifyContent: 'space-between' }}
                 >
                     <NavLink to="/">
-                        <AlternativeLogo />
+                        <Logo />
                     </NavLink>
                     <NavMenu cartData={cartData} />
                 </Toolbar>

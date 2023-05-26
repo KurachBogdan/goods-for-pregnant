@@ -22,7 +22,7 @@ const FavoritesPage = (props: Props) => {
 
     return (
         <Container
-            sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 437px)' }}
+            sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 356px)' }}
             maxWidth="lg"
         >
             <ScrollToTopOnMount />
@@ -66,7 +66,7 @@ const FavoritesPage = (props: Props) => {
                                 fontSize: '21px',
                                 fontWeight: 600,
                                 color: '#105b63',
-                                margin: '34px 0px 21px 34px',
+                                margin: '34px 0px 0px 34px',
                                 cursor: 'context-menu',
                             }}
                             component="div"
@@ -76,7 +76,7 @@ const FavoritesPage = (props: Props) => {
                     </div>
                 )}
             </Grid>
-            <div style={{ marginTop: '49px' }}>
+            <div style={{ marginTop: '21px' }}>
                 <BackToCategoriesBtn />
             </div>
         </Container>
