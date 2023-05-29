@@ -53,22 +53,13 @@ const ReviewsPage = (props: Props) => {
             text: e.target.value,
         }))
     }
-
-    const handleEmail = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-        setNewReview((prevState) => ({
-            ...prevState,
-            email: e.target.value,
-        }))
-    }
-
     const onSend = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         if (newReview.name === '' || newReview.text === '') {
-            alert("Вкажіть Ваше ім'я та сам коментар")
+            alert("Вкажіть Ваше ім'я та сам відгук")
         } else {
             setNewReview({
                 name: '',
-                email: '',
                 text: '',
             })
 
@@ -90,10 +81,10 @@ const ReviewsPage = (props: Props) => {
                         <Card
                             className="comment-card"
                             variant="outlined"
-                            sx={{ margin: '7px 0' }}
+                            sx={{ margin: '7px 0', display: 'flex', justifyContent: 'flex-start' }}
                             key={i}
                         >
-                            <CardContent>
+                            <CardContent sx={{ width: '800px',  }}>
                                 <strong>{item.name}:</strong>
                                 <div>{item.email}</div>
                                 <div>{item.text}</div>
@@ -117,15 +108,6 @@ const ReviewsPage = (props: Props) => {
                             label="Ім'я"
                             value={newReview.name}
                             onChange={handleName}
-                        />
-                    </div>
-                    <br />
-                    <div>
-                        <TextField
-                            className="form_name_field"
-                            label="E-mail"
-                            value={newReview.email}
-                            onChange={handleEmail}
                         />
                     </div>
                     <br />
