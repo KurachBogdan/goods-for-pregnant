@@ -112,7 +112,7 @@ const CardItem = ({
                 </div>
                 <Typography
                     style={{
-                        fontFamily: `'Exo 2', sans-serif`,
+                        fontFamily: `'Bellota Text', cursive`,
                     }}
                     variant="body2"
                     color="text.secondary"
@@ -121,7 +121,7 @@ const CardItem = ({
                     {color}
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Exo 2', sans-serif` }}
+                    style={{ fontFamily: `'Bellota Text', cursive` }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -129,7 +129,7 @@ const CardItem = ({
                     {size} см
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Exo 2', sans-serif` }}
+                    style={{ fontFamily: `'Bellota Text', cursive` }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -137,7 +137,7 @@ const CardItem = ({
                     {composition}
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Exo 2', sans-serif` }}
+                    style={{ fontFamily: `'Bellota Text', cursive` }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -146,7 +146,7 @@ const CardItem = ({
                 </Typography>
                 <Typography
                     style={{
-                        fontFamily: `'Exo 2', sans-serif`,
+                        fontFamily: `'Bellota Text', cursive`,
                         marginBottom: '4px',
                     }}
                     variant="body2"

@@ -57,7 +57,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                             </div>
                             <Typography
                                 style={{
-                                    fontFamily: `'Exo 2', sans-serif`,
+                                    fontFamily: `'Bellota Text', cursive`,
                                     fontSize: '17px',
                                     lineHeight: '19px',
                                     marginTop: '14px',
@@ -72,7 +72,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                             </Typography>
                             <Typography
                                 style={{
-                                    fontFamily: `'Exo 2', sans-serif`,
+                                    fontFamily: `'Bellota Text', cursive`,
                                     fontSize: '16px',
                                     marginTop: '9px',
                                     color: '#105b63',
@@ -86,7 +86,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                             </Typography>
                             <Typography
                                 style={{
-                                    fontFamily: `'Exo 2', sans-serif`,
+                                    fontFamily: `'Bellota Text', cursive`,
                                     fontSize: '16px',
                                     color: '#105b63',
                                 }}
@@ -99,7 +99,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                             </Typography>
                             <Typography
                                 style={{
-                                    fontFamily: `'Exo 2', sans-serif`,
+                                    fontFamily: `'Bellota Text', cursive`,
                                     fontSize: '16px',
                                     color: '#105b63',
                                 }}
@@ -112,7 +112,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                             </Typography>
                             <Typography
                                 style={{
-                                    fontFamily: `'Exo 2', sans-serif`,
+                                    fontFamily: `'Bellota Text', cursive`,
                                     fontSize: '16px',
                                     color: '#105b63',
                                 }}
@@ -125,7 +125,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                             </Typography>
                             <Typography
                                 style={{
-                                    fontFamily: `'Exo 2', sans-serif`,
+                                    fontFamily: `'Bellota Text', cursive`,
                                     fontSize: '16px',
                                     marginBottom: '28px',
                                     color: '#105b63',

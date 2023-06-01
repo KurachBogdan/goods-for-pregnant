@@ -43,7 +43,7 @@ const FavoriteCardItem = ({
                     <p>{itemName}</p>
                 </div>
                 <Typography
-                    style={{ fontFamily: `'Exo 2', sans-serif` }}
+                    style={{ fontFamily: `'Bellota Text', cursive` }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -51,7 +51,7 @@ const FavoriteCardItem = ({
                     {color}
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Exo 2', sans-serif` }}
+                    style={{ fontFamily: `'Bellota Text', cursive` }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -59,7 +59,7 @@ const FavoriteCardItem = ({
                     {size} см
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Exo 2', sans-serif` }}
+                    style={{ fontFamily: `'Bellota Text', cursive` }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -67,7 +67,7 @@ const FavoriteCardItem = ({
                     {composition}
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Exo 2', sans-serif` }}
+                    style={{ fontFamily: `'Bellota Text', cursive` }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -75,7 +75,7 @@ const FavoriteCardItem = ({
                     {term}
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Exo 2', sans-serif`, marginBottom: '3px' }}
+                    style={{ fontFamily: `'Bellota Text', cursive`, marginBottom: '3px' }}
                     variant="body2"
                     color="text.secondary"
                 >

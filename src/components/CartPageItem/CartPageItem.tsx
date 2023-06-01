@@ -64,7 +64,7 @@ const CartPageItem = ({
                                 </div>
                                 <Typography
                                     style={{
-                                        fontFamily: `'Exo 2', sans-serif`,
+                                        fontFamily: `'Bellota Text', cursive`,
                                         marginBottom: '8px',
                                     }}
                                     variant="body2"
@@ -82,7 +82,7 @@ const CartPageItem = ({
                                 </Typography>
                                 <Typography
                                     style={{
-                                        fontFamily: `'Exo 2', sans-serif`,
+                                        fontFamily: `'Bellota Text', cursive`,
                                         marginBottom: '8px',
                                     }}
                                     variant="body2"
@@ -101,7 +101,7 @@ const CartPageItem = ({
                                 </Typography>
                                 <Typography
                                     style={{
-                                        fontFamily: `'Exo 2', sans-serif`,
+                                        fontFamily: `'Bellota Text', cursive`,
                                         marginBottom: '8px',
                                     }}
                                     variant="body2"
@@ -119,7 +119,7 @@ const CartPageItem = ({
                                 </Typography>
                                 <Typography
                                     style={{
-                                        fontFamily: `'Exo 2', sans-serif`,
+                                        fontFamily: `'Bellota Text', cursive`,
                                     }}
                                     variant="body2"
                                     color="text.secondary"
@@ -209,7 +209,7 @@ const CartPageItem = ({
                 <Typography
                     sx={{
                         textTransform: 'none',
-                        fontFamily: `'Exo 2', sans-serif`,
+                        fontFamily: `'Bellota Text', cursive`,
                         fontSize: '21px',
                         fontWeight: 600,
                         color: '#105b63',

@@ -62,7 +62,7 @@ const FavoritesPage = (props: Props) => {
                         <Typography
                             sx={{
                                 textTransform: 'none',
-                                fontFamily: `'Exo 2', sans-serif`,
+                                fontFamily: `'Bellota Text', cursive`,
                                 fontSize: '21px',
                                 fontWeight: 600,
                                 color: '#105b63',
