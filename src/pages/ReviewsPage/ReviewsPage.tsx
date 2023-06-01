@@ -2,6 +2,7 @@ import { Rating, TextField, TextareaAutosize } from '@mui/material'
 import { Button, Card, CardContent, Container } from '@mui/material'
 import BackToCategoriesBtn from 'components/BackToCategoriesBtn/BackToCategoriesBtn'
 import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
+import SelectForm from 'components/SelectForm/SelectForm'
 import { useState } from 'react'
 import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
 import './ReviewsPage.scss'
@@ -100,7 +101,7 @@ const ReviewsPage = (props: Props) => {
                         flexWrap: 'wrap',
                         flexDirection: 'row',
                         justifyContent: 'space-between',
-                        marginRight: '14px',
+                        marginRight: '49px',
                         alignItems: 'center',
                     }}
                 >
@@ -151,6 +152,7 @@ const ReviewsPage = (props: Props) => {
                             onChange={handleName}
                             required
                         />
+                        <SelectForm />
                         <TextareaAutosize
                             className="form_text_field"
                             minRows={7}
@@ -171,7 +173,7 @@ const ReviewsPage = (props: Props) => {
                     </div>
                 </form>
             </div>
-            <div style={{ marginTop: '21px' }}>
+            <div style={{ marginTop: '49px' }}>
                 {/* <Typography
                     sx={{
                         textTransform: 'none',

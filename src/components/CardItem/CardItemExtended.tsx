@@ -154,6 +154,13 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                                     Назад
                                 </Button>
                                 <Button
+                                    variant="contained"
+                                    className="card_item_extended_btn"
+                                    size="small"
+                                >
+                                    Залишити відгук
+                                </Button>
+                                <Button
                                     onClick={() => handleClick(id, count)}
                                     variant="contained"
                                     className="card_item_extended_btn blink"
