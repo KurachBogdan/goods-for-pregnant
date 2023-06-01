@@ -12,7 +12,6 @@ type Props = {}
 export type Review = {
     name: string
     text: string
-    email?: string
 }
 
 const ReviewsPage = (props: Props) => {
@@ -71,21 +70,6 @@ const ReviewsPage = (props: Props) => {
         }
     }
 
-    const handleReviewSubmit = () => {
-        if (newReview.name === '' || newReview.text === '') {
-            alert("Вкажіть Ваше ім'я та сам відгук")
-        } else {
-            setNewReview({
-                name: '',
-                text: '',
-            })
-
-            setReviews((prevState) => {
-                return [...prevState, newReview]
-            })
-        }
-    }
-
     return (
         <Container
             sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 430px)' }}
@@ -96,12 +80,11 @@ const ReviewsPage = (props: Props) => {
             <div className="reviews">
                 <div
                     style={{
-                        width: '800px',
+                        width: '721px',
                         display: 'flex',
                         flexWrap: 'wrap',
                         flexDirection: 'row',
                         justifyContent: 'space-between',
-                        marginRight: '49px',
                         alignItems: 'center',
                     }}
                 >
@@ -134,7 +117,7 @@ const ReviewsPage = (props: Props) => {
                         </Card>
                     ))}
                 </div>
-                <form onSubmit={onSend}>
+                <form style={{ width: '400px' }} onSubmit={onSend}>
                     <h3
                         style={{
                             fontFamily: `'Exo 2', sans-serif`,
@@ -144,24 +127,22 @@ const ReviewsPage = (props: Props) => {
                     >
                         Будь ласка, залиште відгук
                     </h3>
-                    <form onSubmit={handleReviewSubmit}>
-                        <TextField
-                            className="form_name_field"
-                            label="Ім'я"
-                            value={newReview.name}
-                            onChange={handleName}
-                            required
-                        />
-                        <SelectForm />
-                        <TextareaAutosize
-                            className="form_text_field"
-                            minRows={7}
-                            placeholder="Ваш відгук"
-                            value={newReview.text}
-                            onChange={handleText}
-                            required
-                        />
-                    </form>
+                    <TextField
+                        className="form_name_field"
+                        label="Ім'я"
+                        value={newReview.name}
+                        onChange={handleName}
+                        required
+                    />
+                    <SelectForm />
+                    <TextareaAutosize
+                        className="form_text_field"
+                        minRows={7}
+                        placeholder="Ваш відгук"
+                        value={newReview.text}
+                        onChange={handleText}
+                        required
+                    />
                     <div style={{ textAlign: 'center', marginTop: '14px' }}>
                         <Button
                             className="form_btn"
