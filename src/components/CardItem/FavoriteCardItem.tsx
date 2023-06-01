@@ -34,10 +34,15 @@ const FavoriteCardItem = ({
 
     return (
         <Card
-            sx={{ maxWidth: 260, cursor: 'context-menu', borderRadius: '14px', border: '1px solid #105b63' }}
+            sx={{
+                maxWidth: 260,
+                cursor: 'context-menu',
+                borderRadius: '14px',
+                border: '1px solid #105b63',
+            }}
         >
             <CardMedia sx={{ height: 232 }} image={image} />
-            <CardContent>
+            <CardContent sx={{ margin: '0px' }}>
                 <div className="card_title-container">
                     <p className="type">{type}</p>
                     <p>{itemName}</p>
@@ -75,7 +80,10 @@ const FavoriteCardItem = ({
                     {term}
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Bellota Text', cursive`, marginBottom: '3px' }}
+                    style={{
+                        fontFamily: `'Bellota Text', cursive`,
+                        marginBottom: '3px',
+                    }}
                     variant="body2"
                     color="text.secondary"
                 >
