@@ -1,5 +1,5 @@
 .review_title {
-    font-family: 'PT Serif', serif;
+    font-family: 'Exo 2', sans-serif;
     color: black;
 }
 
@@ -11,7 +11,7 @@
 
 .comment-card {
     padding-top: 30px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-size: 14px;
     line-height: 24px;
     color: #74c2c2;
@@ -21,26 +21,36 @@
     }
 }
 
+.comment-card-container {
+    width: 721px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .css-46bh2p-MuiCardContent-root:last-child {
     padding: 7px 14px;
 }
 
 .form_text_field {
     width: 100%;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-size: 16px;
     line-height: 16px;
     border: 1px solid #74c2c2;
     padding: 7px 0 0 7px;
+    border-radius: 4px;
     &::placeholder {
-        font-family: 'PT Sans', sans-serif;
+        font-family: 'Exo 2', sans-serif;
         color: rgba(16, 91, 99, 0.5);
         font-size: 16px;
     }
 }
 
 .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {  
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-size: 16px;
     line-height:0px;
     overflow: visible;
@@ -54,13 +64,14 @@
 
 .form_name_field {
     width: 100%;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .form_btn {
     width: 150px;
     height: 35px;
     border-radius: 14px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 16px;
@@ -75,14 +86,11 @@
 
 form h3 {
     text-align: center;
-    font-family: 'PT Serif', serif;
-    color: black;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 21px;
+    color: #105b63;
+    margin-top: 0px;
 }
-
-// .css-1c99szj-MuiRating-icon {
-//     color: white;
-// }
-
 
 .review_card {
     width: 22rem;
@@ -125,7 +133,7 @@ form h3 {
         font-weight: 600;
         font-size: 1rem;
         color: #105b63;
-        font-family: 'PT Sans', sans-serif;
+        font-family: 'Exo 2', sans-serif;
     }
     & .text_area {
         width: 103%;
@@ -135,7 +143,7 @@ form h3 {
         padding: 12px;
         color: #105b63;
         font-size: 21px;
-        font-family: 'PT Sans', sans-serif;
+        font-family: 'Exo 2', sans-serif;
     }
 }
 

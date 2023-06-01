@@ -56,18 +56,10 @@ const ReviewsPage = (props: Props) => {
 
     const onSend = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        if (newReview.name === '' || newReview.text === '') {
-            alert("Вкажіть Ваше ім'я та сам відгук")
-        } else {
-            setNewReview({
-                name: '',
-                text: '',
-            })
 
-            setReviews((prevState) => {
-                return [...prevState, newReview]
-            })
-        }
+        setReviews((prevState) => {
+            return [...prevState, newReview]
+        })
     }
 
     return (
@@ -78,16 +70,7 @@ const ReviewsPage = (props: Props) => {
             <ScrollToTopOnMount />
             <EveryPageTitle title="Відгуки" />
             <div className="reviews">
-                <div
-                    style={{
-                        width: '721px',
-                        display: 'flex',
-                        flexWrap: 'wrap',
-                        flexDirection: 'row',
-                        justifyContent: 'space-between',
-                        alignItems: 'center',
-                    }}
-                >
+                <div className="comment-card-container">
                     {reviews.map((user, i) => (
                         <Card
                             className="comment-card"
@@ -118,15 +101,7 @@ const ReviewsPage = (props: Props) => {
                     ))}
                 </div>
                 <form style={{ width: '400px' }} onSubmit={onSend}>
-                    <h3
-                        style={{
-                            fontFamily: `'Exo 2', sans-serif`,
-                            fontSize: '21px',
-                            color: '#105b63',
-                        }}
-                    >
-                        Будь ласка, залиште відгук
-                    </h3>
+                    <h3>Будь ласка, залиште відгук</h3>
                     <TextField
                         className="form_name_field"
                         label="Ім'я"
@@ -134,7 +109,31 @@ const ReviewsPage = (props: Props) => {
                         onChange={handleName}
                         required
                     />
-                    <SelectForm />
+                    <div
+                        style={{
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            alignItems: 'center',
+                        }}
+                    >
+                        <SelectForm />
+                        <div>
+                            <p
+                                style={{
+                                    margin: '0px',
+                                    fontFamily: `'Exo 2', sans-serif`,
+                                    color: '#105b63',
+                                }}
+                            >
+                                Оцінка
+                            </p>
+                            <Rating
+                                name="half-rating"
+                                defaultValue={2.5}
+                                precision={0.5}
+                            />
+                        </div>
+                    </div>
                     <TextareaAutosize
                         className="form_text_field"
                         minRows={7}
@@ -155,7 +154,15 @@ const ReviewsPage = (props: Props) => {
                 </form>
             </div>
             <div style={{ marginTop: '49px' }}>
-                {/* <Typography
+                <BackToCategoriesBtn />
+            </div>
+        </Container>
+    )
+}
+
+export default ReviewsPage
+
+/* <Typography
                     sx={{
                         textTransform: 'none',
                         fontFamily: `'Exo 2', sans-serif`,
@@ -168,11 +175,4 @@ const ReviewsPage = (props: Props) => {
                     component="div"
                 >
                     Ще немає відгуків
-                </Typography> */}
-                <BackToCategoriesBtn />
-            </div>
-        </Container>
-    )
-}
-
-export default ReviewsPage
+                </Typography> */
