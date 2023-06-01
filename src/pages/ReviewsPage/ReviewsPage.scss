@@ -10,11 +10,12 @@
 }
 
 .comment-card {
-    width: 100%;
+    padding-top: 30px;
     font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
     color: #74c2c2;
+    border: none;
     & strong {
         color: #105b63;
     }
@@ -78,3 +79,73 @@ form h3 {
     color: black;
 }
 
+// .css-1c99szj-MuiRating-icon {
+//     color: white;
+// }
+
+
+.review_card {
+    width: 22rem;
+    height: 100%;
+    background: rgba(16, 91, 99, 0.4);
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 12px 12px 12px;
+    & .review_card_container {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        border-radius: 30px;
+        }
+    & .review_card_contain {
+        width: 4.3rem;
+        height: 4.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(16, 91, 99, 0.4);
+        position: relative;
+        top: -11px;
+        left: -12px;
+        border-radius: 24px;
+    }
+    & img {
+        width: 60px;
+        height: 60px;
+        border-radius: 24px;
+    }
+    & p {
+        font-weight: 600;
+        font-size: 1rem;
+        color: #105b63;
+        font-family: 'PT Sans', sans-serif;
+    }
+    & .text_area {
+        width: 103%;
+        min-height: 3rem;
+        background: white;
+        border-radius: 18px;
+        padding: 12px;
+        color: #105b63;
+        font-size: 21px;
+        font-family: 'PT Sans', sans-serif;
+    }
+}
+
+.css-46bh2p-MuiCardContent-root {
+    padding: 0px 0px 0px 0px;
+    &:last-child {
+        padding: 0px 0px 0px 0px; 
+    }
+}
+
+.css-1ipvlaw-MuiPaper-root-MuiCard-root {
+    padding: 21px 0 0;
+}

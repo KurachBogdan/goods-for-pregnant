@@ -1,4 +1,4 @@
-import { TextField, TextareaAutosize } from '@mui/material'
+import { Rating, TextField, TextareaAutosize } from '@mui/material'
 import { Button, Card, CardContent, Container } from '@mui/material'
 import BackToCategoriesBtn from 'components/BackToCategoriesBtn/BackToCategoriesBtn'
 import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
@@ -8,7 +8,7 @@ import './ReviewsPage.scss'
 
 type Props = {}
 
-type Review = {
+export type Review = {
     name: string
     text: string
     email?: string
@@ -53,6 +53,7 @@ const ReviewsPage = (props: Props) => {
             text: e.target.value,
         }))
     }
+
     const onSend = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         if (newReview.name === '' || newReview.text === '') {
@@ -68,6 +69,22 @@ const ReviewsPage = (props: Props) => {
             })
         }
     }
+
+    const handleReviewSubmit = () => {
+        if (newReview.name === '' || newReview.text === '') {
+            alert("Вкажіть Ваше ім'я та сам відгук")
+        } else {
+            setNewReview({
+                name: '',
+                text: '',
+            })
+
+            setReviews((prevState) => {
+                return [...prevState, newReview]
+            })
+        }
+    }
+
     return (
         <Container
             sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 430px)' }}
@@ -76,18 +93,42 @@ const ReviewsPage = (props: Props) => {
             <ScrollToTopOnMount />
             <EveryPageTitle title="Відгуки" />
             <div className="reviews">
-                <div>
-                    {reviews.map((item, i) => (
+                <div
+                    style={{
+                        width: '800px',
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        flexDirection: 'row',
+                        justifyContent: 'space-between',
+                        marginRight: '14px',
+                        alignItems: 'center',
+                    }}
+                >
+                    {reviews.map((user, i) => (
                         <Card
                             className="comment-card"
                             variant="outlined"
-                            sx={{ margin: '7px 0', display: 'flex', justifyContent: 'flex-start' }}
+                            sx={{ margin: '7px 0' }}
                             key={i}
                         >
-                            <CardContent sx={{ width: '800px',  }}>
-                                <strong>{item.name}:</strong>
-                                <div>{item.email}</div>
-                                <div>{item.text}</div>
+                            <CardContent>
+                                <div className="review_card">
+                                    <div className="review_card_container">
+                                        <div className="review_card_contain">
+                                            <img
+                                                src="/images/bedclothes_roslinka.jpg"
+                                                alt="#"
+                                            />
+                                        </div>
+                                        <p>{user.name}</p>
+                                        <Rating
+                                            name="half-rating"
+                                            defaultValue={2.5}
+                                            precision={0.5}
+                                        />
+                                    </div>
+                                    <div className="text_area">{user.text}</div>
+                                </div>
                             </CardContent>
                         </Card>
                     ))}
@@ -102,24 +143,23 @@ const ReviewsPage = (props: Props) => {
                     >
                         Будь ласка, залиште відгук
                     </h3>
-                    <div>
+                    <form onSubmit={handleReviewSubmit}>
                         <TextField
                             className="form_name_field"
                             label="Ім'я"
                             value={newReview.name}
                             onChange={handleName}
+                            required
                         />
-                    </div>
-                    <br />
-                    <div>
                         <TextareaAutosize
                             className="form_text_field"
                             minRows={7}
-                            placeholder="Текст"
+                            placeholder="Ваш відгук"
                             value={newReview.text}
                             onChange={handleText}
+                            required
                         />
-                    </div>
+                    </form>
                     <div style={{ textAlign: 'center', marginTop: '14px' }}>
                         <Button
                             className="form_btn"
@@ -131,7 +171,7 @@ const ReviewsPage = (props: Props) => {
                     </div>
                 </form>
             </div>
-            <div>
+            <div style={{ marginTop: '21px' }}>
                 {/* <Typography
                     sx={{
                         textTransform: 'none',
