@@ -114,6 +114,7 @@ const ReviewsPage = (props: Props) => {
                             display: 'flex',
                             justifyContent: 'space-between',
                             alignItems: 'center',
+                            // marginTop: '7px',
                         }}
                     >
                         <SelectForm />
