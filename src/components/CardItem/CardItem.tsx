@@ -68,6 +68,7 @@ const CardItem = ({
     const handleClose = () => {
         setOpen(false)
     }
+    
     return (
         <Card
             sx={{

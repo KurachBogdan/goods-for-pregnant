@@ -80,7 +80,7 @@ const App = (props: Props) => {
                     element={<ReviewsPage />}
                 />
                 <Route path="contact" element={<ContactsPage />} />
-                <Route path="favorite" element={<FavoritesPage />} />
+                <Route path="favorite" element={<FavoritesPage handleClick={handleClick} />} />
                 <Route
                     path="cart"
                     element={

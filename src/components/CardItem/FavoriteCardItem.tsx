@@ -1,10 +1,13 @@
-import { CardMedia, Rating, Typography } from '@mui/material'
+import { CardMedia, Dialog, Rating, Slide, Typography } from '@mui/material'
 import { Button, Card, CardActions, CardContent } from '@mui/material'
 import './CardItem.scss'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { addLike, removeLike } from 'redux/likeReducer'
+import { TransitionProps } from '@mui/material/transitions'
+import React from 'react'
+import FavoriteCardItemExtended from './FavoriteCardItemExtended'
 
 type Props = {
     id: number
@@ -16,7 +19,17 @@ type Props = {
     composition: string
     term: number
     price: number
+    handleClick: (id: number, count: number) => void
 }
+
+const Transition = React.forwardRef(function Transition(
+    props: TransitionProps & {
+        children: React.ReactElement<any, any>
+    },
+    ref: React.Ref<unknown>
+) {
+    return <Slide direction="up" ref={ref} {...props} />
+})
 
 const FavoriteCardItem = ({
     id,
@@ -28,9 +41,19 @@ const FavoriteCardItem = ({
     composition,
     term,
     price,
+    handleClick,
 }: Props) => {
     const isLiked = useAppSelector((state) => state.productsLikeState[id])
     const dispatch = useAppDispatch()
+    const [open, setOpen] = React.useState(false)
+
+    const handleClickOpen = () => {
+        setOpen(true)
+    }
+
+    const handleClose = () => {
+        setOpen(false)
+    }
 
     return (
         <Card
@@ -109,13 +132,28 @@ const FavoriteCardItem = ({
                     )}
                 </Button>
                 <Button
-                    // onClick={() => handleClick(id, count)}
+                    key={`product_${id}`}
+                    onClick={() => handleClickOpen()}
                     variant="contained"
                     className="add_to_cart_btn"
                     size="small"
                 >
                     Дізнатись більше
                 </Button>
+                <Dialog
+                    maxWidth="lg"
+                    open={open}
+                    TransitionComponent={Transition}
+                    keepMounted
+                    onClose={handleClose}
+                    aria-describedby="alert-dialog-slide-description"
+                >
+                    <FavoriteCardItemExtended
+                        id={id}
+                        handleClose={handleClose}
+                        handleClick={handleClick}
+                    />
+                </Dialog>
             </CardActions>
         </Card>
     )

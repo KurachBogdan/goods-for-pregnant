@@ -7,9 +7,11 @@ import FavoriteCardItem from 'components/CardItem/FavoriteCardItem'
 import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
 import BackToCategoriesBtn from 'components/BackToCategoriesBtn/BackToCategoriesBtn'
 
-type Props = {}
+type Props = {
+    handleClick: (id: number, count: number) => void
+}
 
-const FavoritesPage = (props: Props) => {
+const FavoritesPage = ({ handleClick }: Props) => {
     const likedArticleIds = useAppSelector((state) =>
         Object.keys(state.productsLikeState)
             .filter((key) => state.productsLikeState[+key])
@@ -44,6 +46,7 @@ const FavoritesPage = (props: Props) => {
                             <Grid item xs={12} sm={6} md={3} key={id}>
                                 {' '}
                                 <FavoriteCardItem
+                                    handleClick={handleClick}
                                     id={id}
                                     image={image}
                                     type={type}
