@@ -2,6 +2,7 @@ import { Button, Container, Typography } from '@mui/material'
 import './CardItemExtended.scss'
 import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
 import productsArray from 'utils/productsArray'
+import { NavLink } from 'react-router-dom'
 
 type Props = {
     id: number
@@ -158,7 +159,14 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                                     className="card_item_extended_btn"
                                     size="small"
                                 >
-                                    Залишити відгук
+                                    <NavLink style={{
+                                            textDecoration: 'none',
+                                            fontFamily: `'Bellota Text', cursive`,
+                                            fontWeight: 600,
+                                            color: 'white',
+                                        }} to="/review">
+                                        Залишити відгук
+                                    </NavLink>
                                 </Button>
                                 <Button
                                     onClick={() => handleClick(id, count)}

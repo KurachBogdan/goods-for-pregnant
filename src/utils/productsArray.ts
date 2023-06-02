@@ -15,7 +15,7 @@ export type Product = {
 const productsArray: Product[] = [
     {
         id: 1,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Стильна іграшка є абсолютно безпечною для новонародженого, адже виконана з поліестеру. Іграшка для дітей із такого матеріалу являється найбезпечнішою, так як у ньому не можуть з’явитися мікроорганізми. Зайчик не має гострих елементів і всі елементи надійно скріплені між собою. Запевняємо, що саме ця іграшка підкреслить унікальність Вашого подарунку.',
         image: '/images/grey_rabbit.jpg',
         category: 'toys',
         type: `Іграшка в'язана`,
@@ -28,7 +28,7 @@ const productsArray: Product[] = [
     },
     {
         id: 2,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Стильна іграшка є абсолютно безпечною для новонародженого, адже виконана з поліестеру. Іграшка для дітей із такого матеріалу являється найбезпечнішою, так як у ньому не можуть з’явитися мікроорганізми. Зайчик не має гострих елементів і всі елементи надійно скріплені між собою. Запевняємо, що саме ця іграшка підкреслить унікальність Вашого подарунку.',
         image: '/images/rabbit_in_glasses.jpg',
         category: 'toys',
         type: `Іграшка в'язана`,
@@ -41,7 +41,7 @@ const productsArray: Product[] = [
     },
     {
         id: 3,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Стильна іграшка є абсолютно безпечною для новонародженого, адже виконана з поліестеру. Іграшка для дітей із такого матеріалу являється найбезпечнішою, так як у ньому не можуть з’явитися мікроорганізми. Ведмедик не має гострих елементів і всі елементи надійно скріплені між собою. Запевняємо, що саме ця іграшка підкреслить унікальність Вашого подарунку.',
         image: '/images/brown_bear.jpg',
         category: 'toys',
         type: `Іграшка в'язана`,
@@ -54,7 +54,7 @@ const productsArray: Product[] = [
     },
     {
         id: 4,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Стильна іграшка є абсолютно безпечною для новонародженого, адже виконана з поліестеру. Іграшка для дітей із такого матеріалу являється найбезпечнішою, так як у ньому не можуть з’явитися мікроорганізми. Жираф не має гострих елементів і всі елементи надійно скріплені між собою. Запевняємо, що саме ця іграшка підкреслить унікальність Вашого подарунку.',
         image: '/images/giraffe.jpg',
         category: 'toys',
         type: `Іграшка в'язана`,
@@ -67,7 +67,7 @@ const productsArray: Product[] = [
     },
     {
         id: 5,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Стильна іграшка є абсолютно безпечною для новонародженого, адже виконана з поліестеру. Іграшка для дітей із такого матеріалу являється найбезпечнішою, так як у ньому не можуть з’явитися мікроорганізми. Єдиноріжка не має гострих елементів і всі елементи надійно скріплені між собою. Запевняємо, що саме ця іграшка підкреслить унікальність Вашого подарунку.',
         image: '/images/white_unicorn.jpg',
         category: 'toys',
         type: `Іграшка в'язана`,
@@ -301,7 +301,7 @@ const productsArray: Product[] = [
     },
     {
         id: 23,
-        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum voluptatibus similique quasi eos mollitia nihil amet qui cum neque sapiente nobis laudantium optio ipsum architecto possimus laboriosam, veniam facilis.',
+        description: 'Базова річ у шафі кожного малюка. Махровий рушник виконаний зі 100% натуральної тканини, тому чудово вбирає вологу. Капюшон достатньо широкий, тому одягати його легко, швидко та комфортно. Розмір рушничка дозволяє використовувати його мінімум до 5-ти років малюка. А також махра преміум-якості витримує більше 100 циклів прання.',
         image: '/images/towel_bear.jpg',
         category: 'towels',
         type: `Рушник`,
