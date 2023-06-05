@@ -39,6 +39,17 @@ const ReviewsPage = (props: Props) => {
         name: '',
         text: '',
     })
+    const [ratingValue, setRatingValue] = useState(0)
+
+    const handleRatingChange = (
+        event: React.ChangeEvent<{}>,
+        value: number | null
+    ) => {
+        if (value !== null) {
+            setRatingValue(value)
+            console.log('Значення рейтингу:', value)
+        }
+    }
 
     const handleName = (e: React.ChangeEvent<HTMLInputElement>) => {
         setNewReview((prevState) => ({
@@ -130,8 +141,9 @@ const ReviewsPage = (props: Props) => {
                             </p>
                             <Rating
                                 name="half-rating"
-                                defaultValue={2.5}
                                 precision={0.5}
+                                value={ratingValue}
+                                onChange={handleRatingChange}
                             />
                         </div>
                     </div>

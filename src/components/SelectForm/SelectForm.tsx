@@ -15,7 +15,6 @@ const SelectForm = (props: Props) => {
     const handleChange = (event: SelectChangeEvent) => {
         setProduct(event.target.value as string)
     }
-
     return (
         <Box sx={{ width: '154px' }}>
             <FormControl fullWidth>
