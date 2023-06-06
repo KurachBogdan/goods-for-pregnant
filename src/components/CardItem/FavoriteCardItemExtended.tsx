@@ -1,14 +1,5 @@
-// type Props = {}
-
-// const FavoriteCardItemExtended = (props: Props) => {
-//     return <div>FavoriteCardItemExtended</div>
-// }
-
-// export default FavoriteCardItemExtended
-
 import { Button, Container, Typography } from '@mui/material'
 import { NavLink } from 'react-router-dom'
-// import './FavoriteCardItemExtended.scss'
 import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
 import productsArray from 'utils/productsArray'
 
@@ -65,7 +56,7 @@ const FavoriteCardItemExtended = ({ handleClose, handleClick, id }: Props) => {
                             </div>
                             <Typography
                                 style={{
-                                    fontFamily: `'Bellota Text', cursive`,
+                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                     fontSize: '17px',
                                     lineHeight: '19px',
                                     marginTop: '14px',
@@ -80,7 +71,7 @@ const FavoriteCardItemExtended = ({ handleClose, handleClick, id }: Props) => {
                             </Typography>
                             <Typography
                                 style={{
-                                    fontFamily: `'Bellota Text', cursive`,
+                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                     fontSize: '16px',
                                     marginTop: '9px',
                                     color: '#105b63',
@@ -94,7 +85,7 @@ const FavoriteCardItemExtended = ({ handleClose, handleClick, id }: Props) => {
                             </Typography>
                             <Typography
                                 style={{
-                                    fontFamily: `'Bellota Text', cursive`,
+                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                     fontSize: '16px',
                                     color: '#105b63',
                                 }}
@@ -107,7 +98,7 @@ const FavoriteCardItemExtended = ({ handleClose, handleClick, id }: Props) => {
                             </Typography>
                             <Typography
                                 style={{
-                                    fontFamily: `'Bellota Text', cursive`,
+                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                     fontSize: '16px',
                                     color: '#105b63',
                                 }}
@@ -120,7 +111,7 @@ const FavoriteCardItemExtended = ({ handleClose, handleClick, id }: Props) => {
                             </Typography>
                             <Typography
                                 style={{
-                                    fontFamily: `'Bellota Text', cursive`,
+                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                     fontSize: '16px',
                                     color: '#105b63',
                                 }}
@@ -133,7 +124,7 @@ const FavoriteCardItemExtended = ({ handleClose, handleClick, id }: Props) => {
                             </Typography>
                             <Typography
                                 style={{
-                                    fontFamily: `'Bellota Text', cursive`,
+                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                     fontSize: '16px',
                                     marginBottom: '28px',
                                     color: '#105b63',
@@ -169,7 +160,7 @@ const FavoriteCardItemExtended = ({ handleClose, handleClick, id }: Props) => {
                                     <NavLink
                                         style={{
                                             textDecoration: 'none',
-                                            fontFamily: `'Bellota Text', cursive`,
+                                            fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                             fontWeight: 600,
                                             color: 'white',
                                         }}

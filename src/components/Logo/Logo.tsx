@@ -1,6 +1,5 @@
 import { Typography } from '@mui/material'
 import logo from 'assets/logo.png'
-import './Logo.scss'
 
 type Props = {}
 
@@ -16,7 +15,11 @@ const Logo = (props: Props) => {
                 justifyContent: 'center',
             }}
         >
-            <img className="logo" src={logo} alt="Here must be a logo" />
+            <img
+                style={{ height: '30px' }}
+                src={logo}
+                alt="Here must be a logo"
+            />
         </Typography>
     )
 }

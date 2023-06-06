@@ -133,7 +133,7 @@ const ReviewsPage = (props: Props) => {
                             <p
                                 style={{
                                     margin: '0px',
-                                    fontFamily: `'Bellota Text', cursive`,
+                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                     color: '#105b63',
                                 }}
                             >

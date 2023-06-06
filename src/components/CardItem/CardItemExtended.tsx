@@ -58,7 +58,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                             </div>
                             <Typography
                                 style={{
-                                    fontFamily: `'Bellota Text', cursive`,
+                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                     fontSize: '17px',
                                     lineHeight: '19px',
                                     marginTop: '14px',
@@ -73,7 +73,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                             </Typography>
                             <Typography
                                 style={{
-                                    fontFamily: `'Bellota Text', cursive`,
+                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                     fontSize: '16px',
                                     marginTop: '9px',
                                     color: '#105b63',
@@ -87,7 +87,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                             </Typography>
                             <Typography
                                 style={{
-                                    fontFamily: `'Bellota Text', cursive`,
+                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                     fontSize: '16px',
                                     color: '#105b63',
                                 }}
@@ -100,7 +100,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                             </Typography>
                             <Typography
                                 style={{
-                                    fontFamily: `'Bellota Text', cursive`,
+                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                     fontSize: '16px',
                                     color: '#105b63',
                                 }}
@@ -113,7 +113,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                             </Typography>
                             <Typography
                                 style={{
-                                    fontFamily: `'Bellota Text', cursive`,
+                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                     fontSize: '16px',
                                     color: '#105b63',
                                 }}
@@ -126,7 +126,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                             </Typography>
                             <Typography
                                 style={{
-                                    fontFamily: `'Bellota Text', cursive`,
+                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                     fontSize: '16px',
                                     marginBottom: '28px',
                                     color: '#105b63',
@@ -159,12 +159,15 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                                     className="card_item_extended_btn"
                                     size="small"
                                 >
-                                    <NavLink style={{
+                                    <NavLink
+                                        style={{
                                             textDecoration: 'none',
-                                            fontFamily: `'Bellota Text', cursive`,
+                                            fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                             fontWeight: 600,
                                             color: 'white',
-                                        }} to="/review">
+                                        }}
+                                        to="/review"
+                                    >
                                         Залишити відгук
                                     </NavLink>
                                 </Button>

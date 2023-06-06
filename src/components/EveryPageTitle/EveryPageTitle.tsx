@@ -5,7 +5,7 @@ const EveryPageTitle = ({ title }: Props) => {
         <>
             <div
                 style={{
-                    fontFamily: `'Bellota Text', cursive`,
+                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                     fontSize: '35px',
                     lineHeight: '35px',
                     fontWeight: 600,

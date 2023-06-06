@@ -64,7 +64,7 @@ const CartPageItem = ({
                                 </div>
                                 <Typography
                                     style={{
-                                        fontFamily: `'Bellota Text', cursive`,
+                                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                         marginBottom: '8px',
                                     }}
                                     variant="body2"
@@ -82,7 +82,7 @@ const CartPageItem = ({
                                 </Typography>
                                 <Typography
                                     style={{
-                                        fontFamily: `'Bellota Text', cursive`,
+                                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                         marginBottom: '8px',
                                     }}
                                     variant="body2"
@@ -101,7 +101,7 @@ const CartPageItem = ({
                                 </Typography>
                                 <Typography
                                     style={{
-                                        fontFamily: `'Bellota Text', cursive`,
+                                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                         marginBottom: '8px',
                                     }}
                                     variant="body2"
@@ -119,7 +119,7 @@ const CartPageItem = ({
                                 </Typography>
                                 <Typography
                                     style={{
-                                        fontFamily: `'Bellota Text', cursive`,
+                                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                     }}
                                     variant="body2"
                                     color="text.secondary"
@@ -209,7 +209,7 @@ const CartPageItem = ({
                 <Typography
                     sx={{
                         textTransform: 'none',
-                        fontFamily: `'Bellota Text', cursive`,
+                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                         fontSize: '21px',
                         fontWeight: 600,
                         color: '#105b63',

@@ -113,7 +113,7 @@ const CardItem = ({
                 </div>
                 <Typography
                     style={{
-                        fontFamily: `'Bellota Text', cursive`,
+                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                     }}
                     variant="body2"
                     color="text.secondary"
@@ -122,7 +122,7 @@ const CardItem = ({
                     {color}
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Bellota Text', cursive` }}
+                    style={{ fontFamily: `'Sofia Sans Semi Condensed', sans-serif` }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -130,7 +130,7 @@ const CardItem = ({
                     {size} см
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Bellota Text', cursive` }}
+                    style={{ fontFamily: `'Sofia Sans Semi Condensed', sans-serif` }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -138,7 +138,7 @@ const CardItem = ({
                     {composition}
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Bellota Text', cursive` }}
+                    style={{ fontFamily: `'Sofia Sans Semi Condensed', sans-serif` }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -147,7 +147,7 @@ const CardItem = ({
                 </Typography>
                 <Typography
                     style={{
-                        fontFamily: `'Bellota Text', cursive`,
+                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                         marginBottom: '4px',
                     }}
                     variant="body2"

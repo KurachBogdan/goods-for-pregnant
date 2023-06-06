@@ -101,7 +101,7 @@ const CategoryPage = ({ handleClick }: Props) => {
                             <Typography
                                 sx={{
                                     textTransform: 'none',
-                                    fontFamily: `'Bellota Text', cursive`,
+                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                                     fontSize: '21px',
                                     fontWeight: 600,
                                     color: '#105b63',
