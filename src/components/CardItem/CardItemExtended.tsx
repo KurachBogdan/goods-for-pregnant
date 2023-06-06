@@ -24,6 +24,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                 sx={{
                     padding: '21px 24px',
                     cursor: 'context-menu',
+                    position: 'relative',
                     top: 0,
                 }}
             >
