@@ -19,8 +19,8 @@ const MainPart = (props: Props) => {
                     fontSize: '35px',
                     lineHeight: '35px',
                     fontWeight: 600,
-                    // color: '#105b63',
-                    color: 'red',
+                    color: '#105b63',
+                    // color: 'red',
                     cursor: 'context-menu',
                     margin: '14px 0px 0px 0px'
                 }}

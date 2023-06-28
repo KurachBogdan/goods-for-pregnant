@@ -52,7 +52,6 @@
 }
 
 .main_title-container {
-
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -81,4 +80,10 @@
 
 .css-j7pyg7-MuiPaper-root-MuiAppBar-root {
     box-shadow: none;
+}
+
+@media (max-width: 53rem) {
+    .background-container {
+        height: 100vh;
+    }
 }
