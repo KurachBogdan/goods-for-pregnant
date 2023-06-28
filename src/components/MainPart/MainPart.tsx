@@ -21,7 +21,7 @@ const MainPart = (props: Props) => {
                     fontWeight: 600,
                     color: '#105b63',
                     cursor: 'context-menu',
-                    margin: '0px'
+                    margin: '14px 0px 0px 0px'
                 }}
             >
                 Категорії товарів
