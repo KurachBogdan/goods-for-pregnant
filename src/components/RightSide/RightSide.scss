@@ -65,3 +65,9 @@
     width: 195px;
     text-indent: 14px;
 }
+
+@media (max-width: 53rem) {
+    .right_side-container {
+        display: none;
+    }
+}
