@@ -22,7 +22,7 @@ const MainPart = (props: Props) => {
                     color: '#105b63',
                     // color: 'red',
                     cursor: 'context-menu',
-                    margin: '14px 0px 0px 0px'
+                    margin: '0px 0px 0px 0px'
                 }}
             >
                 Категорії товарів
