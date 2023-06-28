@@ -11,19 +11,19 @@ const Footer = (props: Props) => {
             </div>
             <div className="about-us_container">
                 <div className="about_us">
-                    <div className="about_us-title">Про нас</div>
+                    <p className="about_us-title">Про нас</p>
                     <p className="about_us-content">
                         Вітаємо! SOMIK– це сімейна справа, яка мріє стати
                         частинкою затишного дитинства кожної дитини. На фото
                         праворуч– ми (Марія та Артем – власники магазину) . Ми
                         створили ексклюзивні речі для вагітних, новонароджених
-                        та мам. Кожна матуся знайде тут свій ключ до
-                        комфортного материнства, а малюки поринуть у світ
-                        затишку та комформу. SOMIK– це ти з народження !
+                        та мам. Кожна матуся знайде тут свій ключ до комфортного
+                        материнства, а малюки поринуть у світ затишку та
+                        комформу. SOMIK– це ти з народження !
                     </p>
                 </div>
                 <div className="contacts">
-                    <div className="contacts-title">Контакти</div>
+                    <p className="contacts-title">Контакти</p>
                     <div className="contacts-content">
                         <div className="phone_container">
                             <div className="phone_logo"></div>
