@@ -1,9 +1,10 @@
-import AppBar from '@mui/material/AppBar'
-import Toolbar from '@mui/material/Toolbar'
 import Container from '@mui/material/Container/Container'
-import NavMenu from 'components/NavMenu/NavMenu'
 import { NavLink } from 'react-router-dom'
 import Logo from 'components/Logo/Logo'
+import './Header.scss'
+import MenuIcon from '@mui/icons-material/Menu'
+import AppBar from '@mui/material/AppBar'
+import NavMenu from 'components/NavMenu/NavMenu'
 
 type Props = {
     cartData: {
@@ -16,7 +17,6 @@ const Header = ({ cartData }: Props) => {
         <AppBar
             position="sticky"
             sx={{
-                height: '49px',
                 display: 'flex',
                 justifyContent: 'center',
                 backgroundColor: 'rgba(255, 255, 255, 0.9)',
@@ -24,14 +24,16 @@ const Header = ({ cartData }: Props) => {
             }}
         >
             <Container maxWidth="xl">
-                <Toolbar
-                    sx={{ display: 'flex', justifyContent: 'space-between' }}
-                >
+                <nav>
                     <NavLink to="/">
                         <Logo />
                     </NavLink>
+                    <input type="checkbox" name="" id="toggle" />
+                    <label htmlFor="toggle">
+                        <MenuIcon />
+                    </label>
                     <NavMenu cartData={cartData} />
-                </Toolbar>
+                </nav>
             </Container>
         </AppBar>
     )
