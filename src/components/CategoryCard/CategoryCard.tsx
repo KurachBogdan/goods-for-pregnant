@@ -8,7 +8,7 @@ type Props = {
 
 const CategoryCard = ({ image, categoryName }: Props) => {
     return (
-        <Card
+        <Card className='category_card_mobile'
             sx={{
                 width: '264px',
                 borderRadius: '14px',
@@ -17,7 +17,7 @@ const CategoryCard = ({ image, categoryName }: Props) => {
         >
             <CardMedia
                 className="card_media"
-                sx={{ height: 207 }}
+                sx={{ height: '207px' }}
                 image={image}
             />
             <CardContent

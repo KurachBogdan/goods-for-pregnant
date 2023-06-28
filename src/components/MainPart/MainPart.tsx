@@ -13,7 +13,7 @@ const MainPart = (props: Props) => {
     }
     return (
         <div className="main_part-container">
-            <div
+            <p
                 style={{
                     fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                     fontSize: '35px',
@@ -21,11 +21,12 @@ const MainPart = (props: Props) => {
                     fontWeight: 600,
                     color: '#105b63',
                     cursor: 'context-menu',
+                    margin: '0px'
                 }}
             >
                 Категорії товарів
-            </div>
-            <div
+            </p>
+            <div className='border_before_categories'
                 style={{
                     width: '100%',
                     border: '3px solid #105b63',

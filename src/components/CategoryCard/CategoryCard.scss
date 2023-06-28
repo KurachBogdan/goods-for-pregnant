@@ -31,3 +31,13 @@
 .css-144tyno-MuiCardContent-root:last-child {
     padding-bottom: 14px;
 }
+
+@media (max-width: 53rem) {
+    .category_card_mobile {
+        width: 288px;
+    }
+
+    .card_media {
+        height: 226px;
+    }
+}
