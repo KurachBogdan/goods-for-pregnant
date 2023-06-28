@@ -20,7 +20,6 @@ const MainPart = (props: Props) => {
                     lineHeight: '35px',
                     fontWeight: 600,
                     color: '#105b63',
-                    // color: 'red',
                     cursor: 'context-menu',
                     margin: '0px 0px 0px 0px'
                 }}
