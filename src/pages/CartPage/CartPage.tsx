@@ -19,6 +19,8 @@ const CartPage = ({
     removeProductFromCart,
     changeProductQuantity,
 }: Props) => {
+    const hasItemsInCart = Object.keys(productsInCart).length > 0
+
     return (
         <div>
             <ScrollToTopOnMount />
@@ -40,9 +42,14 @@ const CartPage = ({
                     <BackToCategoriesBtn />
                     <div style={{ display: 'flex', alignItems: 'center' }}>
                         <CartTotal productsInCart={productsInCart} />
-                        <Button className="make_purchases" variant="contained">
-                            Оформити замовлення
-                        </Button>
+                        {hasItemsInCart && (
+                            <Button
+                                className="make_purchases"
+                                variant="contained"
+                            >
+                                Оформити замовлення
+                            </Button>
+                        )}
                     </div>
                 </div>
             </Container>
