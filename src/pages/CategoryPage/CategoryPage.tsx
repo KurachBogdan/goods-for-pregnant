@@ -74,7 +74,7 @@ const CategoryPage = ({ handleClick }: Props) => {
                                 term,
                                 price,
                             }) => (
-                                <Grid item xs={12} sm={6} md={3} key={id}>
+                                <Grid item xs={6} sm={6} md={3} key={id}>
                                     <CardItem
                                         id={id}
                                         handleClick={handleClick}

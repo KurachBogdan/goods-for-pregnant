@@ -30,3 +30,9 @@
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:disabled {
         font-weight: 700;
 }
+
+@media (max-width: 53rem) {
+    .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+        min-width: 2px;
+    }
+}

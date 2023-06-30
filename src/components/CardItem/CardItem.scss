@@ -58,6 +58,7 @@
 .card_item_image_hover {
     transition: transform 0.3s ease;
     overflow: hidden;
+    width: 100%;
 }
 
 .card_item_image_hover:hover {
@@ -67,4 +68,42 @@
 
 .css-1qw96cp {
     padding: 0;
+}
+
+@media (max-width: 53rem) {
+    .card_item_card_media {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 58/65;
+    }
+
+    .hide_type,
+    .hide_color,
+    .hide_size,
+    .hide_composition,
+    .hide_term {
+        display: none;
+    }
+
+    .css-34he1w-MuiRating-decimal {
+        width: 100%;
+        max-height: 18px;
+        aspect-ratio: 1/1;
+    }
+
+    .css-iljtu2-MuiRating-root {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        // max-height: 24px;
+    }
+
+    .css-1txofw1-MuiCardContent-root {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .add_to_cart_btn {
+        // background-image: ;
+    }
 }

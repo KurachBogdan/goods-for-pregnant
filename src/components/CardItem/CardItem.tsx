@@ -68,11 +68,12 @@ const CardItem = ({
     const handleClose = () => {
         setOpen(false)
     }
-    
+
     return (
         <Card
+            className="card_item_card"
             sx={{
-                maxWidth: 260,
+                maxWidth: '260px',
                 borderRadius: '14px',
                 border: '1px solid #105b63',
                 boxShadow: 'none',
@@ -84,7 +85,11 @@ const CardItem = ({
                 onClick={() => handleClickOpen()}
                 variant="text"
             >
-                <CardMedia sx={{ height: 232, width: 260 }} image={image} />
+                <CardMedia
+                    className="card_item_card_media"
+                    sx={{ height: 232, width: 260 }}
+                    image={image}
+                />
             </Button>
             <Dialog
                 maxWidth="lg"
@@ -108,10 +113,11 @@ const CardItem = ({
                 }}
             >
                 <div className="card_title-container">
-                    <p className="type">{type}</p>
+                    <p className="type hide_type">{type}</p>
                     <p>{itemName}</p>
                 </div>
                 <Typography
+                    className="hide_color"
                     style={{
                         fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
                     }}
@@ -122,7 +128,10 @@ const CardItem = ({
                     {color}
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Sofia Sans Semi Condensed', sans-serif` }}
+                    className="hide_size"
+                    style={{
+                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
+                    }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -130,7 +139,10 @@ const CardItem = ({
                     {size} см
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Sofia Sans Semi Condensed', sans-serif` }}
+                    className="hide_composition"
+                    style={{
+                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
+                    }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -138,7 +150,10 @@ const CardItem = ({
                     {composition}
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Sofia Sans Semi Condensed', sans-serif` }}
+                    className="hide_term"
+                    style={{
+                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
+                    }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -156,7 +171,12 @@ const CardItem = ({
                     <span className="before_a_colon">Ціна: </span>
                     <span className="price">{price} грн</span>
                 </Typography>
-                <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+                <Rating
+                    className="rating"
+                    name="half-rating"
+                    defaultValue={2.5}
+                    precision={0.5}
+                />
                 <Quantity
                     count={count}
                     onDecrement={onDecrement}
