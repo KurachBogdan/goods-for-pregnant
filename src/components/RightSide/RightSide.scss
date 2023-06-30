@@ -71,3 +71,9 @@
         display: none;
     }
 }
+
+@media (min-width: 595px) and (max-width: 769px) {
+    .right_side-container {
+        display: block;
+    }
+}

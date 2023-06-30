@@ -34,10 +34,11 @@
 
 @media (max-width: 53rem) {
     .category_card_mobile {
-        width: 288px;
+        width: 99%;
     }
 
     .card_media {
-        height: 226px;
+        height: auto;
+        aspect-ratio: 127/100;
     }
 }

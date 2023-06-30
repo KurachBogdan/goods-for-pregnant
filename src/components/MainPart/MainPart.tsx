@@ -39,7 +39,7 @@ const MainPart = (props: Props) => {
                 {categoriesArray.length ? (
                     categoriesArray.map(
                         ({ image, categoryName, link }, index) => (
-                            <Grid item xs={7} md={4} key={`category_${index}`}>
+                            <Grid item xs={7} sm={6} xl={4} md={4} key={`category_${index}`}>
                                 <Button
                                     className="category_btn"
                                     onClick={() =>
