@@ -92,7 +92,7 @@
 
     .css-iljtu2-MuiRating-root {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         width: 100%;
         // max-height: 24px;
     }
@@ -102,14 +102,12 @@
         padding-right: 4px;
     }
 
-    .css-41c965-MuiPaper-root-MuiCard-root {
-        width: 129px;
-    }
-
     .product-quantity input {
         width: 28px;
     }
-    // .add_to_cart_btn {
-    //     background-image: ;
-    // }
+
+    .css-dqr9h-MuiRating-label {
+        display: flex;
+        justify-content: center;
+    }
 }

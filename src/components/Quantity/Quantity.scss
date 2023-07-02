@@ -13,6 +13,8 @@
 .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
     border: 1px solid #74c2c2;
     color: #105b63;
+    min-width: 64px;
+    padding: 5px 15px;
     &:hover {
         background-color: rgba(16, 91, 99, 0.04);
     }
@@ -32,9 +34,18 @@
 }
 
 @media (max-width: 53rem) {
+    .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+        height: 21px;
+        width: 28px;
+    }
+
     .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
-        min-width: 2px;
-        width: 1px;
-        // min-height: 2px;
+        height: 21px;
+        // width: 10px;?
+    }
+
+    .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+        min-width: 35px;
+        padding: 7px 7px;
     }
 }

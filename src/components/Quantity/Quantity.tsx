@@ -18,22 +18,22 @@ const Quantity = ({
 }: Props) => {
     return (
         <div className="product-quantity">
-            <Button
-                variant="outlined"
-                onClick={() => onDecrement()}
-                disabled={count <= minCount}
-                className="quantity_border_color"
-            >
-                -
-            </Button>
+                <Button
+                    variant="outlined"
+                    onClick={() => onDecrement()}
+                    disabled={count <= minCount}
+                    className="quantity_border_color"
+                >
+                    -
+                </Button>
             <TextField value={count} disabled />
-            <Button
-                variant="outlined"
-                onClick={() => onIncrement()}
-                disabled={count >= maxCount}
-            >
-                +
-            </Button>
+                <Button
+                    variant="outlined"
+                    onClick={() => onIncrement()}
+                    disabled={count >= maxCount}
+                >
+                    +
+                </Button>
         </div>
     )
 }

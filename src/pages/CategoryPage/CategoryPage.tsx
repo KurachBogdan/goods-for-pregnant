@@ -74,7 +74,11 @@ const CategoryPage = ({ handleClick }: Props) => {
                                 term,
                                 price,
                             }) => (
-                                <Grid item xs={6} sm={6} md={3} key={id}>
+                                <Grid sx={{
+                                    display: 'flex',
+                                    justifyContent: 'space-between',
+                                    flexWrap: 'wrap',
+                                }} item xs={6} sm={6} md={3} key={id}>
                                     <CardItem
                                         id={id}
                                         handleClick={handleClick}
