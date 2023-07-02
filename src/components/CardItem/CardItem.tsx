@@ -161,10 +161,7 @@ const CardItem = ({
                     {term}
                 </Typography>
                 <Typography
-                    style={{
-                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                        marginBottom: '4px',
-                    }}
+                    className="card_item_price"
                     variant="body2"
                     color="text.secondary"
                 >
@@ -184,12 +181,7 @@ const CardItem = ({
                     onIncrement={onIncrement}
                 />
             </CardContent>
-            <CardActions
-                sx={{
-                    justifyContent: 'space-between',
-                    padding: '7px 14px 4px 14px',
-                }}
-            >
+            <CardActions className="card_item-card_actions">
                 <Button
                     onClick={() =>
                         isLiked
@@ -211,7 +203,7 @@ const CardItem = ({
                     className="add_to_cart_btn"
                     size="small"
                 >
-                    Додати в корзину
+                    <span>Додати в корзину</span>
                 </Button>
             </CardActions>
         </Card>

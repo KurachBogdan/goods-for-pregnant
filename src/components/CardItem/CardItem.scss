@@ -70,6 +70,17 @@
     padding: 0;
 }
 
+.card_item_price {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    margin-bottom: 4px;
+}
+
+.card_item-card_actions  {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 14px 4px 14px;
+}
+
 @media (max-width: 53rem) {
     .card_item_card_media {
         width: 100%;
@@ -94,7 +105,6 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        // max-height: 24px;
     }
 
     .css-1txofw1-MuiCardContent-root {
@@ -106,8 +116,34 @@
         width: 28px;
     }
 
-    .css-dqr9h-MuiRating-label {
+    .card_item_price {
+        text-align: center;
+    }
+
+    .card_item-card_actions  {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 7px 4px;
+    }
+
+    .css-ou4017-MuiButtonBase-root-MuiButton-root {
+        padding: 0;
+    }
+
+    .add_to_cart_btn {
+        height: 24px;
+        & span {
+            display: none;
+        }
+    }
+
+    .card_title-container {
+        font-size: 18px;
+        & .type {
+            font-size: 15px;
+        }
+        & p {
+            margin: 0px;
+        }
     }
 }
