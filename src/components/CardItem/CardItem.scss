@@ -85,6 +85,10 @@
 }
 
 @media (max-width: 53rem) {
+    .css-11qr2p8-MuiButtonBase-root-MuiButton-root {
+        padding: 0;
+    }
+
     .card_item_card_media {
         width: 100%;
         height: auto;
@@ -134,7 +138,7 @@
     }
 
     .add_to_cart_btn {
-        min-width: 24px;
+        min-width: 42px;
         height: 24px;
         border-radius: 14px;
         & .span-hide {
@@ -161,8 +165,12 @@
         margin-left: 0;
     }
 
-    .css-11qr2p8-MuiButtonBase-root-MuiButton-root {
-        line-height: 0;
+    .span-mobile {
+        // line-height: 21px;
+        height: 21px;
+        width: 21px;
+        display: flex;
+        align-items: center;
     }
 
     .css-i4bv87-MuiSvgIcon-root {
