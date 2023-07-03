@@ -99,9 +99,8 @@ const CardItem = ({
                     handleClick={handleClick}
                 />
             </Dialog>
-            <CardContent
+            <CardContent className='card_item_content'
                 sx={{
-                    cursor: 'context-menu',
                     padding: '7px 14px',
                 }}
             >

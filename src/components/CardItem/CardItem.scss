@@ -14,6 +14,11 @@
     }
 }
 
+.card_item_content {
+    cursor: context-menu;
+    padding: 7px 14px;
+}
+
 .css-46bh2p-MuiCardContent-root {
     padding: 7px 14px 0px 14px;
 }
@@ -191,5 +196,9 @@
 
     .css-i4bv87-MuiSvgIcon-root {
         font-size: 21px;
+    }
+
+    .card_item_content {
+        padding: 7px 4px;
     }
 }
