@@ -1,9 +1,18 @@
+import Button from '@mui/material/Button'
 import './NiceButton.scss'
 
 type Props = {}
 
 const NiceButton = (props: Props) => {
-    return <button className="Btn">В корзину</button>
+    return (
+        <Button
+            variant="contained"
+            className="Btn"
+            size="small"
+        >
+            <span></span>
+        </Button>
+    )
 }
 
 export default NiceButton
