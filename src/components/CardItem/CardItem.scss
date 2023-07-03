@@ -136,6 +136,7 @@
     .add_to_cart_btn {
         min-width: 24px;
         height: 24px;
+        border-radius: 14px;
         & .span-hide {
             display: none;
         }
@@ -162,5 +163,9 @@
 
     .css-11qr2p8-MuiButtonBase-root-MuiButton-root {
         line-height: 0;
+    }
+
+    .css-i4bv87-MuiSvgIcon-root {
+        font-size: 21px;
     }
 }

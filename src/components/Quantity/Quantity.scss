@@ -10,6 +10,7 @@
     margin-top: 4px;
     height: 28px;
 }
+
 .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
     border: 1px solid #74c2c2;
     color: #105b63;
@@ -34,23 +35,32 @@
 }
 
 @media (max-width: 53rem) {
-    .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+    .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root,
+    .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:disabled {
         height: 28px;
         width: 28px;
     }
 
     .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
-        height: 28px;
-    }
-
-    .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
         min-width: 28px;
-        // width: 28px;
+        height: 28px;
         padding: 7px 7px;
     }
 
     .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
         min-width: 28px;
         width: 28px;
+    }
+
+    .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+        padding: 0;
+        min-width: 28px;
+        width: 28px;
+    }
+
+    .product-quantity {
+        input {
+            width: 28px;
+        }
     }
 }
