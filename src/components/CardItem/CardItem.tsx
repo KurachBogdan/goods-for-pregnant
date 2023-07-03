@@ -71,15 +71,7 @@ const CardItem = ({
     }
 
     return (
-        <Card
-            className="card_item_card"
-            sx={{
-                maxWidth: '260px',
-                borderRadius: '14px',
-                border: '1px solid #105b63',
-                boxShadow: 'none',
-            }}
-        >
+        <Card className="card_item_card">
             <Button
                 className="card_item_image_hover"
                 key={`product_${id}`}
@@ -205,7 +197,7 @@ const CardItem = ({
                     size="small"
                 >
                     <span className="span-hide">Додати в корзину</span>
-                    <span className='span-mobile'>
+                    <span className="span-mobile">
                         <ShoppingCartIcon />
                     </span>
                 </Button>

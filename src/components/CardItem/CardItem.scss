@@ -84,7 +84,20 @@
     padding: 7px 14px 4px 14px;
 }
 
+.card_item_card {
+    border: 1px solid #105b63;
+    border-radius: 14px;
+    max-width: 265px;
+    box-shadow: none;
+}
+
 @media (max-width: 53rem) {
+    .card_item_card {
+        box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),
+        0px 1px 1px 0px rgba(0,0,0,0.14),
+        0px 1px 3px 0px rgba(0,0,0,0.12);
+    }
+
     .css-11qr2p8-MuiButtonBase-root-MuiButton-root {
         padding: 0;
         line-height: 21px;
