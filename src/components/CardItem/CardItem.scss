@@ -87,6 +87,7 @@
 @media (max-width: 53rem) {
     .css-11qr2p8-MuiButtonBase-root-MuiButton-root {
         padding: 0;
+        line-height: 21px;
     }
 
     .card_item_card_media {
@@ -135,18 +136,20 @@
 
     .css-ou4017-MuiButtonBase-root-MuiButton-root {
         padding: 0;
+        height: 28px;
     }
 
     .add_to_cart_btn {
+        display: flex;
+        align-items: center;
         min-width: 42px;
-        height: 24px;
+        height: 28px;
         border-radius: 14px;
         & .span-hide {
             display: none;
         }
         & .span-mobile {
             display: block;
-            overflow: hidden;
         }
 
     }
