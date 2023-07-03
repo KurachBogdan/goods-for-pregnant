@@ -1,66 +1,54 @@
 .product-quantity {
     display: flex;
-    justify-content: center;
-    input {
-        text-align: center;
-        padding: 0;
-        height: 28px;
-        cursor: context-menu;
-    }
+    justify-content: space-between;
     margin-top: 4px;
     height: 28px;
 }
 
-.css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
-    border: 1px solid #74c2c2;
+.text-field {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 92px;
+    text-align: center;
+    margin: 0;
+    line-height: 28px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.on-decrement_btn,
+.on-increment_btn {
     color: #105b63;
-    min-width: 64px;
-    padding: 5px 15px;
+    font-size: 16px;
+    border: 1px solid #74c2c2;
+    border-radius: 4px;
+    padding: 0;
+    width: 64px;
+    background: none;
+    cursor: pointer;
     &:hover {
         background-color: rgba(16, 91, 99, 0.04);
+        color: #74c2c2;
     }
-}
-
-.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
-    color: #105b63;
-    height: 28px;
-}
-
-.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-    border: 1px solid #74c2c2;
-}
-
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:disabled {
-        font-weight: 700;
+    &:disabled {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        color: rgba(0, 0, 0, 0.2);
+    }
 }
 
 @media (max-width: 53rem) {
-    .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root,
-    .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:disabled {
-        height: 28px;
-        width: 28px;
+    .on-decrement_btn,
+    .on-increment_btn {
+        width: 35px;
     }
 
-    .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
-        min-width: 28px;
-        height: 28px;
-        padding: 7px 7px;
-    }
-
-    .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
-        min-width: 28px;
-        width: 28px;
-    }
-
-    .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-        padding: 0;
-        min-width: 28px;
+    .text-field {
         width: 28px;
     }
 
     .product-quantity {
-        input {
-            width: 28px;
-        }
+        justify-content: center;
     }
 }
