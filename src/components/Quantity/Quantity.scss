@@ -46,6 +46,11 @@
 }
 
 @media (max-width: 53rem) {
+    .product-quantity {
+        height: 35px;
+        // width: 100%;
+    }
+
     .on-decrement_btn,
     .on-increment_btn {
         height: 35px;
