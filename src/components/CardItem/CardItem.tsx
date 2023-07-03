@@ -12,7 +12,7 @@ import Dialog from '@mui/material/Dialog'
 import Slide from '@mui/material/Slide'
 import { TransitionProps } from '@mui/material/transitions'
 import CardItemExtended from './CardItemExtended'
-import NiceButton from 'components/NiceButton/NiceButton'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 
 type Props = {
     id: number
@@ -204,9 +204,11 @@ const CardItem = ({
                     className="add_to_cart_btn"
                     size="small"
                 >
-                    <span>Додати в корзину</span>
+                    <span className="span-hide">Додати в корзину</span>
+                    <span className='span-mobile'>
+                        <ShoppingCartIcon />
+                    </span>
                 </Button>
-                <NiceButton />
             </CardActions>
         </Card>
     )
