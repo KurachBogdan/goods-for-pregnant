@@ -41,14 +41,16 @@
 @media (max-width: 53rem) {
     .on-decrement_btn,
     .on-increment_btn {
+        height: 35px;
         width: 35px;
     }
 
     .text-field {
+        height: 35px;
         width: 28px;
     }
 
-    .product-quantity {
-        justify-content: center;
-    }
+    // .product-quantity {
+    //     justify-content: center;
+    // }
 }
