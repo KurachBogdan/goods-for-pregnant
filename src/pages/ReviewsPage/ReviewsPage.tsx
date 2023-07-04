@@ -124,20 +124,12 @@ const ReviewsPage = (props: Props) => {
                             display: 'flex',
                             justifyContent: 'space-between',
                             alignItems: 'center',
-                            // marginTop: '7px',
+                            margin: '7px 0px',
                         }}
                     >
                         <SelectForm />
-                        <div>
-                            <p
-                                style={{
-                                    margin: '0px',
-                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                    color: '#105b63',
-                                }}
-                            >
-                                Оцінка
-                            </p>
+                        <div className="leave_rating">
+                            <p className="leave_rating_title">Оцінка</p>
                             <Rating
                                 name="half-rating"
                                 precision={0.5}
