@@ -1,3 +1,20 @@
+.card_item_extended-container {
+    display: flex;
+    justify-content: space-between;
+    & img {
+        width: 43vw;
+    }
+}
+
+.card_item_extended-text_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+
+}
+
 .card_item_extended_title-container {
     text-align: center;
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
@@ -53,4 +70,17 @@
 .css-hz1bth-MuiDialog-container {
     height: 110%;
     align-items: start;
+}
+
+@media (max-width: 53rem) {
+    // Поправити картинку
+    .card_item_extended-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        & img {
+            width: 100vw;
+        }
+    }
 }

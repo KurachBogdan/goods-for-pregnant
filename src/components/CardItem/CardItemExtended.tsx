@@ -26,31 +26,9 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                     cursor: 'context-menu',
                 }}
             >
-                <div
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                        // alignItems: 'center',
-                        // boxSizing: 'border-box',
-                    }}
-                >
-                    <img
-                        alt="Ooops..."
-                        src={product.image}
-                        style={{
-                            width: '43vw',
-                        }}
-                    ></img>
-                    <div
-                        style={{
-                            width: '450px',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            color: 'blueviolet',
-                        }}
-                    >
+                <div className="card_item_extended-container">
+                    <img alt="Ooops..." src={product.image}></img>
+                    <div className="card_item_extended-text_container">
                         <div style={{ marginLeft: '24px' }}>
                             <div className="card_item_extended_title-container">
                                 <p className="type">{product.type}</p>
