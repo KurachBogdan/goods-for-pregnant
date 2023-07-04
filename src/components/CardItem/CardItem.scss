@@ -110,7 +110,7 @@
 @media (max-width: 53rem) {
     .css-v0c36e-MuiSvgIcon-root,
     .css-9v5bxy-MuiSvgIcon-root {
-        height: 30px;
+        min-height: 30px;
         width: 30px;
     }
 
@@ -241,6 +241,7 @@
     }
 
     .review_btn {
+        display: block;
         min-width: 36px;
         color: grey;
         height: 28px;
