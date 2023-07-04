@@ -91,7 +91,7 @@
 
 @media (max-width: 53rem) {
     .card_item_extended-Container {
-        width: 100vw;
+        max-width: 100vw;
         padding: 14px 7px;
     }
 
@@ -122,4 +122,8 @@
     .card_item_extended-description {
         max-width: 100%;
     }
+
+    // .css-18i3v7t {
+    //     max-width: 500px;
+    // }
 }
