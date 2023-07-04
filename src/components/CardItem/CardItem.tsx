@@ -13,6 +13,7 @@ import Slide from '@mui/material/Slide'
 import { TransitionProps } from '@mui/material/transitions'
 import CardItemExtended from './CardItemExtended'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
+import RateReviewOutlinedIcon from '@mui/icons-material/RateReviewOutlined'
 
 type Props = {
     id: number
@@ -99,7 +100,8 @@ const CardItem = ({
                     handleClick={handleClick}
                 />
             </Dialog>
-            <CardContent className='card_item_content'
+            <CardContent
+                className="card_item_content"
                 sx={{
                     padding: '7px 14px',
                 }}
@@ -188,6 +190,9 @@ const CardItem = ({
                     ) : (
                         <FavoriteBorderIcon sx={{ color: 'grey' }} />
                     )}
+                </Button>
+                <Button className="review_btn">
+                    <RateReviewOutlinedIcon />
                 </Button>
                 <Button
                     onClick={() => handleClick(id, count)}
