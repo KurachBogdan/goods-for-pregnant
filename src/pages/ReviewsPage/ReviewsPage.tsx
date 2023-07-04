@@ -86,7 +86,6 @@ const ReviewsPage = (props: Props) => {
                         <Card
                             className="comment-card"
                             variant="outlined"
-                            sx={{ margin: '7px 0' }}
                             key={i}
                         >
                             <CardContent>
@@ -111,7 +110,7 @@ const ReviewsPage = (props: Props) => {
                         </Card>
                     ))}
                 </div>
-                <form style={{ width: '400px' }} onSubmit={onSend}>
+                <form className="review_form" onSubmit={onSend}>
                     <h3>Будь ласка, залиште відгук</h3>
                     <TextField
                         className="form_name_field"
