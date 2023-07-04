@@ -33,17 +33,12 @@ const CartPageItem = ({
             {Object.keys(productsInCart).length ? (
                 Object.keys(productsInCart).map((productId) => (
                     <Card
-                        className="item_in_cart-container"
+                        className="cart_page_item-container"
                         key={productsObject[parseInt(productId)].id}
                     >
-                        <div
-                            style={{
-                                display: 'flex',
-                                justifyContent: 'space-between',
-                            }}
-                        >
+                        <div className="cart_page_item-container_part_1">
                             <img
-                                style={{ height: '200px', width: '225px' }}
+                                className="cart_page_item-image"
                                 alt="this_image"
                                 src={productsObject[parseInt(productId)].image}
                             />
@@ -63,10 +58,7 @@ const CartPageItem = ({
                                     </p>
                                 </div>
                                 <Typography
-                                    style={{
-                                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                        marginBottom: '8px',
-                                    }}
+                                    className="cart_page_item-description need_to_hide"
                                     variant="body2"
                                     color="text.secondary"
                                 >
@@ -81,10 +73,7 @@ const CartPageItem = ({
                                     </span>
                                 </Typography>
                                 <Typography
-                                    style={{
-                                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                        marginBottom: '8px',
-                                    }}
+                                    className="cart_page_item-description need_to_hide"
                                     variant="body2"
                                     color="text.secondary"
                                 >
@@ -100,10 +89,7 @@ const CartPageItem = ({
                                     см
                                 </Typography>
                                 <Typography
-                                    style={{
-                                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                        marginBottom: '8px',
-                                    }}
+                                    className="cart_page_item-description need_to_hide"
                                     variant="body2"
                                     color="text.secondary"
                                 >
@@ -118,9 +104,7 @@ const CartPageItem = ({
                                     </span>
                                 </Typography>
                                 <Typography
-                                    style={{
-                                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                    }}
+                                    className="cart_page_item-description need_to_hide"
                                     variant="body2"
                                     color="text.secondary"
                                 >
@@ -136,23 +120,18 @@ const CartPageItem = ({
                                 </Typography>
                             </CardContent>
                         </div>
-                        <div
-                            style={{
-                                display: 'flex',
-                                justifyContent: 'space-between',
-                            }}
-                        >
+                        <div className="cart_page_item-container_part_2">
                             <div className="properties-container">
                                 <p className="product_count_in_cart">
-                                    Кількість:{' '}
-                                    <span>
+                                    <span>Кількість:</span>{' '}
+                                    <span className='this_count'>
                                         {productsInCart[parseInt(productId)]}{' '}
                                         шт.
                                     </span>
                                 </p>
-                                <p className="product_price_in_cart">
-                                    Сума:{' '}
-                                    <span>
+                                <p className="product_price_in_cart"><span>Сума:</span>
+                                    {' '}
+                                    <span className='this_count'>
                                         {`${
                                             productsObject[parseInt(productId)]
                                                 .price *
@@ -190,15 +169,11 @@ const CartPageItem = ({
                                 />
                             </div>
                             <Button
+                                className="cart_page_item-delete_btn"
                                 onClick={() =>
                                     removeProductFromCart(parseInt(productId))
                                 }
-                                sx={{
-                                    width: '140px',
-                                    color: '#045540',
-                                    marginLeft: '14px',
-                                    borderRadius: '14px',
-                                }}
+                                sx={{ color: '#045540' }}
                             >
                                 <DeleteIcon />
                             </Button>

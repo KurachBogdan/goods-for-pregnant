@@ -24,14 +24,7 @@ const CartPage = ({
     return (
         <div>
             <ScrollToTopOnMount />
-            <Container
-                maxWidth="lg"
-                sx={{
-                    padding: '21px 24px',
-                    minHeight: 'calc(100vh - 356px)',
-                    cursor: 'context-menu',
-                }}
-            >
+            <Container className="cart_page_container" maxWidth="lg">
                 <EveryPageTitle title="Кошик" />
                 <CartPageItem
                     removeProductFromCart={removeProductFromCart}

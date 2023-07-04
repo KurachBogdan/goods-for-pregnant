@@ -1,12 +1,35 @@
-.item_in_cart-container {
+.cart_page_item-container {
     border-radius: 14px;
-    max-width: 100%;
+    width: 100%;
     border: 1px solid #105b63;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
     margin-bottom: 14px;
     box-shadow: none;
+}
+
+.cart_page_item-container_part_1,
+.cart_page_item-container_part_2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart_page_item-image {
+    height: 200px;
+    width: 225px;
+}
+
+.cart_page_item-description {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    margin-bottom: 8px;
+}
+
+.cart_page_item-delete_btn {
+    width: 140px;
+    color: #045540;
+    margin-left: 14px;
+    border-radius: 14px;
 }
 
 .cart_title-container {
@@ -39,7 +62,7 @@
     font-weight: 600;
     color: #105b63;
     margin: 7px 0px;
-    & span {
+    & .this_count {
         color: #74c2c2;
         text-decoration: underline;
     }
@@ -50,9 +73,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    & p {
-        margin-left: 14px;
-    }
 }
 
 .page_item-card_content {
@@ -60,5 +80,36 @@
     margin: 10px 14px 10px 35px;
     &:last-child {
         padding-bottom: 0;
+    }
+}
+
+@media (max-width: 53rem) {
+    .properties-container {
+        width: 120px;
+    }
+
+    .page_item-card_content {
+        margin: auto 4px;
+    }
+
+    .need_to_hide {
+        display: none;
+    }
+
+    .cart_page_item-image {
+        height: auto;
+        max-width: 70px;
+        aspect-ratio: 40/45;
+    }
+
+    .cart_page_item-delete_btn {
+        width: 14px;
+        color: #045540;
+        margin-left: 0px;
+        border-radius: 14px;
+    }
+
+    .css-4yhr24-MuiButtonBase-root-MuiButton-root {
+        min-width: 49px;
     }
 }
