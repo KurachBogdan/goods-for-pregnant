@@ -215,4 +215,8 @@ form h3 {
     .MuiOutlinedInput-notchedOutline {
         border-color: #74c2c2;
     }
+
+    .css-3zukih > :not(:first-of-type) {
+        margin-left: 0px;
+    }
 }
