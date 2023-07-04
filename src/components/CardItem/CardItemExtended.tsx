@@ -19,31 +19,16 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
     return (
         <>
             <ScrollToTopOnMount />
-            <Container
-                maxWidth="lg"
-                sx={{
-                    padding: '21px 24px',
-                    cursor: 'context-menu',
-                }}
-            >
+            <Container className="card_item_extended-Container" maxWidth="lg">
                 <div className="card_item_extended-container">
                     <img alt="Ooops..." src={product.image}></img>
                     <div className="card_item_extended-text_container">
-                        <div style={{ marginLeft: '24px' }}>
+                        <div className="card_item_extended-text_container_margin">
                             <div className="card_item_extended_title-container">
                                 <p className="type">{product.type}</p>
                                 <p>{product.itemName}</p>
                             </div>
-                            <Typography
-                                style={{
-                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                    fontSize: '17px',
-                                    lineHeight: '19px',
-                                    marginTop: '14px',
-                                    maxWidth: '350px',
-                                    color: '#105b63',
-                                }}
-                            >
+                            <Typography className="card_item_extended-description">
                                 <span className="card_item_extended_before_a_colon">
                                     Опис: <span style={{ margin: '0' }}></span>
                                 </span>
