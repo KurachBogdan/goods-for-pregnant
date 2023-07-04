@@ -202,7 +202,7 @@ const CardItem = ({
                 >
                     <span className="span-hide">Додати в корзину</span>
                     <span className="span-mobile">
-                        <ShoppingCartIcon />
+                        <ShoppingCartIcon className='shopping_cart_btn_mobole'/>
                     </span>
                 </Button>
             </CardActions>

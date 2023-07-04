@@ -108,12 +108,6 @@
 }
 
 @media (max-width: 53rem) {
-    // .css-v0c36e-MuiSvgIcon-root,
-    // .css-9v5bxy-MuiSvgIcon-root {
-    //     min-height: 30px;
-    //     width: 30px;
-    // }
-
     .css-1ipqyij {
         width: 100%;
         justify-content: center;
@@ -222,7 +216,7 @@
         align-items: center;
     }
 
-    .css-i4bv87-MuiSvgIcon-root {
+    .shopping_cart_btn_mobole {
         font-size: 21px;
     }
 
@@ -242,6 +236,9 @@
 
     .review_btn {
         display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         min-width: 36px;
         color: grey;
         height: 28px;
