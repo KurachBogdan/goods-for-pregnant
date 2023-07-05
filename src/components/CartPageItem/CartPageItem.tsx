@@ -36,12 +36,12 @@ const CartPageItem = ({
                         className="cart_page_item-container"
                         key={productsObject[parseInt(productId)].id}
                     >
-                        <div className="cart_page_item-container_part_1">
+                        <div className="cart_page_item-container_part_1"><div>
                             <img
                                 className="cart_page_item-image"
                                 alt="this_image"
                                 src={productsObject[parseInt(productId)].image}
-                            />
+                            /></div>
                             <CardContent className="page_item-card_content">
                                 <div className="cart_title-container">
                                     <p className="cart_type">
@@ -122,16 +122,30 @@ const CartPageItem = ({
                         </div>
                         <div className="cart_page_item-container_part_2">
                             <div className="properties-container">
+                                <div className="cart_title-container_2">
+                                    <p className="cart_type">
+                                        {
+                                            productsObject[parseInt(productId)]
+                                                .type
+                                        }
+                                    </p>
+                                    <p>
+                                        {
+                                            productsObject[parseInt(productId)]
+                                                .itemName
+                                        }
+                                    </p>
+                                </div>
                                 <p className="product_count_in_cart">
                                     <span>Кількість:</span>{' '}
-                                    <span className='this_count'>
+                                    <span className="this_count">
                                         {productsInCart[parseInt(productId)]}{' '}
                                         шт.
                                     </span>
                                 </p>
-                                <p className="product_price_in_cart"><span>Сума:</span>
-                                    {' '}
-                                    <span className='this_count'>
+                                <p className="product_price_in_cart">
+                                    <span>Сума:</span>{' '}
+                                    <span className="this_count">
                                         {`${
                                             productsObject[parseInt(productId)]
                                                 .price *
