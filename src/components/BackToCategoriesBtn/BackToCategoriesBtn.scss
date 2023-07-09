@@ -17,3 +17,19 @@
     text-decoration: none;
     color: white;
 }
+
+.back_btn_mobile {
+    display: none;
+}
+
+@media (max-width: 53rem) {
+    .back_btn_desktop {
+        display: none;
+    }
+
+    .back_btn_mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

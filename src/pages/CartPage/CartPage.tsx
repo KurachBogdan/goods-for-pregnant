@@ -5,6 +5,7 @@ import './CartPage.scss'
 import CartTotal from 'components/CartTotal/CartTotal'
 import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
 import BackToCategoriesBtn from 'components/BackToCategoriesBtn/BackToCategoriesBtn'
+import ShoppingBasketRoundedIcon from '@mui/icons-material/ShoppingBasketRounded'
 
 type Props = {
     productsInCart: {
@@ -31,7 +32,7 @@ const CartPage = ({
                     productsInCart={productsInCart}
                     changeProductQuantity={changeProductQuantity}
                 />
-                <div className="cart_footer">
+                <div className="cart_footer_desktop">
                     <BackToCategoriesBtn />
                     <div style={{ display: 'flex', alignItems: 'center' }}>
                         <CartTotal productsInCart={productsInCart} />
@@ -40,7 +41,28 @@ const CartPage = ({
                                 className="make_purchases"
                                 variant="contained"
                             >
-                                Оформити замовлення
+                                <span className="make_purchases_btn_desktop">
+                                    Оформити замовлення
+                                </span>
+                                <span className="make_purchases_btn_mobile">
+                                    <ShoppingBasketRoundedIcon />
+                                </span>
+                            </Button>
+                        )}
+                    </div>
+                </div>
+                <div className="cart_footer_mobile_container">
+                    <CartTotal productsInCart={productsInCart} />
+                    <div className="cart_footer_mobile">
+                        <BackToCategoriesBtn />
+                        {hasItemsInCart && (
+                            <Button
+                                className="make_purchases"
+                                variant="contained"
+                            >
+                                <span className="make_purchases_btn_mobile">
+                                    <ShoppingBasketRoundedIcon />
+                                </span>
                             </Button>
                         )}
                     </div>

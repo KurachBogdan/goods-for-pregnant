@@ -1,6 +1,5 @@
 import productsArray, { Product, getProductObject } from 'utils/productsArray'
 import { Button, Card, CardContent, Typography } from '@mui/material'
-import Quantity from 'components/Quantity/Quantity'
 import DeleteIcon from '@mui/icons-material/Delete'
 import './CartPageItem.scss'
 
@@ -36,12 +35,17 @@ const CartPageItem = ({
                         className="cart_page_item-container"
                         key={productsObject[parseInt(productId)].id}
                     >
-                        <div className="cart_page_item-container_part_1"><div>
-                            <img
-                                className="cart_page_item-image"
-                                alt="this_image"
-                                src={productsObject[parseInt(productId)].image}
-                            /></div>
+                        <div className="cart_page_item-container_part_1">
+                            {/* <div> */}
+                                <img
+                                    className="cart_page_item-image"
+                                    alt="this_image"
+                                    src={
+                                        productsObject[parseInt(productId)]
+                                            .image
+                                    }
+                                />
+                            {/* </div> */}
                             <CardContent className="page_item-card_content">
                                 <div className="cart_title-container">
                                     <p className="cart_type">
@@ -154,33 +158,57 @@ const CartPageItem = ({
                                         грн.
                                     </span>
                                 </p>
-                                <Quantity
-                                    count={productsInCart[parseInt(productId)]}
-                                    onDecrement={() =>
-                                        productsInCart[parseInt(productId)] <= 1
-                                            ? removeProductFromCart(
-                                                  parseInt(productId)
-                                              )
-                                            : changeProductQuantity(
-                                                  productsObject[
-                                                      parseInt(productId)
-                                                  ].id,
-                                                  productsInCart[
-                                                      parseInt(productId)
-                                                  ] - 1
-                                              )
-                                    }
-                                    onIncrement={() =>
-                                        changeProductQuantity(
-                                            productsObject[parseInt(productId)]
-                                                .id,
+                                <div className="cpi_product-quantity">
+                                    <button
+                                        className="cpi_on-decrement_btn"
+                                        onClick={() =>
                                             productsInCart[
                                                 parseInt(productId)
-                                            ] + 1
-                                        )
-                                    }
-                                    minCount={0}
-                                />
+                                            ] <= 1
+                                                ? removeProductFromCart(
+                                                      parseInt(productId)
+                                                  )
+                                                : changeProductQuantity(
+                                                      productsObject[
+                                                          parseInt(productId)
+                                                      ].id,
+                                                      productsInCart[
+                                                          parseInt(productId)
+                                                      ] - 1
+                                                  )
+                                        }
+                                        disabled={
+                                            productsInCart[
+                                                parseInt(productId)
+                                            ] <= 0
+                                        }
+                                    >
+                                        -
+                                    </button>
+                                    <p className="cpi_text-field">
+                                        {productsInCart[parseInt(productId)]}
+                                    </p>
+                                    <button
+                                        className="cpi_on-increment_btn"
+                                        onClick={() =>
+                                            changeProductQuantity(
+                                                productsObject[
+                                                    parseInt(productId)
+                                                ].id,
+                                                productsInCart[
+                                                    parseInt(productId)
+                                                ] + 1
+                                            )
+                                        }
+                                        disabled={
+                                            productsInCart[
+                                                parseInt(productId)
+                                            ] >= 21
+                                        }
+                                    >
+                                        +
+                                    </button>
+                                </div>
                             </div>
                             <Button
                                 className="cart_page_item-delete_btn"

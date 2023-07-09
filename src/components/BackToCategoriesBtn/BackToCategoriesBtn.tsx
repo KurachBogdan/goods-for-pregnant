@@ -2,6 +2,7 @@ import { Button } from '@mui/material'
 import { NavLink } from 'react-router-dom'
 import './BackToCategoriesBtn.scss'
 import React from 'react'
+import ReplyAllRoundedIcon from '@mui/icons-material/ReplyAllRounded';
 
 type Props = {}
 
@@ -22,7 +23,8 @@ const BackToCategoriesBtn: React.FC<Props> = () => {
                 size="small"
             >
                 <NavLink className="back_to_btn_link" to="/">
-                    Повернутись до категорій
+                    <span className='back_btn_desktop'>Повернутись до категорій</span>
+                    <span className='back_btn_mobile'><ReplyAllRoundedIcon /></span>
                 </NavLink>
             </Button>
         </div>

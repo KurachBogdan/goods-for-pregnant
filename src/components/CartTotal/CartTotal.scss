@@ -5,3 +5,10 @@
     color: #105b63;
     margin-right: 14px;
 }
+
+@media (max-width: 53rem) {
+    .total_price_in_cart {
+        margin-right: 0;
+        margin-bottom: 7px;
+    }
+}
