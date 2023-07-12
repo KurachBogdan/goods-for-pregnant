@@ -140,6 +140,12 @@
 }
 
 @media (max-width: 53rem) {
+    .cart_page_item-delete_btn {
+        height: 49px;
+        align-self: center;
+        background-color: #dffff5;
+    }
+
     .cart_page_item-image_container {
         max-height: 125px;
         max-width: 112px;
@@ -166,7 +172,6 @@
 
     .properties-container {
         width: 140px;
-        margin-right: 10px;
     }
 
     .page_item-card_content {
