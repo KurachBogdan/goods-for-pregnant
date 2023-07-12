@@ -1,0 +1,48 @@
+.favorite_card_item_container {
+    // max-width: 260px;
+    cursor: context-menu;
+    border-radius: 14px;
+    border: 1px solid #105b63;
+}
+
+.favorite_card_item_image {
+    height: 232px;
+}
+
+.favorite_card_title-container {
+    text-align: center;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #74c2c2;
+    & .type {
+        font-weight: 500;
+        margin: 0px;
+        line-height: 18px;
+    }
+    & p {
+        margin: 0px;
+    }
+}
+
+.favorite_card_item_info_color,
+.favorite_card_item_info_size,
+.favorite_card_item_info_composition,
+.favorite_card_item_info_term,
+.favorite_card_item_info_price {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+.favorite_card_item_info_price {
+    margin-bottom: 3px;
+}
+
+.favorite_card_item_like_btn {
+    border-radius: 100%;
+    min-width: 36px;
+    padding: 6px 8px;
+}
+
+.favorite_card_item_more_btn_mobile {
+    display: none;
+}

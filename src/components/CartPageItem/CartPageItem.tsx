@@ -36,7 +36,7 @@ const CartPageItem = ({
                         key={productsObject[parseInt(productId)].id}
                     >
                         <div className="cart_page_item-container_part_1">
-                            {/* <div> */}
+                            <div className="cart_page_item-image_container">
                                 <img
                                     className="cart_page_item-image"
                                     alt="this_image"
@@ -45,7 +45,7 @@ const CartPageItem = ({
                                             .image
                                     }
                                 />
-                            {/* </div> */}
+                            </div>
                             <CardContent className="page_item-card_content">
                                 <div className="cart_title-container">
                                     <p className="cart_type">

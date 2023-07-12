@@ -1,0 +1,14 @@
+.favorites_page_container {
+    padding: 21px 24px;
+    min-height: calc(100vh - 356px);
+}
+
+.favorites_page_alternative_text {
+    text-transform: none;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: #105b63;
+    margin: 34px 0px 0px 34px;
+    cursor: context-menu;
+}

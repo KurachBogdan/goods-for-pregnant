@@ -16,6 +16,10 @@
     justify-content: space-between;
 }
 
+.cart_page_item-image_container {
+    max-height: 200px;
+    max-width: 225px;
+}
 .cart_page_item-image {
     height: 200px;
     width: 225px;
@@ -164,8 +168,8 @@
     }
 
     .cart_page_item-image {
-        height: auto;
-        max-width: 120px;
+        height: 100%;
+        width: 100px;
         aspect-ratio: 40/45;
     }
 

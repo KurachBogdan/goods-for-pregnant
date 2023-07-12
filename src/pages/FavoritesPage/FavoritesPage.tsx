@@ -6,6 +6,7 @@ import productsArray, { Product } from 'utils/productsArray'
 import FavoriteCardItem from 'components/CardItem/FavoriteCardItem'
 import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
 import BackToCategoriesBtn from 'components/BackToCategoriesBtn/BackToCategoriesBtn'
+import './FavoritesPage.scss'
 
 type Props = {
     handleClick: (id: number, count: number) => void
@@ -23,10 +24,7 @@ const FavoritesPage = ({ handleClick }: Props) => {
     )
 
     return (
-        <Container
-            sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 356px)' }}
-            maxWidth="lg"
-        >
+        <Container className="favorites_page_container" maxWidth="lg">
             <ScrollToTopOnMount />
             <EveryPageTitle title="Подобається" />
             <Grid container spacing={4.2}>
@@ -61,21 +59,8 @@ const FavoritesPage = ({ handleClick }: Props) => {
                         )
                     )
                 ) : (
-                    <div>
-                        <Typography
-                            sx={{
-                                textTransform: 'none',
-                                fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                fontSize: '21px',
-                                fontWeight: 600,
-                                color: '#105b63',
-                                margin: '34px 0px 0px 34px',
-                                cursor: 'context-menu',
-                            }}
-                            component="div"
-                        >
-                            Ще немає обраних товарів
-                        </Typography>
+                    <div className="favorites_page_alternative_text">
+                        Ще немає обраних товарів
                     </div>
                 )}
             </Grid>

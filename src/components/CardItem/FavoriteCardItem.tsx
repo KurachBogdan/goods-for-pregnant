@@ -1,6 +1,5 @@
 import { CardMedia, Dialog, Rating, Slide, Typography } from '@mui/material'
 import { Button, Card, CardActions, CardContent } from '@mui/material'
-import './CardItem.scss'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
@@ -8,6 +7,7 @@ import { addLike, removeLike } from 'redux/likeReducer'
 import { TransitionProps } from '@mui/material/transitions'
 import React from 'react'
 import FavoriteCardItemExtended from './FavoriteCardItemExtended'
+import './FavoriteCardItem.scss'
 
 type Props = {
     id: number
@@ -56,22 +56,15 @@ const FavoriteCardItem = ({
     }
 
     return (
-        <Card
-            sx={{
-                maxWidth: 260,
-                cursor: 'context-menu',
-                borderRadius: '14px',
-                border: '1px solid #105b63',
-            }}
-        >
-            <CardMedia sx={{ height: 232 }} image={image} />
+        <Card className="favorite_card_item_container">
+            <CardMedia className="favorite_card_item_image" image={image} />
             <CardContent sx={{ margin: '0px' }}>
-                <div className="card_title-container">
+                <div className="favorite_card_title-container">
                     <p className="type">{type}</p>
                     <p>{itemName}</p>
                 </div>
                 <Typography
-                    style={{ fontFamily: `'Sofia Sans Semi Condensed', sans-serif` }}
+                    className="favorite_card_item_info_color"
                     variant="body2"
                     color="text.secondary"
                 >
@@ -79,7 +72,7 @@ const FavoriteCardItem = ({
                     {color}
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Sofia Sans Semi Condensed', sans-serif` }}
+                    className="favorite_card_item_info_size"
                     variant="body2"
                     color="text.secondary"
                 >
@@ -87,7 +80,7 @@ const FavoriteCardItem = ({
                     {size} см
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Sofia Sans Semi Condensed', sans-serif` }}
+                    className="favorite_card_item_info_composition"
                     variant="body2"
                     color="text.secondary"
                 >
@@ -95,7 +88,7 @@ const FavoriteCardItem = ({
                     {composition}
                 </Typography>
                 <Typography
-                    style={{ fontFamily: `'Sofia Sans Semi Condensed', sans-serif` }}
+                    className="favorite_card_item_info_term"
                     variant="body2"
                     color="text.secondary"
                 >
@@ -103,10 +96,7 @@ const FavoriteCardItem = ({
                     {term}
                 </Typography>
                 <Typography
-                    style={{
-                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                        marginBottom: '3px',
-                    }}
+                    className="favorite_card_item_info_price"
                     variant="body2"
                     color="text.secondary"
                 >
@@ -117,13 +107,12 @@ const FavoriteCardItem = ({
             </CardContent>
             <CardActions sx={{ justifyContent: 'space-between' }}>
                 <Button
+                    className="favorite_card_item_like_btn"
                     onClick={() =>
                         isLiked
                             ? dispatch(removeLike(id))
                             : dispatch(addLike(id))
                     }
-                    sx={{ borderRadius: '100%', minWidth: '36px' }}
-                    variant="text"
                 >
                     {isLiked ? (
                         <FavoriteIcon sx={{ color: 'tomato' }} />
@@ -138,7 +127,10 @@ const FavoriteCardItem = ({
                     className="add_to_cart_btn"
                     size="small"
                 >
-                    Дізнатись більше
+                    <span className="favorite_card_item_more_btn_desktop">
+                        Дізнатись більше
+                    </span>
+                    <span className="favorite_card_item_more_btn_mobile">Більше</span>
                 </Button>
                 <Dialog
                     maxWidth="lg"
