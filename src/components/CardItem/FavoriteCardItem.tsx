@@ -8,6 +8,7 @@ import { TransitionProps } from '@mui/material/transitions'
 import React from 'react'
 import FavoriteCardItemExtended from './FavoriteCardItemExtended'
 import './FavoriteCardItem.scss'
+import RateReviewOutlinedIcon from '@mui/icons-material/RateReviewOutlined'
 
 type Props = {
     id: number
@@ -120,6 +121,9 @@ const FavoriteCardItem = ({
                         <FavoriteBorderIcon sx={{ color: 'grey' }} />
                     )}
                 </Button>
+                <Button className="review_btn">
+                    <RateReviewOutlinedIcon />
+                </Button>
                 <Button
                     key={`product_${id}`}
                     onClick={() => handleClickOpen()}
@@ -130,7 +134,9 @@ const FavoriteCardItem = ({
                     <span className="favorite_card_item_more_btn_desktop">
                         Дізнатись більше
                     </span>
-                    <span className="favorite_card_item_more_btn_mobile">Більше</span>
+                    <span className="favorite_card_item_more_btn_mobile">
+                        Більше
+                    </span>
                 </Button>
                 <Dialog
                     maxWidth="lg"
