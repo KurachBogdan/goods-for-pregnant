@@ -135,7 +135,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                                     </NavLink>
                                 </Button>
                                 <Button
-                                    onClick={() => handleClick(id, count)}
+                                    onClick={() => handleClick(id, 1)}
                                     variant="contained"
                                     className="card_item_extended_btn blink"
                                     size="small"
