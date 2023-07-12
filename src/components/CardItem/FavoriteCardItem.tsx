@@ -103,8 +103,8 @@ const FavoriteCardItem = ({
                 >
                     <span className="before_a_colon">Ціна: </span>
                     <span className="price">{price} грн</span>
-                </Typography>
-                <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+                </Typography><div className="rating"><Rating name="half-rating" defaultValue={2.5} precision={0.5} /></div>
+                
             </CardContent>
             <CardActions sx={{ justifyContent: 'space-between' }}>
                 <Button
