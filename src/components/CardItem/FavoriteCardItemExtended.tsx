@@ -2,6 +2,7 @@ import { Button, Container, Typography } from '@mui/material'
 import { NavLink } from 'react-router-dom'
 import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
 import productsArray from 'utils/productsArray'
+import './FavoriteCardItemExtended.scss'
 
 type Props = {
     id: number
@@ -18,64 +19,29 @@ const FavoriteCardItemExtended = ({ handleClose, handleClick, id }: Props) => {
         <>
             <ScrollToTopOnMount />
             <Container
+                className="favorite_card_item_extended_Container"
                 maxWidth="lg"
-                sx={{
-                    padding: '21px 24px',
-                    cursor: 'context-menu',
-                }}
             >
-                <div
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                        // alignItems: 'center',
-                        // boxSizing: 'border-box',
-                    }}
-                >
+                <div className="favorite_card_item_extended_container">
                     <img
+                        className="favorite_card_item_extended_image"
                         alt="Ooops..."
                         src={product.image}
-                        style={{
-                            width: '43vw',
-                        }}
                     ></img>
-                    <div
-                        style={{
-                            width: '450px',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            color: 'blueviolet',
-                        }}
-                    >
-                        <div style={{ marginLeft: '24px' }}>
-                            <div className="card_item_extended_title-container">
+                    <div className="favorite_card_item_extended_text_container">
+                        <div className="favorite_card_item_extended_container_margin">
+                            <div className="favorite_card_item_extended_title_container">
                                 <p className="type">{product.type}</p>
                                 <p>{product.itemName}</p>
                             </div>
-                            <Typography
-                                style={{
-                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                    fontSize: '17px',
-                                    lineHeight: '19px',
-                                    marginTop: '14px',
-                                    maxWidth: '350px',
-                                    color: '#105b63',
-                                }}
-                            >
+                            <Typography className="favorite_card_item_extended_description">
                                 <span className="card_item_extended_before_a_colon">
                                     Опис: <span style={{ margin: '0' }}></span>
                                 </span>
                                 {product.description}
                             </Typography>
                             <Typography
-                                style={{
-                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                    fontSize: '16px',
-                                    marginTop: '9px',
-                                    color: '#105b63',
-                                }}
+                                className="favorite_card_item_extended_color"
                                 variant="body2"
                             >
                                 <span className="card_item_extended_before_a_colon">
@@ -84,11 +50,7 @@ const FavoriteCardItemExtended = ({ handleClose, handleClick, id }: Props) => {
                                 {product.color}
                             </Typography>
                             <Typography
-                                style={{
-                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                    fontSize: '16px',
-                                    color: '#105b63',
-                                }}
+                                className="favorite_card_item_extended_size"
                                 variant="body2"
                             >
                                 <span className="card_item_extended_before_a_colon">
@@ -97,11 +59,7 @@ const FavoriteCardItemExtended = ({ handleClose, handleClick, id }: Props) => {
                                 {product.size} см
                             </Typography>
                             <Typography
-                                style={{
-                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                    fontSize: '16px',
-                                    color: '#105b63',
-                                }}
+                                className="favorite_card_item_extended_composition"
                                 variant="body2"
                             >
                                 <span className="card_item_extended_before_a_colon">
@@ -110,11 +68,7 @@ const FavoriteCardItemExtended = ({ handleClose, handleClick, id }: Props) => {
                                 {product.composition}
                             </Typography>
                             <Typography
-                                style={{
-                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                    fontSize: '16px',
-                                    color: '#105b63',
-                                }}
+                                className="favorite_card_item_extended_term"
                                 variant="body2"
                             >
                                 <span className="card_item_extended_before_a_colon">
@@ -123,12 +77,7 @@ const FavoriteCardItemExtended = ({ handleClose, handleClick, id }: Props) => {
                                 {product.term}
                             </Typography>
                             <Typography
-                                style={{
-                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                    fontSize: '16px',
-                                    marginBottom: '28px',
-                                    color: '#105b63',
-                                }}
+                                className="favorite_card_item_extended_price"
                                 variant="body2"
                             >
                                 <span className="card_item_extended_before_a_colon">
@@ -138,12 +87,7 @@ const FavoriteCardItemExtended = ({ handleClose, handleClick, id }: Props) => {
                                     {product.price} грн.
                                 </span>
                             </Typography>
-                            <div
-                                style={{
-                                    display: 'flex',
-                                    justifyContent: 'space-between',
-                                }}
-                            >
+                            <div className="favorite_card_item_extended_btns_container">
                                 <Button
                                     onClick={handleClose}
                                     variant="contained"
@@ -158,12 +102,7 @@ const FavoriteCardItemExtended = ({ handleClose, handleClick, id }: Props) => {
                                     size="small"
                                 >
                                     <NavLink
-                                        style={{
-                                            textDecoration: 'none',
-                                            fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                            fontWeight: 600,
-                                            color: 'white',
-                                        }}
+                                        className="favorite_card_item_extended_btn_navlink"
                                         to="/review"
                                     >
                                         Залишити відгук
