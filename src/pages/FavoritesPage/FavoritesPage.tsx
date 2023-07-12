@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material'
+import { Grid } from '@mui/material'
 import { useAppSelector } from 'redux/hooks'
 import Container from '@mui/material/Container/Container'
 import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
