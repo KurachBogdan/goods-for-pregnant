@@ -140,6 +140,11 @@
 }
 
 @media (max-width: 53rem) {
+    .cart_page_item-image_container {
+        max-height: 125px;
+        max-width: 112px;
+    }
+
     .cart_title-container,
     .need_to_hide,
     .product_count_in_cart {
@@ -161,15 +166,16 @@
 
     .properties-container {
         width: 140px;
+        margin-right: 10px;
     }
 
     .page_item-card_content {
-        margin: auto 4px;
+        margin: auto;
     }
 
     .cart_page_item-image {
         height: 100%;
-        width: 100px;
+        width: auto;
         aspect-ratio: 40/45;
     }
 
