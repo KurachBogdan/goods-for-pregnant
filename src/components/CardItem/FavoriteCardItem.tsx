@@ -104,7 +104,7 @@ const FavoriteCardItem = ({
                     <span className="before_a_colon">Ціна: </span>
                     <span className="price">{price} грн</span>
                 </Typography>
-                <div className="rating">
+                <div className="favorite_card_item_rating">
                     <Rating
                         name="half-rating"
                         defaultValue={2.5}
