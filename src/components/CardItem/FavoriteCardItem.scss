@@ -46,3 +46,21 @@
 .favorite_card_item_more_btn_mobile {
     display: none;
 }
+
+@media (max-width: 53rem) {
+    .favorite_card_item_more_btn_desktop {
+        padding: 4px 14px;
+    }
+
+    .favorite_card_item_info_color,
+    .favorite_card_item_info_term {
+        display: none;
+    }
+
+    .favorite_card_item_info_size,
+    .favorite_card_item_info_composition,
+    .favorite_card_item_info_price {
+        display: flex;
+        justify-content: center;
+    }
+}
