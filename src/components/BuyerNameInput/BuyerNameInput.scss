@@ -1,4 +1,4 @@
-input.phone_number_mask_input {
+.buyer_name_input {
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
     font-size: 18px;
     height: 35px;
@@ -15,12 +15,12 @@ input.phone_number_mask_input {
     }
 }
 
-.phone_number_mask_input_container {
+.buyer_name_input_container {
     min-width: 238px;
     position: relative;
 }
-  
-.phone_number_mask_input_container:after {
+
+.buyer_name_input_container::after {
     content: '\2714';
     position: absolute;
     top: 50%;
@@ -36,7 +36,7 @@ input.phone_number_mask_input {
     height: 21px;
     width: 21px;
 }
-  
-.phone_number_mask_input_container.complete:after {
+
+.buyer_name_input_container.complete:after {
     opacity: 1;
 }
