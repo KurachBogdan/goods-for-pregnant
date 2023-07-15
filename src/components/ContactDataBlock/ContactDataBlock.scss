@@ -1,0 +1,31 @@
+.contact_data_block_container {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    padding: 20px 16px;
+    // border: 1px solid #105b63;
+    // border-radius: 8px;
+}
+
+.phone_title,
+.last_name_title,
+.first_name_title {
+    margin: 0 0 4px;
+    color: #105b63;
+    position: relative;
+}
+
+.phone_title:after, 
+.last_name_title:after, 
+.first_name_title:after {
+    content: '\2217';
+    position: absolute;
+    top: 28%;
+    transform: translateY(-50%);
+    color: red;
+    opacity: 1;
+}
+
+.phone_title_container,
+.last_name_container,
+.first_name_container {
+    padding: 7px 0;
+}
