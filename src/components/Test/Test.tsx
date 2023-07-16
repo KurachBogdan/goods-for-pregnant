@@ -1,7 +1,6 @@
 import './Test.scss'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import MaskedInput from 'react-text-mask'
-import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
 
 const ContactDataBlock: React.FC = () => {
     const [isPhoneNumberComplete, setIsPhoneNumberComplete] = useState(false)
@@ -57,7 +56,9 @@ const ContactDataBlock: React.FC = () => {
 
     const handleContinue = () => {
         setShowUserData(true)
-        ScrollToTopOnMount()
+        useEffect(() => {
+            window.scrollTo(0, 0)
+        }, [])
     }
 
     const handleEdit = () => {
@@ -69,14 +70,6 @@ const ContactDataBlock: React.FC = () => {
         setLastName('')
         setFirstName('')
     }
-
-    // const ScrollToTopOnMount = () => {
-    //     useEffect(() => {
-    //         window.scrollTo(0, 0)
-    //     }, [])
-    
-    //     return null
-    // }
 
     return (
         <div style={{ padding: '7px' }}>
