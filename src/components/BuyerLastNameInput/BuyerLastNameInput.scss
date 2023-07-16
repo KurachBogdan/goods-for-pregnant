@@ -8,7 +8,7 @@
     padding: 7px 7px 7px 21px;
     color: #105b63;
     &::placeholder {
-        color: rgba(0, 0, 0, 0.4);
+        color: #00000066;
     }
     &:focus {
         border: 1px solid #105b63;
@@ -39,4 +39,10 @@
 
 .buyer_last_name_input_container.complete:after {
     opacity: 1;
+}
+
+.error_message {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
 }

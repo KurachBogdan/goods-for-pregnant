@@ -40,3 +40,9 @@
 .buyer_name_input_container.complete:after {
     opacity: 1;
 }
+
+.error_message {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}

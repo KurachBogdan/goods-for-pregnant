@@ -1,0 +1,259 @@
+.contact_data_block_title {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    cursor: context-menu;
+    &::after {
+        content: '\2217';
+        position: absolute;
+        top: 28%;
+        transform: translateY(-50%);
+        color: red;
+        opacity: 1;
+    }
+}
+
+.contact_data_block {
+    border: 1px solid #105b63;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.contact_data_block_container {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    padding: 20px 16px;
+}
+
+.phone_title,
+.last_name_title,
+.first_name_title {
+    margin: 0 0 4px;
+    color: #105b63;
+    position: relative;
+    cursor: context-menu;
+}
+
+.phone_title:after, 
+.last_name_title:after, 
+.first_name_title:after {
+    content: '\2217';
+    position: absolute;
+    top: 28%;
+    transform: translateY(-50%);
+    color: tomato;
+    opacity: 1;
+}
+
+.phone_title_container,
+.last_name_container,
+.first_name_container {
+    padding: 7px 0;
+}
+
+.contact_data_block_button {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    width: 100%;
+    height: 40px;
+    padding: 8px 16px;
+    color: white;
+    background-color: #74c2c2;
+    border-radius: 8px;
+    border: 1px solid #f1f1f9;
+    cursor: pointer;
+    &:disabled { 
+        color: #7d7d91;
+        background-color: #F0F0F0;
+    }
+}
+
+input.phone_number_mask_input {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 18px;
+    height: 42px;
+    width: 100%;
+    border: 1px solid #c1c1d4;
+    border-radius: 8px;
+    padding: 7px 7px 7px 21px;
+    color: #105b63;
+    &::placeholder {
+        color: rgba(0, 0, 0, 0.4);
+    }
+    &:focus {
+        border: 1px solid #105b63;
+    }
+}
+
+.phone_number_mask_input_container {
+    min-width: 238px;
+    position: relative;
+}
+  
+.phone_number_mask_input_container:after {
+    content: '\2714';
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(5, 184, 5);
+    height: 21px;
+    width: 21px;
+}
+  
+.phone_number_mask_input_container.complete:after {
+    opacity: 1;
+}
+
+.buyer_last_name_input {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 18px;
+    height: 42px;
+    width: 100%;
+    border: 1px solid #c1c1d4;
+    border-radius: 8px;
+    padding: 7px 7px 7px 21px;
+    color: #105b63;
+    &::placeholder {
+        color: #00000066;
+    }
+    &:focus {
+        border: 1px solid #105b63;
+    }
+}
+
+.buyer_last_name_input_container {
+    min-width: 238px;
+    position: relative;
+}
+
+.buyer_last_name_input_container::after {
+    content: '\2714';
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(5, 184, 5);
+    height: 21px;
+    width: 21px;
+}
+
+.buyer_last_name_input_container.complete:after {
+    opacity: 1;
+}
+
+.error_message {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.buyer_name_input {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 18px;
+    height: 42px;
+    width: 100%;
+    border: 1px solid #c1c1d4;
+    border-radius: 8px;
+    padding: 7px 7px 7px 21px;
+    color: #105b63;
+    &::placeholder {
+        color: rgba(0, 0, 0, 0.4);
+    }
+    &:focus {
+        border: 1px solid #105b63;
+    }
+}
+
+.buyer_name_input_container {
+    min-width: 238px;
+    position: relative;
+}
+
+.buyer_name_input_container::after {
+    content: '\2714';
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(5, 184, 5);
+    height: 21px;
+    width: 21px;
+}
+
+.buyer_name_input_container.complete:after {
+    opacity: 1;
+}
+
+.error_message {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+
+
+
+.contact_data_block_title_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_data_block_title_container {
+    display: flex;
+    align-items: center;
+}
+
+.incomplete_first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+    font-size: 14px;
+    line-height: 21px;
+    border-radius: 50%;
+    background-color: #74c2c2;
+    color: white;
+    font-weight: bold;
+}
+
+.checkmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+    font-size: 14px;
+    line-height: 21px;
+    border-radius: 50%;
+    background-color: rgb(0, 218, 0);
+    color: white;
+    font-weight: bold;
+}
+
+.change_input_data {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 8px;
+}
