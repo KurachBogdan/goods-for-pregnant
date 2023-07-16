@@ -1,5 +1,5 @@
 import './Test.scss'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import MaskedInput from 'react-text-mask'
 
 const ContactDataBlock: React.FC = () => {
@@ -56,9 +56,10 @@ const ContactDataBlock: React.FC = () => {
 
     const handleContinue = () => {
         setShowUserData(true)
-        useEffect(() => {
-            window.scrollTo(0, 0)
-        }, [])
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        })
     }
 
     const handleEdit = () => {
@@ -114,7 +115,27 @@ const ContactDataBlock: React.FC = () => {
                                     <MaskedInput
                                         type="tel"
                                         className="phone_number_mask_input"
-                                        mask={["+","3","8","0"," ","(",/[1-9]/,/\d/,")"," ",/\d/,/\d/,/\d/,"-",/\d/,/\d/,"-",/\d/,/\d/]}
+                                        mask={[
+                                            '+',
+                                            '3',
+                                            '8',
+                                            '0',
+                                            ' ',
+                                            '(',
+                                            /[1-9]/,
+                                            /\d/,
+                                            ')',
+                                            ' ',
+                                            /\d/,
+                                            /\d/,
+                                            /\d/,
+                                            '-',
+                                            /\d/,
+                                            /\d/,
+                                            '-',
+                                            /\d/,
+                                            /\d/,
+                                        ]}
                                         placeholder="+380 ( __ ) ___-__-__"
                                         placeholderChar={'\u2000'}
                                         onChange={handlePhoneNumberChange}
