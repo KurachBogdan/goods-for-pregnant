@@ -56,6 +56,10 @@ const ContactDataBlock: React.FC = () => {
 
     const handleContinue = () => {
         setShowUserData(true)
+        scrollToTop()
+    }
+
+    const scrollToTop = () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth',
@@ -115,27 +119,7 @@ const ContactDataBlock: React.FC = () => {
                                     <MaskedInput
                                         type="tel"
                                         className="phone_number_mask_input"
-                                        mask={[
-                                            '+',
-                                            '3',
-                                            '8',
-                                            '0',
-                                            ' ',
-                                            '(',
-                                            /[1-9]/,
-                                            /\d/,
-                                            ')',
-                                            ' ',
-                                            /\d/,
-                                            /\d/,
-                                            /\d/,
-                                            '-',
-                                            /\d/,
-                                            /\d/,
-                                            '-',
-                                            /\d/,
-                                            /\d/,
-                                        ]}
+                                        mask={["+","3","8","0"," ","(",/[1-9]/,/\d/,")"," ",/\d/,/\d/,/\d/,"-",/\d/,/\d/,"-",/\d/,/\d/]}
                                         placeholder="+380 ( __ ) ___-__-__"
                                         placeholderChar={'\u2000'}
                                         onChange={handlePhoneNumberChange}
