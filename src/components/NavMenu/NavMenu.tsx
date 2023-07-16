@@ -9,13 +9,18 @@ type Props = {
     cartData: {
         totalCount: number
     }
+    onClose: () => void
 }
 
-const NavMenu = ({ cartData }: Props) => {
+const NavMenu = ({ cartData, onClose }: Props) => {
     const likesCount = useAppSelector(selectLikesCount)
 
+    const handleMenuClose = () => {
+        onClose();
+      }
+
     return (
-        <div className="menu">
+        <div className="menu" onClick={handleMenuClose}>
             <ul>
                 <li>
                     <Button className="nav-button">
