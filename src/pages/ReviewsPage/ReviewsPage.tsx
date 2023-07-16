@@ -1,20 +1,28 @@
-import { Rating, TextField, TextareaAutosize } from '@mui/material'
-import { Button, Card, CardContent, Container } from '@mui/material'
 import BackToCategoriesBtn from 'components/BackToCategoriesBtn/BackToCategoriesBtn'
 import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
+import { Button, Card, CardContent, Container } from '@mui/material'
+import { Rating, TextField, TextareaAutosize } from '@mui/material'
+import MuiAlert, { AlertProps } from '@mui/material/Alert'
 import SelectForm from 'components/SelectForm/SelectForm'
-import { useState } from 'react'
 import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
+import Snackbar from '@mui/material/Snackbar'
+import React, { useState } from 'react'
 import './ReviewsPage.scss'
-
-type Props = {}
 
 export type Review = {
     name: string
     text: string
 }
 
-const ReviewsPage = (props: Props) => {
+const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
+    props,
+    ref
+) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />
+})
+
+const ReviewsPage: React.FC = () => {
+    const [openSnack, setOpenSnack] = useState(false)
     const arrReviews: Review[] = [
         {
             name: 'Ольга Б.',
@@ -40,6 +48,7 @@ const ReviewsPage = (props: Props) => {
         text: '',
     })
     const [ratingValue, setRatingValue] = useState(0)
+    const [isFormValid, setIsFormValid] = useState(false) // Доданий стан для валідації форми
 
     const handleRatingChange = (
         event: React.ChangeEvent<{}>,
@@ -52,17 +61,21 @@ const ReviewsPage = (props: Props) => {
     }
 
     const handleName = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { value } = e.target
         setNewReview((prevState) => ({
             ...prevState,
-            name: e.target.value,
+            name: value,
         }))
+        validateForm() // Валідація форми при зміні поля
     }
 
     const handleText = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+        const { value } = e.target
         setNewReview((prevState) => ({
             ...prevState,
-            text: e.target.value,
+            text: value,
         }))
+        validateForm() // Валідація форми при зміні поля
     }
 
     const onSend = (e: React.FormEvent<HTMLFormElement>) => {
@@ -71,6 +84,36 @@ const ReviewsPage = (props: Props) => {
         setReviews((prevState) => {
             return [...prevState, newReview]
         })
+
+        setNewReview({
+            name: '',
+            text: '',
+        })
+        setRatingValue(0)
+    }
+
+    const handleOpenSnack = () => {
+        setOpenSnack(true)
+    }
+
+    const handleCloseSnack = (
+        event?: React.SyntheticEvent | Event,
+        reason?: string
+    ) => {
+        if (reason === 'clickaway') {
+            return
+        }
+
+        setOpenSnack(false)
+    }
+
+    const validateForm = () => {
+        // Валідація форми
+        if (newReview.name.trim() !== '' && newReview.text.trim() !== '') {
+            setIsFormValid(true)
+        } else {
+            setIsFormValid(false)
+        }
     }
 
     return (
@@ -151,9 +194,24 @@ const ReviewsPage = (props: Props) => {
                             className="form_btn"
                             type="submit"
                             variant="outlined"
+                            onClick={handleOpenSnack}
+                            disabled={!isFormValid} // Додано властивість disabled на основі стану валідації форми
                         >
                             Відправити
                         </Button>
+                        <Snackbar
+                            open={openSnack}
+                            autoHideDuration={800}
+                            onClose={handleCloseSnack}
+                            anchorOrigin={{
+                                vertical: 'top',
+                                horizontal: 'center',
+                            }}
+                        >
+                            <Alert severity="success" sx={{ width: '100%' }}>
+                                Дякуємо за Ваш відгук!
+                            </Alert>
+                        </Snackbar>
                     </div>
                 </form>
             </div>
@@ -165,18 +223,3 @@ const ReviewsPage = (props: Props) => {
 }
 
 export default ReviewsPage
-
-/* <Typography
-                    sx={{
-                        textTransform: 'none',
-                        fontFamily: `'Exo 2', sans-serif`,
-                        fontSize: '21px',
-                        fontWeight: 600,
-                        color: '#105b63',
-                        margin: '0px 0px 21px 0px',
-                        cursor: 'context-menu',
-                    }}
-                    component="div"
-                >
-                    Ще немає відгуків
-                </Typography> */
