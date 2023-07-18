@@ -263,7 +263,7 @@ const ReviewsPage: React.FC = () => {
                         </Button>
                         <Snackbar
                             open={openSnack}
-                            autoHideDuration={1000}
+                            autoHideDuration={2000}
                             onClose={handleCloseSnack}
                             anchorOrigin={{
                                 vertical: 'top',
