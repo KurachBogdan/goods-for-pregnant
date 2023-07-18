@@ -1,3 +1,11 @@
+.input_label {
+    color: #105b63;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    overflow: visible;
+}
+
 .review_title {
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
     color: black;
@@ -136,6 +144,7 @@ form h3 {
         font-size: 1rem;
         color: #105b63;
         font-family: 'Sofia Sans Semi Condensed', sans-serif;
+        margin: 0px;
     }
     & .text_area {
         width: 103%;
@@ -218,5 +227,27 @@ form h3 {
 
     .css-3zukih > :not(:first-of-type) {
         margin-left: 0px;
+    }
+
+    .comment-card {
+        width: 100%;
+    }
+
+    .form_btn {
+        font-family: 'Sofia Sans Semi Condensed', sans-serif;
+        font-size: 19px;
+        font-weight: bold;
+        width: 100%;
+        height: 40px;
+        padding: 8px 16px;
+        color: white;
+        background-color: #74c2c2;
+        border-radius: 8px;
+        border: 1px solid #f1f1f9;
+        cursor: pointer;
+        &:disabled { 
+            color: #7d7d91;
+            background-color: #F0F0F0;
+        }
     }
 }

@@ -1,13 +1,18 @@
 import BackToCategoriesBtn from 'components/BackToCategoriesBtn/BackToCategoriesBtn'
 import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
-import { Button, Card, CardContent, Container } from '@mui/material'
+import { Button, Card, CardContent, Container, Typography } from '@mui/material'
 import { Rating, TextField, TextareaAutosize } from '@mui/material'
 import MuiAlert, { AlertProps } from '@mui/material/Alert'
-import SelectForm from 'components/SelectForm/SelectForm'
 import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
 import Snackbar from '@mui/material/Snackbar'
-import React, { useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import './ReviewsPage.scss'
+import Box from '@mui/material/Box'
+import InputLabel from '@mui/material/InputLabel'
+import MenuItem from '@mui/material/MenuItem'
+import FormControl from '@mui/material/FormControl'
+import Select, { SelectChangeEvent } from '@mui/material/Select'
+import productsArray from 'utils/productsArray'
 
 export type Review = {
     name: string
@@ -22,7 +27,6 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
 })
 
 const ReviewsPage: React.FC = () => {
-    const [openSnack, setOpenSnack] = useState(false)
     const arrReviews: Review[] = [
         {
             name: 'Ольга Б.',
@@ -43,12 +47,29 @@ const ReviewsPage: React.FC = () => {
     ]
 
     const [reviews, setReviews] = useState<Review[]>(arrReviews)
-    const [newReview, setNewReview] = useState<Review>({
-        name: '',
-        text: '',
-    })
+    const [product, setProduct] = React.useState('')
+    const [newReview, setNewReview] = useState<Review>({ name: '', text: '' })
+    const [isFormValid, setIsFormValid] = useState(false)
+    const [openSnack, setOpenSnack] = useState(false)
     const [ratingValue, setRatingValue] = useState(0)
-    const [isFormValid, setIsFormValid] = useState(false) // Доданий стан для валідації форми
+
+    const validateForm = useCallback(() => {
+        setIsFormValid(
+            newReview.name.trim() !== '' &&
+                newReview.text.trim() !== '' &&
+                product.trim() !== ''
+        )
+    }, [newReview.name, newReview.text, product])
+
+    useEffect(() => {
+        validateForm()
+    }, [validateForm])
+
+    const handleProduct = (event: SelectChangeEvent) => {
+        const { value } = event.target
+        setProduct(value as string)
+        validateForm()
+    }
 
     const handleRatingChange = (
         event: React.ChangeEvent<{}>,
@@ -66,7 +87,7 @@ const ReviewsPage: React.FC = () => {
             ...prevState,
             name: value,
         }))
-        validateForm() // Валідація форми при зміні поля
+        validateForm()
     }
 
     const handleText = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -75,14 +96,14 @@ const ReviewsPage: React.FC = () => {
             ...prevState,
             text: value,
         }))
-        validateForm() // Валідація форми при зміні поля
+        validateForm()
     }
 
     const onSend = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
         setReviews((prevState) => {
-            return [...prevState, newReview]
+            return [newReview, ...prevState]
         })
 
         setNewReview({
@@ -90,6 +111,8 @@ const ReviewsPage: React.FC = () => {
             text: '',
         })
         setRatingValue(0)
+
+        validateForm()
     }
 
     const handleOpenSnack = () => {
@@ -107,15 +130,6 @@ const ReviewsPage: React.FC = () => {
         setOpenSnack(false)
     }
 
-    const validateForm = () => {
-        // Валідація форми
-        if (newReview.name.trim() !== '' && newReview.text.trim() !== '') {
-            setIsFormValid(true)
-        } else {
-            setIsFormValid(false)
-        }
-    }
-
     return (
         <Container
             sx={{ padding: '21px 24px', minHeight: 'calc(100vh - 430px)' }}
@@ -125,33 +139,52 @@ const ReviewsPage: React.FC = () => {
             <EveryPageTitle title="Відгуки" />
             <div className="reviews">
                 <div className="comment-card-container">
-                    {reviews.map((user, i) => (
-                        <Card
-                            className="comment-card"
-                            variant="outlined"
-                            key={i}
-                        >
-                            <CardContent>
-                                <div className="review_card">
-                                    <div className="review_card_container">
-                                        <div className="review_card_contain">
-                                            <img
-                                                src="/images/bedclothes_roslinka.jpg"
-                                                alt="#"
+                    {reviews.length ? (
+                        reviews.map((user, i) => (
+                            <Card
+                                className="comment-card"
+                                variant="outlined"
+                                key={i}
+                            >
+                                <CardContent>
+                                    <div className="review_card">
+                                        <div className="review_card_container">
+                                            <div className="review_card_contain">
+                                                <img
+                                                    src="/images/bedclothes_roslinka.webp"
+                                                    alt="#"
+                                                />
+                                            </div>
+                                            <p>{user.name}</p>
+                                            <Rating
+                                                name="half-rating"
+                                                defaultValue={2.5}
+                                                precision={0.5}
                                             />
                                         </div>
-                                        <p>{user.name}</p>
-                                        <Rating
-                                            name="half-rating"
-                                            defaultValue={2.5}
-                                            precision={0.5}
-                                        />
+                                        <div className="text_area">
+                                            {user.text}
+                                        </div>
                                     </div>
-                                    <div className="text_area">{user.text}</div>
-                                </div>
-                            </CardContent>
-                        </Card>
-                    ))}
+                                </CardContent>
+                            </Card>
+                        ))
+                    ) : (
+                        <Typography
+                            sx={{
+                                textTransform: 'none',
+                                fontFamily: `'Exo 2', sans-serif`,
+                                fontSize: '21px',
+                                fontWeight: 600,
+                                color: '#105b63',
+                                margin: '0px 0px 21px 0px',
+                                cursor: 'context-menu',
+                            }}
+                            component="div"
+                        >
+                            Ще немає відгуків
+                        </Typography>
+                    )}
                 </div>
                 <form className="review_form" onSubmit={onSend}>
                     <h3>Будь ласка, залиште відгук</h3>
@@ -170,7 +203,36 @@ const ReviewsPage: React.FC = () => {
                             margin: '7px 0px',
                         }}
                     >
-                        <SelectForm />
+                        <Box sx={{ width: '154px' }}>
+                            <FormControl fullWidth>
+                                <InputLabel
+                                    className="input_label"
+                                    id="demo-simple-select-label"
+                                >
+                                    Оберіть товар
+                                </InputLabel>
+                                <Select
+                                    sx={{
+                                        height: '35px',
+                                    }}
+                                    labelId="demo-simple-select-label"
+                                    id="demo-simple-select"
+                                    value={product}
+                                    label="Оберіть товар"
+                                    onChange={handleProduct}
+                                    required
+                                >
+                                    {productsArray.map(
+                                        ({ id, type, itemName }) => (
+                                            <MenuItem
+                                                key={id}
+                                                value={`${type} ${itemName}`}
+                                            >{`${type} ${itemName}`}</MenuItem>
+                                        )
+                                    )}
+                                </Select>
+                            </FormControl>
+                        </Box>
                         <div className="leave_rating">
                             <p className="leave_rating_title">Оцінка</p>
                             <Rating
@@ -195,13 +257,13 @@ const ReviewsPage: React.FC = () => {
                             type="submit"
                             variant="outlined"
                             onClick={handleOpenSnack}
-                            disabled={!isFormValid} // Додано властивість disabled на основі стану валідації форми
+                            disabled={!isFormValid}
                         >
                             Відправити
                         </Button>
                         <Snackbar
                             open={openSnack}
-                            autoHideDuration={800}
+                            autoHideDuration={1000}
                             onClose={handleCloseSnack}
                             anchorOrigin={{
                                 vertical: 'top',
