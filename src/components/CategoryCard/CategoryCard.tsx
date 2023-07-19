@@ -8,26 +8,9 @@ type Props = {
 
 const CategoryCard = ({ image, categoryName }: Props) => {
     return (
-        <Card className='category_card_mobile'
-            sx={{
-                width: '264px',
-                borderRadius: '14px',
-                paddingBottom: '0px',
-            }}
-        >
-            <CardMedia
-                className="card_media"
-                sx={{ height: '207px' }}
-                image={image}
-            />
-            <CardContent
-                sx={{
-                    paddingTop: '7px',
-                    // marginTop: '7px',
-                    // borderRadius: '14px',
-                    backgroundColor: '#105b63',
-                }}
-            >
+        <Card className="category_card_container">
+            <CardMedia className="card_media" image={image} />
+            <CardContent className="category_card_content">
                 <Typography className="category" component="div">
                     {categoryName}
                 </Typography>

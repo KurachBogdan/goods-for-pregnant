@@ -79,11 +79,7 @@ const CardItem = ({
                 onClick={() => handleClickOpen()}
                 variant="text"
             >
-                <CardMedia
-                    className="card_item_card_media"
-                    sx={{ height: 232, width: 260 }}
-                    image={image}
-                />
+                <CardMedia className="card_item_card_media" image={image} />
             </Button>
             <Dialog
                 maxWidth="lg"
@@ -112,9 +108,6 @@ const CardItem = ({
                 </div>
                 <Typography
                     className="hide_color"
-                    style={{
-                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                    }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -123,9 +116,6 @@ const CardItem = ({
                 </Typography>
                 <Typography
                     className="hide_size"
-                    style={{
-                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                    }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -134,9 +124,6 @@ const CardItem = ({
                 </Typography>
                 <Typography
                     className="hide_composition"
-                    style={{
-                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                    }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -145,9 +132,6 @@ const CardItem = ({
                 </Typography>
                 <Typography
                     className="hide_term"
-                    style={{
-                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                    }}
                     variant="body2"
                     color="text.secondary"
                 >
@@ -202,7 +186,7 @@ const CardItem = ({
                 >
                     <span className="span-hide">Додати в корзину</span>
                     <span className="span-mobile">
-                        <ShoppingCartIcon className='shopping_cart_btn_mobole'/>
+                        <ShoppingCartIcon className="shopping_cart_btn_mobole" />
                     </span>
                 </Button>
             </CardActions>

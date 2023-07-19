@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@300;400;500;600&display=swap');
+
 .cart_page_item-container {
     border-radius: 14px;
     width: 100%;
@@ -137,6 +139,16 @@
         border: 1px solid rgba(0, 0, 0, 0.2);
         color: rgba(0, 0, 0, 0.2);
     }
+}
+
+.cart_page_item_alternative_message {
+    text-transform: none;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: #105b63;
+    margin-bottom: 21px;
+    cursor: context-menu;
 }
 
 @media (max-width: 53rem) {

@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@300;400;500;600&display=swap');
 
-.favorites_page_container {
+.certificates_page_container {
     padding: 21px 24px;
     min-height: calc(100vh - 356px);
 }
 
-.favorites_page_alternative_text {
+.certificates_page_alternative_message {
     text-transform: none;
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
     font-size: 21px;
     font-weight: 600;
     color: #105b63;
-    margin: 34px 0px 0px 34px;
+    margin: 0px 0px 21px 0px;
     cursor: context-menu;
 }

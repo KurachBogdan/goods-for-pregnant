@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@300;400;500;600&display=swap');
+
 .card_item_extended-Container {
     cursor: context-menu;
     padding: 21px 24px;
@@ -77,6 +79,46 @@
 .blink {
     animation: blink 1.4s infinite;
 }
+
+.card_item_extended_product_color {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 16px;
+    margin-top: 9px;
+    color: #105b63;
+}
+
+.card_item_extended_product_size {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 16px;
+    color: #105b63;
+}
+
+.card_item_extended_product_composition {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 16px;
+    color: #105b63;
+}
+
+.card_item_extended_product_term {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 16px;
+    color: #105b63;
+}
+
+.card_item_extended_product_price {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-size: 16px;
+    margin-bottom: 28px;
+    color: #105b63;
+}
+
+.card_item_extended_leave_review {
+    text-decoration: none;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
 
 @keyframes blink {
     50% {

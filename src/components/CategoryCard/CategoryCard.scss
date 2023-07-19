@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@300;400;500;600&display=swap');
+
+.category_card_container {
+    width: 264px;
+    border-radius: 14px;
+    padding-bottom: 0px;
+}
+
+.card_media {
+    transition: all 0.4s ease-in-out;
+    height: 207px;
+}
+
+.category_card_content {
+    background-color: #105b63;
+    & :last-child {
+    padding: 7px 16px 14px 16px;
+    }
+}
+
 .category {
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
     font-size: 20px;
@@ -12,28 +32,21 @@
     padding-bottom: 7px;
 }
 
-.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root,
+.css-1o971ee-MuiCardContent-root:last-child {
     padding: 0;
 }
 
-.card_media {
-    transition: all 0.4s ease-in-out;
-  }
-
 .category_btn:hover .card_media {
     filter: grayscale(0%) contrast(100%) brightness(110%);
-  }
+}
 
-  .category_btn:hover .category {
+.category_btn:hover .category {
     color: #74c2c2;
 }
 
-.css-144tyno-MuiCardContent-root:last-child {
-    padding-bottom: 14px;
-}
-
 @media (max-width: 53rem) {
-    .category_card_mobile {
+    .category_card_container {
         width: 99%;
     }
 

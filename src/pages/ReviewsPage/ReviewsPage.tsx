@@ -65,11 +65,10 @@ const ReviewsPage: React.FC = () => {
         validateForm()
     }, [validateForm])
 
-    const handleProduct = (event: SelectChangeEvent) => {
+    const handleProduct = useCallback((event: SelectChangeEvent) => {
         const { value } = event.target
         setProduct(value as string)
-        validateForm()
-    }
+    }, [])
 
     const handleRatingChange = (
         event: React.ChangeEvent<{}>,
@@ -81,36 +80,36 @@ const ReviewsPage: React.FC = () => {
         }
     }
 
-    const handleName = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleName = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
         const { value } = e.target
         setNewReview((prevState) => ({
             ...prevState,
             name: value,
         }))
-        validateForm()
-    }
+    }, [])
 
-    const handleText = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-        const { value } = e.target
-        setNewReview((prevState) => ({
-            ...prevState,
-            text: value,
-        }))
-        validateForm()
-    }
+    const handleText = useCallback(
+        (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+            const { value } = e.target
+            setNewReview((prevState) => ({
+                ...prevState,
+                text: value,
+            }))
+        },
+        []
+    )
 
     const onSend = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
-        setReviews((prevState) => {
-            return [newReview, ...prevState]
-        })
+        setReviews((prevState) => [newReview, ...prevState])
 
         setNewReview({
             name: '',
             text: '',
         })
         setRatingValue(0)
+        setProduct('')
 
         validateForm()
     }
@@ -171,15 +170,7 @@ const ReviewsPage: React.FC = () => {
                         ))
                     ) : (
                         <Typography
-                            sx={{
-                                textTransform: 'none',
-                                fontFamily: `'Exo 2', sans-serif`,
-                                fontSize: '21px',
-                                fontWeight: 600,
-                                color: '#105b63',
-                                margin: '0px 0px 21px 0px',
-                                cursor: 'context-menu',
-                            }}
+                            className="reviews_page_alternative_message"
                             component="div"
                         >
                             Ще немає відгуків

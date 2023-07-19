@@ -35,12 +35,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                                 {product.description}
                             </Typography>
                             <Typography
-                                style={{
-                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                    fontSize: '16px',
-                                    marginTop: '9px',
-                                    color: '#105b63',
-                                }}
+                                className="card_item_extended_product_color"
                                 variant="body2"
                             >
                                 <span className="card_item_extended_before_a_colon">
@@ -49,11 +44,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                                 {product.color}
                             </Typography>
                             <Typography
-                                style={{
-                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                    fontSize: '16px',
-                                    color: '#105b63',
-                                }}
+                                className="card_item_extended_product_size"
                                 variant="body2"
                             >
                                 <span className="card_item_extended_before_a_colon">
@@ -62,11 +53,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                                 {product.size} см
                             </Typography>
                             <Typography
-                                style={{
-                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                    fontSize: '16px',
-                                    color: '#105b63',
-                                }}
+                                className="card_item_extended_product_composition"
                                 variant="body2"
                             >
                                 <span className="card_item_extended_before_a_colon">
@@ -75,11 +62,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                                 {product.composition}
                             </Typography>
                             <Typography
-                                style={{
-                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                    fontSize: '16px',
-                                    color: '#105b63',
-                                }}
+                                className="card_item_extended_product_term"
                                 variant="body2"
                             >
                                 <span className="card_item_extended_before_a_colon">
@@ -88,12 +71,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                                 {product.term}
                             </Typography>
                             <Typography
-                                style={{
-                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                    fontSize: '16px',
-                                    marginBottom: '28px',
-                                    color: '#105b63',
-                                }}
+                                className="card_item_extended_product_price"
                                 variant="body2"
                             >
                                 <span className="card_item_extended_before_a_colon">
@@ -123,12 +101,7 @@ const CardItemExtended = ({ handleClose, handleClick, count, id }: Props) => {
                                     size="small"
                                 >
                                     <NavLink
-                                        style={{
-                                            textDecoration: 'none',
-                                            fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                            fontWeight: 600,
-                                            color: 'white',
-                                        }}
+                                        className="card_item_extended_leave_review"
                                         to="/review"
                                     >
                                         Залишити відгук

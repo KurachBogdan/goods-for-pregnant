@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom'
 import BackToCategoriesBtn from 'components/BackToCategoriesBtn/BackToCategoriesBtn'
 import EveryPageTitle from 'components/EveryPageTitle/EveryPageTitle'
 import categoriesArray, { Category } from 'utils/categoriesArray'
+import './CategoryPage.scss'
 
 type Props = {
     handleClick: (id: number, count: number) => void
@@ -23,23 +24,23 @@ const CategoryPage = ({ handleClick }: Props) => {
     const setBackground = () => {
         switch (categoryId) {
             case 'diapers':
-                return '/images/diapers_background.jpg'
+                return '/images/diapers_background.webp'
             case 'bibs':
-                return '/images/bibs_background.jpg'
+                return '/images/bibs_background.webp'
             case 'pregnant':
-                return '/images/pregnant_background.jpg'
+                return '/images/pregnant_background.webp'
             case 'toys':
-                return '/images/toys_background.jpg'
+                return '/images/toys_background.webp'
             case 'presbox':
-                return '/images/presbox_background.jpg'
+                return '/images/presbox_background.webp'
             case 'textile':
-                return '/images/textile_background.jpg'
+                return '/images/textile_background.webp'
             case 'body':
-                return '/images/body_background.jpg'
+                return '/images/body_background.webp'
             case 'towels':
-                return '/images/towels_background.jpg'
+                return '/images/towels_background.webp'
             case 'cocoons':
-                return '/images/cocoons_background.jpg'
+                return '/images/cocoons_background.webp'
             default:
                 break
         }
@@ -47,7 +48,6 @@ const CategoryPage = ({ handleClick }: Props) => {
 
     return (
         <div
-            className="category_page_background"
             style={{
                 background: `url(${setBackground()}) center/cover no-repeat`,
             }}
@@ -74,11 +74,14 @@ const CategoryPage = ({ handleClick }: Props) => {
                                 term,
                                 price,
                             }) => (
-                                <Grid sx={{
-                                    display: 'flex',
-                                    justifyContent: 'space-between',
-                                    flexWrap: 'wrap',
-                                }} item xs={6} sm={6} md={3} key={id}>
+                                <Grid
+                                    className="category_page_grid_item"
+                                    item
+                                    xs={6}
+                                    sm={6}
+                                    md={3}
+                                    key={id}
+                                >
                                     <CardItem
                                         id={id}
                                         handleClick={handleClick}
@@ -103,17 +106,7 @@ const CategoryPage = ({ handleClick }: Props) => {
                             }}
                         >
                             <Typography
-                                sx={{
-                                    textTransform: 'none',
-                                    fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                                    fontSize: '21px',
-                                    fontWeight: 600,
-                                    color: '#105b63',
-                                    lineHeight: '350px',
-                                    cursor: 'context-menu',
-                                    textAlign: 'center',
-                                    minHeight: 'calc(100vh - 530px)',
-                                }}
+                                className="category_page_alternative_message"
                                 component="div"
                             >
                                 Ще немає товарів цієї категорії

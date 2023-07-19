@@ -223,16 +223,7 @@ const CartPageItem = ({
                     </Card>
                 ))
             ) : (
-                <Typography
-                    sx={{
-                        textTransform: 'none',
-                        fontFamily: `'Sofia Sans Semi Condensed', sans-serif`,
-                        fontSize: '21px',
-                        fontWeight: 600,
-                        color: '#105b63',
-                        marginBottom: '21px',
-                        cursor: 'context-menu',
-                    }}
+                <Typography className='cart_page_item_alternative_message'
                     component="div"
                 >
                     Ваш кошик порожній
