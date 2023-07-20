@@ -9,6 +9,7 @@ import React from 'react'
 import FavoriteCardItemExtended from './FavoriteCardItemExtended'
 import './FavoriteCardItem.scss'
 import RateReviewOutlinedIcon from '@mui/icons-material/RateReviewOutlined'
+import { NavLink } from 'react-router-dom'
 
 type Props = {
     id: number
@@ -128,7 +129,9 @@ const FavoriteCardItem = ({
                     )}
                 </Button>
                 <Button className="review_btn">
-                    <RateReviewOutlinedIcon />
+                    <NavLink className="review_btn" to="/review">
+                        <RateReviewOutlinedIcon />
+                    </NavLink>
                 </Button>
                 <Button
                     key={`product_${id}`}

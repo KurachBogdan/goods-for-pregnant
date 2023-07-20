@@ -8,7 +8,8 @@
 
 .card_media {
     transition: all 0.4s ease-in-out;
-    height: 207px;
+    height: auto;
+    aspect-ratio: 264/207;
 }
 
 .category_card_content {
@@ -47,7 +48,7 @@
 
 @media (max-width: 53rem) {
     .category_card_container {
-        width: 99%;
+        width: 100vw;
     }
 
     .card_media {

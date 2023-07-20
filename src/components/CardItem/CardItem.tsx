@@ -14,6 +14,7 @@ import { TransitionProps } from '@mui/material/transitions'
 import CardItemExtended from './CardItemExtended'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 import RateReviewOutlinedIcon from '@mui/icons-material/RateReviewOutlined'
+import { NavLink } from 'react-router-dom'
 
 type Props = {
     id: number
@@ -176,7 +177,9 @@ const CardItem = ({
                     )}
                 </Button>
                 <Button className="review_btn">
-                    <RateReviewOutlinedIcon />
+                    <NavLink className="review_btn" to="/review">
+                        <RateReviewOutlinedIcon />
+                    </NavLink>
                 </Button>
                 <Button
                     onClick={() => handleClick(id, count)}

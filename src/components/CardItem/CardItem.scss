@@ -111,7 +111,13 @@
 }
 
 .review_btn {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 36px;
+    color: grey;
+    height: 28px;
+    width: 26px;
 }
 
 .hide_color,
@@ -247,17 +253,6 @@
 
     .css-34he1w-MuiRating-decimal {
         height: 24px;
-    }
-
-    .review_btn {
-        display: block;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-width: 36px;
-        color: grey;
-        height: 28px;
-        width: 26px;
     }
 
     .card_item_rating {
