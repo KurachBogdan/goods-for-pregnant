@@ -70,7 +70,7 @@ const NavMenu = ({ cartData, onClose }: Props) => {
                         </NavLink>{' '}
                     </Button>
                 </li>
-                <li>
+                <li className='hide_for_mobile'>
                     <Button className="nav-button">
                         <NavLink
                             className={({ isActive }) =>
@@ -88,7 +88,7 @@ const NavMenu = ({ cartData, onClose }: Props) => {
                         </NavLink>{' '}
                     </Button>
                 </li>
-                <li>
+                <li className='hide_for_mobile'>
                     <Button className="nav-button shop_cart_icon">
                         <NavLink
                             className={({ isActive }) =>

@@ -50,8 +50,16 @@
     }
 }
 
+.only_for_mobile {
+    display: none;
+}
+
 .shoppig_cart_icon_color {
     color: rgba(69, 73, 77, .6);
+}
+
+.favorite_icon_color {
+    color: rgba(69, 73, 77, .6)
 }
 
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover {
@@ -108,5 +116,37 @@ nav #toggle, nav label {
 
     nav #toggle:checked ~ .menu {
         height: 100%;
+    }
+    
+    .only_for_mobile {
+        display: block;
+    }
+
+    .menu_itemActive_mobile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        text-decoration: none;
+        color: rgba(69, 73, 77, .6);
+        font-family: 'Sofia Sans Semi Condensed', sans-serif;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 600;
+    }
+
+    .nav-button-link {
+        justify-content: flex-end;
+    }
+
+    .shoppig_cart_icon_color {
+        color: #74c2c2;
+    }
+    
+    .favorite_icon_color {
+        color: red;
+    }
+    
+    .hide_for_mobile {
+        display: none;
     }
 }
