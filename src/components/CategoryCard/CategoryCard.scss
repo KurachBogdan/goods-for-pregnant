@@ -15,18 +15,23 @@
 .category_card_content {
     background-color: #105b63;
     & :last-child {
-    padding: 7px 16px 14px 16px;
+    padding: 4px;
     }
 }
 
 .category {
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
     font-size: 20px;
+    line-height: 20px;
     font-weight: 700;
     color:white;
     text-align: center;
     text-transform: uppercase;
     transition: all 0.1s ease-in-out;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .css-651hzl-MuiCardContent-root:last-child {

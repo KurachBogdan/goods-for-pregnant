@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from '@mui/material'
+import { Button, Typography } from '@mui/material'
 import './MainPart.scss'
 import CategoryCard from 'components/CategoryCard/CategoryCard'
 import categoriesArray from 'utils/categoriesArray'
@@ -15,30 +15,22 @@ const MainPart = (props: Props) => {
         <div className="main_part-container">
             <p>Категорії товарів</p>
             <div className="border_before_categories"></div>
-            <Grid container spacing={3}>
+            <div className="main_part_flex_container">
                 {categoriesArray.length ? (
                     categoriesArray.map(
                         ({ image, categoryName, link }, index) => (
-                            <Grid
-                                item
-                                xs={7}
-                                sm={6}
-                                xl={4}
-                                md={4}
+                            <Button
                                 key={`category_${index}`}
+                                className="category_btn"
+                                onClick={() =>
+                                    handleLocation(`/category${link}`)
+                                }
                             >
-                                <Button
-                                    className="category_btn"
-                                    onClick={() =>
-                                        handleLocation(`/category${link}`)
-                                    }
-                                >
-                                    <CategoryCard
-                                        image={image}
-                                        categoryName={categoryName}
-                                    />
-                                </Button>
-                            </Grid>
+                                <CategoryCard
+                                    image={image}
+                                    categoryName={categoryName}
+                                />
+                            </Button>
                         )
                     )
                 ) : (
@@ -46,7 +38,7 @@ const MainPart = (props: Props) => {
                         No any categories
                     </Typography>
                 )}
-            </Grid>
+            </div>
         </div>
     )
 }
