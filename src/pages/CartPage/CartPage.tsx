@@ -44,9 +44,6 @@ const CartPage = ({
                                 <span className="make_purchases_btn_desktop">
                                     Оформити замовлення
                                 </span>
-                                <span className="make_purchases_btn_mobile">
-                                    <ShoppingBasketRoundedIcon />
-                                </span>
                             </Button>
                         )}
                     </div>
@@ -61,6 +58,9 @@ const CartPage = ({
                                 variant="contained"
                             >
                                 <span className="make_purchases_btn_mobile">
+                                    <span style={{ marginRight: '7px' }}>
+                                        Купити
+                                    </span>
                                     <ShoppingBasketRoundedIcon />
                                 </span>
                             </Button>
