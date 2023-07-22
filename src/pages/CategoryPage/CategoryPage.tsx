@@ -1,4 +1,4 @@
-import { Container, Grid, Typography } from '@mui/material'
+import { Container, Typography } from '@mui/material'
 import ScrollToTopOnMount from 'utils/ScrollToTopOnMount'
 import CardItem from 'components/CardItem/CardItem'
 import productsArray from 'utils/productsArray'
@@ -60,7 +60,7 @@ const CategoryPage = ({ handleClick }: Props) => {
                 }}
             >
                 <EveryPageTitle title={categoryName} />
-                <Grid container spacing={4.2}>
+                <div className="category_page_flex_container">
                     {filteredArray.length ? (
                         filteredArray.map(
                             ({
@@ -74,27 +74,19 @@ const CategoryPage = ({ handleClick }: Props) => {
                                 term,
                                 price,
                             }) => (
-                                <Grid
-                                    className="category_page_grid_item"
-                                    item
-                                    xs={6}
-                                    sm={6}
-                                    md={3}
+                                <CardItem
+                                    id={id}
+                                    handleClick={handleClick}
+                                    image={image}
+                                    type={type}
+                                    itemName={itemName}
+                                    color={color}
+                                    size={size}
+                                    composition={composition}
+                                    term={term}
+                                    price={price}
                                     key={id}
-                                >
-                                    <CardItem
-                                        id={id}
-                                        handleClick={handleClick}
-                                        image={image}
-                                        type={type}
-                                        itemName={itemName}
-                                        color={color}
-                                        size={size}
-                                        composition={composition}
-                                        term={term}
-                                        price={price}
-                                    />
-                                </Grid>
+                                />
                             )
                         )
                     ) : (
@@ -113,7 +105,7 @@ const CategoryPage = ({ handleClick }: Props) => {
                             </Typography>
                         </div>
                     )}
-                </Grid>
+                </div>
                 <div style={{ marginTop: '35px' }}>
                     <BackToCategoriesBtn />
                 </div>
